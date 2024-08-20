@@ -1,0 +1,6 @@
+@import './base.css';
+
+/* darkmode */
+.dark body {
+    background-color: #092635;
+}
