@@ -8,8 +8,8 @@ import i18n from './services/language'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar} from '@fortawesome/free-solid-svg-icons'
-library.add(faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar)
+import {faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar, faArrowLeftLong} from '@fortawesome/free-solid-svg-icons'
+library.add(faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar, faArrowLeftLong)
 
 
 const app = createApp(App)

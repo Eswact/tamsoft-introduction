@@ -4,5 +4,11 @@
     "about": "About",
     "contact": "Contact",
     "login": "Login",
-    "signup": "Sign Up"
+    "signup": "Sign Up",
+    "404": {
+        "title": "Page not found",
+        "description": "The page you are looking for doesn't exist. Here are some helpful links:",
+        "goBack": "Go Back",
+        "takeMeHome": "Take me home"
+    }
 }

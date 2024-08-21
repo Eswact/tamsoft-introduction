@@ -4,5 +4,11 @@
     "about": "Hakkımızda",
     "contact": "İletişim",
     "login": "Giriş Yap",
-    "signup": "Üye Ol"
+    "signup": "Üye Ol",
+    "404": {
+        "title": "Sayfa Bulunamadı",
+        "description": "Aradığınız sayfa mevcut değil. İşte bazı yararlı bağlantılar:",
+        "goBack": "Geri Dön",
+        "takeMeHome": "Anasayfaya Dön"
+    }
 }

@@ -23,14 +23,14 @@
         <img
             @click="switchLanguage('tr')"
             :class="{ 'hidden': currentLocale !== 'en' }"
-            class="w-[36px] sm:w-[40px] cursor-pointer"
+            class="w-[36px] md:w-[40px] cursor-pointer"
             src="../images/tr-flag.png"
             alt="TR"
         />
         <img
             @click="switchLanguage('en')"
             :class="{ 'hidden': currentLocale !== 'tr' }"
-            class="w-[36px] sm:w-[40px] cursor-pointer"
+            class="w-[36px] md:w-[40px] cursor-pointer"
             src="../images/uk-flag.png"
             alt="EN"
         />
