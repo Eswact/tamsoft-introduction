@@ -10,5 +10,12 @@
         "description": "Aradığınız sayfa mevcut değil. İşte bazı yararlı bağlantılar:",
         "goBack": "Geri Dön",
         "takeMeHome": "Anasayfaya Dön"
+    },
+    "pricingPage": {
+        "title": "Tamsoft Paketleri",
+        "description": "Kullanım ihtiyaçlarınıza göre size en uygun paketi bulabilirsiniz. İş süreçlerinizi daha verimli hale getirmek, finansal işlemlerinizi kolayca yönetmek ve zaman kazanmak için doğru paketi seçin.",
+        "basic": "Temel Plan",
+        "standard": "Standart Plan",
+        "recommend": "Önerilen"
     }
 }

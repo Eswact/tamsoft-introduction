@@ -13,13 +13,13 @@
 
 <template>
   <HamburgerMenu/>
-  <div class="w-full flex flex-col gap-[10px] justify-center items-center">
+  <div class="w-full flex flex-col justify-center items-center">
     <!-- header -->
     <header v-if="!isNotFound" class="w-full flex justify-center items-center bg-white dark:bg-dark transition-all duration-500">
       <Header />
     </header>
     <!-- main -->
-    <main :class="{ 'max-w-[1600px]': !isNotFound }" class="w-full px-[10px] dark:text-white">
+    <main class="w-full dark:text-white">
       <RouterView />
     </main>
     <!-- footer -->

@@ -10,5 +10,12 @@
         "description": "The page you are looking for doesn't exist. Here are some helpful links:",
         "goBack": "Go Back",
         "takeMeHome": "Take me home"
+    },
+    "pricingPage": {
+        "title": "Tamsoft Packages",
+        "description": "You can find the most suitable package according to your usage needs. Choose the right package to make your business processes more efficient, manage your financial transactions easily and save time.",
+        "basic": "Basic Plan",
+        "standard": "Standard Plan",
+        "recommend": "Recommend"
     }
 }
