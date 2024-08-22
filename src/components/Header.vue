@@ -49,8 +49,8 @@
             <DarkModeToggle />
             <!-- buttons -->
             <div class="flex items-center justify-end gap-[12px] md:hidden">
-                <a href="https://demo.tamsoft.com.tr/" target="_blank" class="cursor-pointer text-[1.15rem] md:text-[1rem] font-semibold border-[1px] border-main text-main shadow-sm shadow-main-shadow py-[6px] text-center w-[90px] md:w-[80px] rounded-md dark:text-white dark:border-white duration-200 hover:bg-main hover:text-white">{{ $t('login') }}</a>
-                <a class="cursor-pointer text-[1.15rem] md:text-[1rem] font-semibold border-[1px] border-main bg-main text-white shadow-md shadow-main-shadow py-[6px] text-center w-[90px] md:w-[80px] rounded-md dark:border-white duration-200 hover:bg-transparent hover:text-main dark:hover:text-white">{{ $t('signup') }}</a>
+                <a href="https://demo.tamsoft.com.tr/" target="_blank" class="gelatine cursor-pointer text-[1.15rem] md:text-[1rem] font-semibold border-[1px] border-main text-main shadow-sm shadow-main-shadow py-[6px] text-center w-[90px] md:w-[80px] rounded-md dark:text-white dark:border-white duration-200">{{ $t('login') }}</a>
+                <a class="gelatine cursor-pointer text-[1.15rem] md:text-[1rem] font-semibold border-[1px] border-main bg-main text-white shadow-md shadow-main-shadow py-[6px] text-center w-[90px] md:w-[80px] rounded-md dark:border-white duration-200">{{ $t('signup') }}</a>
             </div>
         </div>
     </div>

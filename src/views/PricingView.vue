@@ -1,21 +1,13 @@
 <script setup>
-    import { onMounted } from 'vue'
-
-    onMounted(() => {
-        const elements = document.querySelectorAll('.fade-in');
-        elements.forEach((element) => {
-        if (element.getBoundingClientRect().top < window.innerHeight) {
-            element.classList.add('active');
-        }
-        });
-    });
+    import { useFadeIn } from '../scripts/common';
+    useFadeIn();
 </script>
 
 <template>
     <div class="w-full flex flex-col">
         <div class="w-full bg-main-light dark:bg-main-shadow flex justify-center items-center shadow-sm dark:shadow-md dark:shadow-main-shadow">
             <div class="w-full max-w-[1600px] flex flex-col gap-[60px] sm:gap-[30px] justify-center items-center py-[60px] sm:py-[30px]">
-                <div class="w-full flex flex-col gap-[40px] justify-center items-center">
+                <div class="fade-in w-full flex flex-col gap-[40px] justify-center items-center">
                     <h1 class="text-[2.5rem] font-bold sm:text-[2rem]">{{$t('pricingPage.title')}}</h1>
                     <p class="text-[1.25rem] sm:text-[1.1rem] w-full max-w-[800px] text-center px-[20px]">{{$t('pricingPage.description')}}</p>
                 </div>
@@ -49,8 +41,69 @@
             </div>
         </div>
         <div class="w-full flex justify-center items-center">
-            <div class="w-full max-w-[1600px] px-[20px] py-[40px]">
-                Detaylar
+            <div class="w-full max-w-[1600px] px-[80px] lg:px-[40px] md:px-[20px] py-[40px] flex justify-center items-center">
+                <div class="grid items-center grid-cols-4 md:grid-cols-3 w-full px-[40px] py-[20px] md:px-0 md:py-0 md:border-0 border-[1px] rounded-lg text-text dark:text-white text-[1.15rem] md:text-[1rem]">
+                    <!-- Başlıklar -->
+                    <div class="p-[8px] md:text-center md:col-span-3"></div>
+                    <div class="p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem]">Basic</div>
+                    <div class="p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem]">Standard</div>
+                    <div class="p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem]">Pro</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px] md:border-t-[1px]">Özellik 1</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Özellik 2</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Özellik 3</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Uzun Özellik 1</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Uzun Özellik 2</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Uzun Özellik 3</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px] md:border-t-[1px]">Özellik 4</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Özellik 5</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Özellik 6</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">❌</div>
+                    <div class="border p-[10px] text-center">✔️</div>
+
+                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Fiyat</div>
+                    <div class="font-semibold border p-[10px] text-center">10000</div>
+                    <div class="font-semibold border p-[10px] text-center">15000</div>
+                    <div class="font-semibold border p-[10px] text-center">20000</div>
+
+                    <div class="pt-[20px] md:text-center md:col-span-3"></div>
+                    <div class="p-[20px] md:pt-0 text-center"><button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">Hemen Al</button></div>
+                    <div class="p-[20px] md:pt-0 text-center"><button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">Hemen Al</button></div>
+                    <div class="p-[20px] md:pt-0 text-center"><button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">Hemen Al</button></div>
+                </div>
             </div>
         </div>
     </div>

@@ -12,14 +12,14 @@
 </script>
 
 <template>
-  <HamburgerMenu/>
+  <HamburgerMenu class="z-30"/>
   <div class="w-full flex flex-col justify-center items-center">
     <!-- header -->
-    <header v-if="!isNotFound" class="fixed top-0 left-0 w-full h-[100px] flex justify-center items-center bg-white dark:bg-dark transition-all duration-500 shadow-md dark:shadow-dark">
+    <header v-if="!isNotFound" class="z-20 fixed top-0 left-0 w-full h-[100px] flex justify-center items-center bg-white dark:bg-dark transition-all duration-500 shadow-md dark:shadow-dark">
       <Header />
     </header>
     <!-- main -->
-    <main class="mt-[100px] w-full dark:text-white">
+    <main class="z-10 mt-[100px] w-full dark:text-white">
       <RouterView />
     </main>
     <!-- footer -->
