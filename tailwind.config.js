@@ -9,10 +9,10 @@ export default {
         'text': '#3B3A3A',
         'main': '#C32640',
         'second': '#545657',
-        'third': '#F8D519',
+        'third': '#FAA550',
         'main-shadow': '#C326405e',
         'second-shadow': '#5456575e',
-        'third-shadow': '#F8D5195e',
+        'third-shadow': '#FAA5505e',
         'main-light': '#C326401a'
       },
     },
