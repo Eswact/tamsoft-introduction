@@ -22,7 +22,7 @@
                 <img class="w-[200px] dark:hidden" src="../images/tamsoft.png" alt="Tamsoft">
                 <img class="w-[200px] hidden dark:block" src="../images/tamsoft-dark.png" alt="Tamsoft">
             </RouterLink>
-            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-main': isActive('/properties') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/properties"><span class="text-[1.4rem] font-semibold">{{ $t('features') }}</span></RouterLink>
+            <RouterLink @click="closeHamburgerMenu" :class="{ 'text-main': isActive('/features') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/features"><span class="text-[1.4rem] font-semibold">{{ $t('features') }}</span></RouterLink>
             <RouterLink @click="closeHamburgerMenu" :class="{ 'text-main': isActive('/pricing') }" class="p-[10px] flex items-center gap-[8px]" to="/pricing"><span class="text-[1.4rem] font-semibold">{{ $t('pricing') }}</span></RouterLink>
             <RouterLink @click="closeHamburgerMenu" :class="{ 'text-main': isActive('/about') }" class="p-[10px] flex items-center gap-[8px]" to="/about"><span class="text-[1.4rem] font-semibold">{{ $t('about') }}</span></RouterLink>
             <RouterLink @click="closeHamburgerMenu" :class="{ 'text-main': isActive('/contact') }" class="p-[10px] flex items-center gap-[8px]" to="/contact"><span class="text-[1.4rem] font-semibold">{{ $t('contact') }}</span></RouterLink>

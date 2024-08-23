@@ -10,6 +10,7 @@ export default {
         'main': '#C32640',
         'second': '#545657',
         'third': '#FAA550',
+        'dark-shadow': '#0926355e',
         'main-shadow': '#C326405e',
         'second-shadow': '#5456575e',
         'third-shadow': '#FAA5505e',

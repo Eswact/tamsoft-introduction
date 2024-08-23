@@ -5,6 +5,10 @@
     "contact": "İletişim",
     "login": "Giriş Yap",
     "signup": "Üye Ol",
+    "quickLinks": "Hızlı Erişim",
+    "services": "Servisler",
+    "support": "Destek",
+    "copyright": "© 2024 Tamsoft, Tüm hakları saklıdır.",
     "404": {
         "title": "Sayfa Bulunamadı",
         "description": "Aradığınız sayfa mevcut değil. İşte bazı yararlı bağlantılar:",
@@ -16,6 +20,9 @@
         "description": "Kullanım ihtiyaçlarınıza en uygun paketi seçerek, iş süreçlerinizi daha verimli hale getirebilir, finansal işlemlerinizi kolayca yönetebilir ve zamandan tasarruf edebilirsiniz. Size en uygun olanı belirlemek için planlarımızı inceleyebilirsiniz.",
         "basic": "Temel Plan",
         "standard": "Standart Plan",
-        "recommend": "Önerilen"
+        "pro": "Pro Plan",
+        "recommend": "Önerilen",
+        "buyNow": "Hemen Al",
+        "price": "Fiyat"
     }
 }

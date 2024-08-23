@@ -19,10 +19,12 @@
       <Header />
     </header>
     <!-- main -->
-    <main class="z-10 mt-[100px] w-full dark:text-white">
+    <main :class="{ 'mt-[100px]': !isNotFound }" class="z-10 w-full dark:text-white">
       <RouterView />
     </main>
     <!-- footer -->
-    <footer v-if="!isNotFound"></footer>
+    <footer class="w-full mt-[40px]" v-if="!isNotFound">
+      <Footer />
+    </footer>
   </div>
 </template>

@@ -22,7 +22,7 @@
                 <img class="h-[58px] hidden dark:block xl:dark:hidden" src="../images/tamsoft-dark.png" alt="Tamsoft">
                 <img class="h-[70px] hidden xl:block" src="../images/logo.png" alt="Tamsoft">
             </RouterLink>
-            <RouterLink :class="{ 'text-main': isActive('/properties') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] hover:text-main" to="/properties"> 
+            <RouterLink :class="{ 'text-main': isActive('/features') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] hover:text-main" to="/features"> 
                 <!-- <font-awesome-icon class="text-[1.4rem] lg:text-[1.8rem]" icon="fa-solid fa-star" /> --> 
                 <span class="text-[1.2rem] font-semibold">{{ $t('features') }}</span>
             </RouterLink>
