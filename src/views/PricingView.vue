@@ -5,8 +5,10 @@
 
 <template>
     <div class="w-full flex flex-col">
-        <div class="w-full bg-main-light dark:bg-main-shadow flex justify-center items-center shadow-sm dark:shadow-md dark:shadow-main-shadow">
-            <div class="w-full max-w-[1600px] flex flex-col gap-[60px] sm:gap-[30px] justify-center items-center py-[60px] sm:py-[30px]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="z-0 w-full absolute top-0 fill-main-light"><path fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,181.3C384,149,480,75,576,80C672,85,768,171,864,176C960,181,1056,107,1152,90.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="w-full relative bg-main-light dark:bg-main-shadow flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="z-0 w-full absolute top-0 fill-main-light"><path fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,181.3C384,149,480,75,576,80C672,85,768,171,864,176C960,181,1056,107,1152,90.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <div class="w-full max-w-[1600px] flex flex-col gap-[60px] sm:gap-[30px] justify-center items-center pt-[60px] sm:pt-[30px]">
                 <div class="fade-in w-full flex flex-col gap-[40px] justify-center items-center">
                     <h1 class="text-[2.5rem] font-bold sm:text-[2rem]">{{$t('pricingPage.title')}}</h1>
                     <p class="text-[1.25rem] sm:text-[1.1rem] w-full max-w-[800px] text-center px-[20px]">{{$t('pricingPage.description')}}</p>
@@ -40,9 +42,10 @@
                 </div>
             </div>
         </div>
-        <div class="w-full flex justify-center items-center">
-            <div class="w-full max-w-[1600px] px-[80px] lg:px-[40px] md:px-[20px] py-[40px] flex justify-center items-center">
-                <div class="dark:bg-white grid items-center grid-cols-4 md:grid-cols-3 w-full px-[40px] py-[20px] md:px-0 md:py-0 md:border-0 border-[1px] rounded-lg text-text text-[1.15rem] md:text-[1rem]">
+        <div class="relative w-full flex flex-col justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="z-0 w-full absolute top-0 fill-main-light dark:fill-main-shadow"><path fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,181.3C384,149,480,75,576,80C672,85,768,171,864,176C960,181,1056,107,1152,90.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <div class="z-10 w-full max-w-[1600px] px-[80px] lg:px-[40px] md:px-[20px] py-[40px] mt-[60px] flex justify-center items-center">
+                <div class="bg-white grid items-center grid-cols-4 md:grid-cols-3 w-full px-[40px] py-[20px] md:px-0 md:py-0 md:border-0 border-[2px] rounded-lg text-text text-[1.15rem] md:text-[1rem]">
                     <!-- Başlıklar -->
                     <div class="p-[8px] md:text-center md:col-span-3"></div>
                     <div class="p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem]">{{$t('pricingPage.basic')}}</div>
