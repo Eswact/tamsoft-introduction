@@ -24,5 +24,13 @@
         "recommend": "Önerilen",
         "buyNow": "Hemen Al",
         "price": "Fiyat"
+    },
+    "contactPage": {
+        "getInTouch": "İletişime Geçin",
+        "description": "Senin için buradayız! Nasıl Yardımcı Olabiliriz ?",
+        "yourName": "Adınız",
+        "yourMailAddress": "Mail Adresiniz",
+        "yourMessage": "Mesajınız",
+        "submit": "Gönder"
     }
 }

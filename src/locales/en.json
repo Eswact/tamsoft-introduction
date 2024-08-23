@@ -24,5 +24,13 @@
         "recommend": "Recommend",
         "buyNow": "Buy Now",
         "price": "Price"
+    },
+    "contactPage": {
+        "getInTouch": "Get In Touch",
+        "description": "We are here for you! How can we help ?",
+        "yourName": "Your Name",
+        "yourMailAddress": "Your Mail Address",
+        "yourMessage": "Your Message",
+        "submit": "Submit"
     }
 }
