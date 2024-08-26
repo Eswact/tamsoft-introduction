@@ -22,21 +22,21 @@
                 <img class="h-[58px] hidden dark:block xl:dark:hidden" src="../images/tamsoft-dark.png" alt="Tamsoft">
                 <img class="h-[70px] hidden xl:block" src="../images/logo.png" alt="Tamsoft">
             </RouterLink>
-            <RouterLink :class="{ 'text-main': isActive('/features') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] hover:text-main" to="/features"> 
-                <!-- <font-awesome-icon class="text-[1.4rem] lg:text-[1.8rem]" icon="fa-solid fa-star" /> --> 
+            <RouterLink :class="{ 'text-main': isActive('/features') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] relative group" to="/features"> 
                 <span class="text-[1.2rem] font-semibold">{{ $t('features') }}</span>
+                <span :class="{ 'w-full': isActive('/features'), 'w-0': !isActive('/features') }" class="absolute left-0 bottom-0 h-[2px] bg-main transition-all duration-300 group-hover:w-full"></span>
             </RouterLink>
-            <RouterLink :class="{ 'text-main': isActive('/pricing') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px]  hover:text-main" to="/pricing">
-                <!-- <font-awesome-icon class="text-[1.4rem] lg:text-[1.8rem]" icon="fa-solid fa-dollar-sign" /> -->
+            <RouterLink :class="{ 'text-main': isActive('/pricing') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] relative group" to="/pricing">
                 <span class="text-[1.2rem] font-semibold">{{ $t('pricing') }}</span>
+                <span :class="{ 'w-full': isActive('/pricing'), 'w-0': !isActive('/pricing') }" class="absolute left-0 bottom-0 h-[2px] bg-main transition-all duration-300 group-hover:w-full"></span>
             </RouterLink>
-            <RouterLink :class="{ 'text-main': isActive('/about') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px]  hover:text-main" to="/about">
-                <!-- <font-awesome-icon class="text-[1.4rem] lg:text-[1.8rem]" icon="fa-solid fa-circle-info"/> -->
+            <RouterLink :class="{ 'text-main': isActive('/about') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] relative group" to="/about">
                 <span class="text-[1.2rem] font-semibold">{{ $t('about') }}</span>
+                <span :class="{ 'w-full': isActive('/about'), 'w-0': !isActive('/about') }" class="absolute left-0 bottom-0 h-[2px] bg-main transition-all duration-300 group-hover:w-full"></span>
             </RouterLink>
-            <RouterLink :class="{ 'text-main': isActive('/contact') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px]  hover:text-main" to="/contact"> 
-                <!-- <font-awesome-icon class="text-[1.4rem] lg:text-[1.8rem]" icon="fa-solid fa-headset"/> --> 
+            <RouterLink :class="{ 'text-main': isActive('/contact') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] relative group" to="/contact"> 
                 <span class="text-[1.2rem] font-semibold">{{ $t('contact') }}</span>
+                <span :class="{ 'w-full': isActive('/contact'), 'w-0': !isActive('/contact') }" class="absolute left-0 bottom-0 h-[2px] bg-main transition-all duration-300 group-hover:w-full"></span>
             </RouterLink>
         </nav>
         <div class="hidden md:block">

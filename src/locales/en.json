@@ -1,4 +1,5 @@
 {
+    "home": "Home",
     "features": "Features",
     "pricing": "Pricing",
     "about": "About",
@@ -26,11 +27,13 @@
         "price": "Price"
     },
     "contactPage": {
+        "header": "Contact Us",
+        "address": "Zümrütevler Neighborhood Adalar St. No: 14 Floor: 6, Maltepe/Istanbul",
         "getInTouch": "Get In Touch",
         "description": "We are here for you! How can we help ?",
         "yourName": "Your Name",
         "yourMailAddress": "Your Mail Address",
         "yourMessage": "Your Message",
-        "submit": "Submit"
+        "submit": "Submit"    
     }
 }

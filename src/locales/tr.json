@@ -1,4 +1,5 @@
 {
+    "home": "Anasayfa",
     "features": "Özellikler",
     "pricing": "Fiyatlandırma",
     "about": "Hakkımızda",
@@ -26,6 +27,8 @@
         "price": "Fiyat"
     },
     "contactPage": {
+        "header": "Bize Ulaşın",
+        "address": "Zümrütevler Mah. Adalar Sok. No: 14 Kat: 6, Maltepe/İstanbul",
         "getInTouch": "İletişime Geçin",
         "description": "Senin için buradayız! Nasıl Yardımcı Olabiliriz ?",
         "yourName": "Adınız",

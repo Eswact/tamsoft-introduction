@@ -58,3 +58,16 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+@keyframes pulse-whatsapp {
+    0%, 100% {
+        box-shadow: 0 0 10px 4px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 15px 8px rgba(37, 211, 102, 0.6);
+    }
+}
+
+.whatsapp-logo {
+    animation: pulse-whatsapp 1.5s infinite;
+}

@@ -12,20 +12,20 @@
                     <div class="flex justify-end items-center gap-[20px] py-[10px] text-[1.5rem]">
                         <a class="hover:text-main duration-200" href=""><font-awesome-icon icon="fa-brands fa-facebook" size="lg" /></a> 
                         <a class="hover:text-main duration-200" href=""><font-awesome-icon icon="fa-brands fa-twitter" size="lg" /></a> 
-                        <a class="hover:text-main duration-200" href=""><font-awesome-icon icon="fa-brands fa-instagram" size="lg" /></a> 
-                        <a class="hover:text-main duration-200" href=""><font-awesome-icon icon="fa-brands fa-linkedin" size="lg" /></a> 
-                        <a class="hover:text-main duration-200" href=""><font-awesome-icon icon="fa-brands fa-youtube" size="lg" /></a> 
+                        <a class="hover:text-main duration-200" href="https://www.instagram.com/tamsoft_/"><font-awesome-icon icon="fa-brands fa-instagram" size="lg" /></a> 
+                        <a class="hover:text-main duration-200" href="https://www.linkedin.com/company/%C3%A7aml%C4%B1ca-barkod/mycompany/"><font-awesome-icon icon="fa-brands fa-linkedin" size="lg" /></a> 
+                        <a class="hover:text-main duration-200" href="https://www.youtube.com/@tamsoft3257"><font-awesome-icon icon="fa-brands fa-youtube" size="lg" /></a> 
                     </div>
                 </div>
                 <div class="flex items-start gap-[120px] 2xl:gap-[80px] xl:gap-[60px] lg:gap-[40px] px-[40px] py-[40px] xl:px-[20px] xl:py-[20px] lg:flex-col lg:w-full lg:max-w-[500px]">
                     <div class="flex flex-col gap-[24px]">
                         <h3 class="text-[1.5rem] font-bold">{{$t('quickLinks')}}</h3>
                         <ul class="flex flex-col gap-[6px] text-[1.2rem] font-semibold px-[6px]">
-                            <li class="hover:text-main duration-200"><a href="/">Home</a></li>
-                            <li class="hover:text-main duration-200"><a href="/features">Features</a></li>
-                            <li class="hover:text-main duration-200"><a href="/pricing">Pricing</a></li>
-                            <li class="hover:text-main duration-200"><a href="/about">About</a></li>
-                            <li class="hover:text-main duration-200"><a href="/contact">Contact</a></li>
+                            <li class="hover:text-main duration-200"><a href="/">{{$t("home")}}</a></li>
+                            <li class="hover:text-main duration-200"><a href="/features">{{$t("features")}}</a></li>
+                            <li class="hover:text-main duration-200"><a href="/pricing">{{$t("pricing")}}</a></li>
+                            <li class="hover:text-main duration-200"><a href="/about">{{$t("about")}}</a></li>
+                            <li class="hover:text-main duration-200"><a href="/contact">{{$t("contact")}}</a></li>
                         </ul>
                     </div>
                     <div class="flex flex-col gap-[24px]">
