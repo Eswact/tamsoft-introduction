@@ -53,7 +53,7 @@
     </footer>
   </div>
   <!-- whatsapp -->
-  <a class="whatsapp-logo z-20 fixed bottom-[24px] right-[24px] lg:bottom-[10px] lg:right-[10px] overflow-hidden rounded-[50%]" target="_blank" href="https://web.whatsapp.com/send?phone=+902164412041&text=Merhaba+Tamsoft+Yaz%C4%B1l%C4%B1ma+Ho%C5%9Fgeldiniz."><img class="w-[64px] h-[64px] lg:w-[55px] lg:h-[55px] rounded-[50%]" src="./images/whatsapp-logo.png" alt="whatsapp logo"></a>
+  <a v-if="!isNotFound" class="whatsapp-logo bg-[#25D366] p-[4px] z-20 fixed bottom-[24px] right-[24px] lg:bottom-[10px] lg:right-[10px] overflow-hidden rounded-[50%]" target="_blank" href="https://web.whatsapp.com/send?phone=+902164412041&text=Merhaba+Tamsoft+Yaz%C4%B1l%C4%B1ma+Ho%C5%9Fgeldiniz."><img class="aspect-square w-[55px] lg:w-[50px] rounded-[50%]" src="./images/whatsapp-logo.png" alt="whatsapp logo"></a>
   <!-- arrow up -->
   <a href="#" id="scrollToTopButton" class="fixed text-[1.5rem] bottom-[30vh] right-0 z-30 py-[8px] pl-[12px] pr-[6px] bg-main text-white shadow-md transition-opacity duration-300 opacity-0 pointer-events-none" style="border-radius: 50% 0 0 50%;">
     <font-awesome-icon icon="fa-solid fa-chevron-up" />

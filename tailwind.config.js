@@ -4,6 +4,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        ptSans: ['PT Sans', 'sans-serif'],
+      },
       colors: {
         'dark': '#092635',
         'text': '#3B3A3A',

@@ -13,23 +13,23 @@
         <div class="w-full max-w-[1600px] flex flex-col gap-[40px] px-[40px] 3xl:px-[60px] 2xl:px-[40px] py-[40px] md:px-[20px] md:py-[20px] md:flex-col">
             <!-- contact infos -->
             <div class="w-full flex flex-wrap justify-around items-center md:items-start md:justify-start gap-[20px]">
-                <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1">
-                    <div class="text-[2rem] p-[16px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
+                <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1 sm:items-start">
+                    <div class="text-[2rem] md:text-[1.5rem] p-[16px] md:p-[10px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
                         <font-awesome-icon class="w-[30px] flex justify-center items-center" icon="fa-solid fa-phone" />
                     </div>
-                    <span class="text-[1.5rem] xl:text-[1.25rem] max-w-[300px] md:max-w-full">+90 216 441 20 41</span>
+                    <span class="text-[1.5rem] xl:text-[1.25rem] max-w-[300px] md:max-w-full sm:pt-[7px]">+90 216 441 20 41</span>
                 </div>
-                <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1">
-                    <div class="text-[2rem] p-[16px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
+                <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1 sm:items-start">
+                    <div class="text-[2rem] md:text-[1.5rem] p-[16px] md:p-[10px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
                         <font-awesome-icon class="w-[30px] flex justify-center items-center" icon="fa-solid fa-envelope" />
                     </div>
-                    <span class="text-[1.5rem] xl:text-[1.25rem] max-w-[300px] md:max-w-full">info@camlica.com.tr</span>
+                    <span class="text-[1.5rem] xl:text-[1.25rem] max-w-[300px] md:max-w-full sm:pt-[7px]">info@camlica.com.tr</span>
                 </div>
-                <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1">
-                    <div class="text-[2rem] p-[16px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
+                <div class="px-[20px] md:w-full flex items-center gap-[20px] border-b-1 sm:items-start">
+                    <div class="text-[2rem] md:text-[1.5rem] p-[16px] md:p-[10px] rounded-[50%] flex justify-center items-center border border-main bg-main-light text-main dark:bg-main dark:text-white shadow-md shadow-main-shadow">
                         <font-awesome-icon class="w-[30px] flex justify-center items-center" icon="fa-solid fa-location-dot" />
                     </div>
-                    <span class="text-[1.25rem] max-w-[300px] md:max-w-full">{{ $t("contactPage.address") }}</span>
+                    <span class="text-[1.25rem] max-w-[300px] md:max-w-full sm:pt-[7px]">{{ $t("contactPage.address") }}</span>
                 </div>
             </div>
             <div class="w-full flex items-start md:items-center justify-between lg:flex-col-reverse gap-[30px]">
