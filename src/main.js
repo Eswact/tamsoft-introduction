@@ -8,9 +8,9 @@ import i18n from './services/language'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar, faArrowLeftLong, faTurkishLiraSign, faCheck, faXmark, faPhone, faEnvelope, faLocationDot, faFax, faChevronUp, faMap} from '@fortawesome/free-solid-svg-icons'
+import {faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar, faArrowLeftLong, faTurkishLiraSign, faCheck, faXmark, faPhone, faEnvelope, faLocationDot, faFax, faChevronUp, faMap, faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
-library.add(faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar, faArrowLeftLong, faTurkishLiraSign, faCheck, faXmark, faFacebook, faTwitter, faInstagram, faLinkedin, faYoutube, faPhone, faEnvelope, faLocationDot, faFax, faChevronUp, faMap)
+library.add(faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar, faArrowLeftLong, faTurkishLiraSign, faCheck, faXmark, faFacebook, faTwitter, faInstagram, faLinkedin, faYoutube, faPhone, faEnvelope, faLocationDot, faFax, faChevronUp, faMap, faChevronLeft, faChevronRight)
 
 
 const app = createApp(App)

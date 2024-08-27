@@ -1,6 +1,33 @@
 <script setup>
+    import { onMounted } from 'vue';
     import { useFadeIn } from '../scripts/common';
     useFadeIn();
+
+    onMounted(() => {
+        const cells = document.querySelectorAll('.select-column');
+        const columns = document.querySelectorAll('h3.select-column');
+        function updateColumns() {
+            cells.forEach((cell, index) => {
+                if (cell.dataset.column == currentIndex) {
+                    cell.classList.add('visible');
+                }
+                else {
+                    cell.classList.remove('visible');
+                }
+            });
+        }
+        document.getElementById('prevColumn').addEventListener('click', function () {
+            currentIndex = (currentIndex - 1 + columns.length) % columns.length;
+            updateColumns();
+        });
+        document.getElementById('nextColumn').addEventListener('click', function () {
+            currentIndex = (currentIndex + 1) % columns.length;
+            updateColumns();
+        });
+        
+        let currentIndex = 1;
+        updateColumns();
+    });
 </script>
 
 <template>
@@ -44,71 +71,135 @@
         </div>
         <div class="relative w-full flex flex-col justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="z-0 w-full absolute top-0 fill-main-light dark:fill-main-shadow"><path fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,181.3C384,149,480,75,576,80C672,85,768,171,864,176C960,181,1056,107,1152,90.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-            <div class="z-10 w-full max-w-[1600px] px-[80px] lg:px-[40px] md:px-[20px] py-[40px] mt-[60px] flex justify-center items-center">
-                <div class="bg-white grid items-center grid-cols-4 md:grid-cols-3 w-full px-[40px] py-[20px] md:px-0 md:py-0 md:border-0 border-[2px] rounded-lg text-text text-[1.15rem] md:text-[1rem]">
-                    <!-- Başlıklar -->
-                    <div class="p-[8px] md:text-center md:col-span-3"></div>
-                    <div class="p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem]">{{$t('pricingPage.basic')}}</div>
-                    <div class="p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem]">{{$t('pricingPage.standard')}}</div>
-                    <div class="p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem]">{{$t('pricingPage.pro')}}</div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px] md:border-t-[1px]">Özellik 1</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Özellik 2</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Özellik 3</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Uzun Özellik 1</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Uzun Özellik 2</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Uzun Özellik 3</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px] md:border-t-[1px]">Özellik 4</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Özellik 5</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">Özellik 6</div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></div>
-                    <div class="border p-[10px] text-center"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></div>
-
-                    <div class="font-semibold p-[10px] md:text-center md:col-span-3 md:border-r-[1px] md:border-l-[1px]">{{ $t('pricingPage.price') }}</div>
-                    <div class="text-[1.5rem] font-semibold border p-[10px] text-center">10000 <font-awesome-icon class="text-[1.2rem] pt-[8px]" icon="fa-solid fa-turkish-lira-sign" /></div>
-                    <div class="text-[1.5rem] font-semibold border p-[10px] text-center">15000 <font-awesome-icon class="text-[1.2rem] pt-[8px]" icon="fa-solid fa-turkish-lira-sign" /></div>
-                    <div class="text-[1.5rem] font-semibold border p-[10px] text-center">20000 <font-awesome-icon class="text-[1.2rem] pt-[8px]" icon="fa-solid fa-turkish-lira-sign" /></div>
-
-                    <div class="pt-[20px] md:text-center md:col-span-3"></div>
-                    <div class="p-[20px] md:pt-0 text-center"><button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">{{$t('pricingPage.buyNow')}}</button></div>
-                    <div class="p-[20px] md:pt-0 text-center"><button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">{{$t('pricingPage.buyNow')}}</button></div>
-                    <div class="p-[20px] md:pt-0 text-center"><button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">{{$t('pricingPage.buyNow')}}</button></div>
+            <div class="z-10 w-full max-w-[1600px] px-[80px] lg:px-[40px] md:px-[4px] py-[40px] mt-[60px] flex justify-center items-center">
+                <div class="bg-white w-full px-[40px] md:px-[10px] py-[20px] border-[2px] rounded-lg text-text text-[1.15rem] md:text-[1rem] md:flex md:flex-col md:justify-center md:items-center md:gap-[20px]">
+                    <div class="hidden md:flex items-center justify-center gap-[20px]">
+                        <button id="prevColumn" class="rounded-full px-[12px] py-[8px] bg-main text-white">
+                            <font-awesome-icon icon="fa-solid fa-chevron-left" size="xl" />
+                        </button>
+                        <h3 class="select-column text-[1.5rem] text-text" data-column="0">{{$t('pricingPage.basic')}}</h3>
+                        <h3 class="select-column text-[1.5rem] text-text" data-column="1">{{$t('pricingPage.standard')}}</h3>
+                        <h3 class="select-column text-[1.5rem] text-text" data-column="2">{{$t('pricingPage.pro')}}</h3>
+                        <button id="nextColumn" class="rounded-full px-[12px] py-[8px] bg-main text-white">
+                            <font-awesome-icon icon="fa-solid fa-chevron-right" size="xl" />
+                        </button>
+                    </div>
+                    <table class="w-full text-center table-fixed">
+                        <thead>
+                            <tr class="md:hidden">
+                                <th class="w-[260px] 2xl:w-[220px] xl:w-[180px] md:w-1/2"></th>
+                                <th class="w-1/3 p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem] md:w-1/2">
+                                    {{$t('pricingPage.basic')}}
+                                </th>
+                                <th class="w-1/3 p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem] md:w-1/2">
+                                    {{$t('pricingPage.standard')}}
+                                </th>
+                                <th class="w-1/3 p-[10px] text-center font-semibold text-[1.5rem] md:text-[1.25rem] md:w-1/2">
+                                    {{$t('pricingPage.pro')}}
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 1</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 2</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 3</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Uzun Özellik 1</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Uzun Özellik 2</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Uzun Özellik 3</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 4</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 5</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 6</td>
+                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
+                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">{{$t('pricingPage.price')}}</td>
+                                <td class="select-column text-[1.5rem] font-semibold border p-[10px]" data-column="0">10000 <font-awesome-icon class="text-[1.2rem] pt-[8px]" icon="fa-solid fa-turkish-lira-sign" /></td>
+                                <td class="select-column text-[1.5rem] font-semibold border p-[10px]" data-column="1">15000 <font-awesome-icon class="text-[1.2rem] pt-[8px]" icon="fa-solid fa-turkish-lira-sign" /></td>
+                                <td class="select-column text-[1.5rem] font-semibold border p-[10px]" data-column="2">20000 <font-awesome-icon class="text-[1.2rem] pt-[8px]" icon="fa-solid fa-turkish-lira-sign" /></td>
+                            </tr>
+                            <tr class="md:hidden">
+                                <td></td>
+                                <td class="p-[20px] text-center">
+                                    <button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">
+                                        {{$t('pricingPage.buyNow')}}
+                                    </button>
+                                </td>
+                                <td class="p-[20px] text-center">
+                                    <button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">
+                                        {{$t('pricingPage.buyNow')}}
+                                    </button>
+                                </td>
+                                <td class="p-[20px] text-center">
+                                    <button class="fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">
+                                        {{$t('pricingPage.buyNow')}}
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="hidden md:block fade-in w-full font-semibold border-[1px] border-main bg-main hover:bg-main-light hover:text-main duration-600 text-white shadow-md shadow-main-shadow py-[8px] px-[16px] text-center rounded-md">
+                        {{$t('pricingPage.buyNow')}}
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </template>
-  
+
+<style scoped>
+    /* md:*/
+    @media (max-width: 850px) {
+        .select-column {
+            display: none;
+        }
+        .select-column.visible {
+            display: table-cell;
+        }
+        h3.select-column.visible {
+            display: block;
+        }
+    }
+</style>
