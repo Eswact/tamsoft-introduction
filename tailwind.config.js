@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         ptSans: ['PT Sans', 'sans-serif'],
+        newAmsterdam: ['New Amsterdam', 'sans-serif'],
       },
       colors: {
         'dark': '#092635',
