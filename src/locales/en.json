@@ -45,5 +45,19 @@
         "visionAndMission": "Our Vision & Mission",
         "ourTeam": "Our Team",
         "meetOurTeam": "Meet Our Team"
+    },
+    "propertiesPage": {
+        "banners": [
+            {
+                "header": "Simplify Your Accounting",
+                "description": "Tracking hundreds of invoices, waybills, and other documents manually can be challenging. However, the Tamsoft Pre-Accounting Program automates your accounting processes, offering an error-free and swift workflow.",
+                "img": "/src/images/trafficData.gif"
+            },
+            {
+                "header": "Accelerate Your Workflow",
+                "description": "Tamsoft software speeds up your business processes, providing a more efficient and organized work environment.",
+                "img": "/src/images/trafficData.gif"
+            }
+        ]
     }
 }

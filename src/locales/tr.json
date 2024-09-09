@@ -45,5 +45,97 @@
         "visionAndMission": "Vizyonumuz & Misyonumuz",
         "ourTeam": "Ekibimiz",
         "meetOurTeam": "Ekibimiz ile tanışın"
+    },
+    "propertiesPage": {
+        "banners": [
+            {
+                "header": "Muhasebenizi Kolaylaştırın",
+                "description": "Yüzlerce fatura, irsaliye ve diğer dökümanlarınızı manuel olarak takip etmeye çalışmak zor olabilir. Ancak Tamsoft Ön Muhasebe Programı, muhasebe süreçlerinizi otomatize ederek, hatasız ve hızlı bir iş akışı sunar.",
+                "img": "/src/images/trafficData.gif"
+            },
+            {
+                "header": "İş Akışınızı Hızlandırın",
+                "description": "Tamsoft yazılımı, işletmenizin iş süreçlerini hızlandırarak daha verimli ve düzenli bir çalışma ortamı sağlar.",
+                "img": "/src/images/trafficData.gif"
+            }
+        ],
+        "allProps": {
+            "header": "Tüm Özellikler",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem omnis distinctio doloribus hic? Quidem impedit ut dicta natus, asperiores fugit. Atque non cupiditate dolorum odio, totam rem eius vel natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem omnis distinctio doloribus hic? Quidem impedit ut dicta natus, asperiores fugit. Atque non cupiditate dolorum odio, totam rem eius vel natus.",
+            "cards": [
+                {
+                    "href": "#stockManagement",
+                    "header": "Stok Yönetimi",
+                    "description": "İşletmelerin stoklarını etkin ve verimli bir şekilde yönetmelerine yardımcı olacak birçok özellik sunuyor.",
+                    "icon": "fa-solid fa-layer-group"
+                },
+                {
+                    "href": "#cariManagement",
+                    "header": "Cari Yönetimi",
+                    "description": "İşletmelerin cari hesaplarını etkin bir şekilde yönetmelerine olanak sağlayan kapsamlı bir çözümdür",
+                    "icon": "fa-solid fa-users"
+                },
+                {
+                    "href": "#buyManagement",
+                    "header": "Satın Alma",
+                    "description": "İşletmeler için etkili bir satın alma süreci yönetimini sağlayan bir sistem olarak geliştirilmiştir.",
+                    "icon": "fa-solid fa-cart-shopping"
+                },
+                {
+                    "href": "#sellManagement",
+                    "header": "Satış Yönetimi",
+                    "description": "Satış yönetimi ile satışlarınızın planlanması, yürütülmesi ve denetlenmesi artık çok kolay.",
+                    "icon": "fa-solid fa-store"
+                },
+                {
+                    "href": "#",
+                    "header": "Finans Yönetimi",
+                    "description": "Finansal yönetim ile Para, fon ve sermayenize dijital ortamda da hakim olun.",
+                    "icon": "fa-solid fa-sack-dollar"
+                },
+                {
+                    "href": "#",
+                    "header": "Market Yönetimi",
+                    "description": "Market modülü mükemmel entegrasyonu sayesinde Perakende de elinizi güçlendirir, işinizi kolaylaştırır.",
+                    "icon": "fa-solid fa-cash-register"
+                },
+                {
+                    "href": "#",
+                    "header": "CRM Yönetimi",
+                    "description": "Müşteri ilişkileri yönetimi ile mevcut ve potansiyel müşterileri bağlantılarınızı yönetmek çok kolay.",
+                    "icon": "fa-solid fa-address-book"
+                },
+                {
+                    "href": "#",
+                    "header": "Entegrasyon",
+                    "description": "Entegrasyon işlemleri ile veri akışı ve veri transferi artık çok kolay ve kullanışlı.",
+                    "icon": "fa-solid fa-circle-nodes"
+                },
+                {
+                    "href": "#",
+                    "header": "E-Ticaret",
+                    "description": "Yerinizden kalkmadan tüm E-Ticaret işlemlerinizi yapmanın tadını çıkarın.",
+                    "icon": "fa-solid fa-comments-dollar"
+                }
+            ],
+            "stockManagement": {
+                "head": "Stok Yönetimi",
+                "header": "Tamsoft Stok Yönetimi Modulü",
+                "p1": "Tamsoft'un Ön Muhasebe Programı Stok Yönetimi modülü, işletmelere stoklarını her yerden ve her zaman yönetme imkanı sunan bulut tabanlı bir sistemdir. Detaylı stok kartları, esnek birim ve barkod yönetimi, grup ve kategori yönetimi gibi özelliklerle stokları etkin şekilde takip etmeyi sağlar. Çoklu şube ve depo yönetimi, fiyatlandırma stratejilerinin esnek yönetimi ile stokları optimize etmeye olanak tanır.",
+                "p2": "Ayrıca, mobil uygulama entegrasyonu sayesinde saha satışları, şubeler arası sevkiyat ve hızlı fiyat güncelleme işlemleri kolayca yapılabilir. Bu özellikler, işletmelerin maliyetleri düşürerek stok yönetiminde verimliliği artırmasına yardımcı olur.",
+                "cards": [
+                    
+                ]
+            },
+            "cariManagement": {
+                "head": "Stok Yönetimi",
+                "header": "Tamsoft Stok Yönetimi Modulü",
+                "p1": "",
+                "p2": "",
+                "cards": [
+                    
+                ]
+            }
+        }
     }
 }

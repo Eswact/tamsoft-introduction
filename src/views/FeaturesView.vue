@@ -6,9 +6,13 @@
     import 'swiper/css/navigation';
     import { Autoplay, Pagination, Navigation } from 'swiper/modules';
     import { useFadeIn } from '../scripts/common';
+    import languageJson from '../locales/tr.json'
+
     const modules = [Autoplay, Pagination, Navigation];
     useFadeIn();
 
+    const bannerLength = languageJson.propertiesPage.banners.length;
+    const propCardLength = languageJson.propertiesPage.allProps.cards.length
     const itemsToShow = ref(4);
     const latestBooks = ref([]);
     const handleResize = () => {
@@ -52,58 +56,20 @@
             :modules="modules"
             class="w-full min-h-[340px]"
             >
-                <swiper-slide class="w-full h-full">
+                <swiper-slide class="w-full h-full" v-for="item in bannerLength" :key="item">
                     <div class="w-full h-full flex justify-center items-center">
                         <div class="w-full max-w-[1600px] flex flex-col gap-[60px] sm:gap-[30px] justify-center items-center pt-[20px] pb-[40px]">
                             <div class="w-full px-[80px] md:px-[20px] flex lg:flex-col-reverse justify-center items-center">
                                 <div class="relative w-[50%] xl:w-[60%] lg:w-full px-[28px] pb-[24px] pt-[16px] flex flex-col gap-[20px]">
                                     <div class="border-t-[2px] border-l-[2px] border-main dark:border-white w-[64px] h-[64px] absolute left-0 top-0"></div>
                                     <div class="hidden md:block border-t-[2px] border-r-[2px] border-main dark:border-white w-[64px] h-[64px] absolute right-0 top-0"></div>
-                                    <h1 class="text-[2.25rem] font-bold text-dark dark:text-white">Muhasebenizi Kolaylaştırın</h1>
-                                    <p class="text-[1.2rem] text-text dark:text-white">Yüzlerce fatura, irsaliye ve diğer dökümanlarınızı manuel olarak takip etmeye çalışmak zor olabilir. Ancak Tamsoft Ön Muhasebe Programı, muhasebe süreçlerinizi otomatize ederek, hatasız ve hızlı bir iş akışı sunar.</p>
+                                    <h1 class="text-[2.25rem] font-bold text-dark dark:text-white">{{ $t(`propertiesPage.banners[${item-1}].header`) }}</h1>
+                                    <p class="text-[1.2rem] text-text dark:text-white">{{ $t(`propertiesPage.banners[${item-1}].description`) }}</p>
                                     <div class="hidden md:block border-b-[2px] border-l-[2px] border-main dark:border-white w-[64px] h-[64px] absolute left-0 bottom-0"></div>
                                     <div class="border-b-[2px] border-r-[2px] border-main dark:border-white w-[64px] h-[64px] absolute right-0 bottom-0"></div>
                                 </div>
                                 <div class="w-[50%] xl:w-[40%] md:w-full flex justify-center items-center">
-                                    <img class="w-full max-w-[410px] xl:max-w-[300px] max-h-[320px] xl:max-h-[210px] object-cover object-bottom" src="../images/trafficData.gif">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </swiper-slide>
-                <swiper-slide class="w-full h-full">
-                    <div class="w-full h-full flex justify-center items-center">
-                        <div class="w-full max-w-[1600px] flex flex-col gap-[60px] sm:gap-[30px] justify-center items-center pt-[20px] pb-[40px]">
-                            <div class="w-full px-[80px] md:px-[20px] flex lg:flex-col-reverse justify-center items-center">
-                                <div class="relative w-[50%] xl:w-[60%] lg:w-full px-[28px] pb-[24px] pt-[16px] flex flex-col gap-[20px]">
-                                    <div class="border-t-[2px] border-l-[2px] border-main dark:border-white w-[64px] h-[64px] absolute left-0 top-0"></div>
-                                    <div class="hidden md:block border-t-[2px] border-r-[2px] border-main dark:border-white w-[64px] h-[64px] absolute right-0 top-0"></div>
-                                    <h1 class="text-[2.25rem] font-bold text-dark dark:text-white">Muhasebenizi Kolaylaştırın</h1>
-                                    <p class="text-[1.2rem] text-text dark:text-white">Yüzlerce fatura, irsaliye ve diğer dökümanlarınızı manuel olarak takip etmeye çalışmak zor olabilir. Ancak Tamsoft Ön Muhasebe Programı, muhasebe süreçlerinizi otomatize ederek, hatasız ve hızlı bir iş akışı sunar.</p>
-                                    <div class="hidden md:block border-b-[2px] border-l-[2px] border-main dark:border-white w-[64px] h-[64px] absolute left-0 bottom-0"></div>
-                                    <div class="border-b-[2px] border-r-[2px] border-main dark:border-white w-[64px] h-[64px] absolute right-0 bottom-0"></div>
-                                </div>
-                                <div class="w-[50%] xl:w-[40%] md:w-full flex justify-center items-center">
-                                    <img class="w-full max-w-[410px] xl:max-w-[300px] max-h-[320px] xl:max-h-[210px] object-cover object-bottom" src="../images/trafficData.gif">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </swiper-slide>
-                <swiper-slide class="w-full h-full">
-                    <div class="w-full h-full flex justify-center items-center">
-                        <div class="w-full max-w-[1600px] flex flex-col gap-[60px] sm:gap-[30px] justify-center items-center pt-[20px] pb-[40px]">
-                            <div class="w-full px-[80px] md:px-[20px] flex lg:flex-col-reverse justify-center items-center">
-                                <div class="relative w-[50%] xl:w-[60%] lg:w-full px-[28px] pb-[24px] pt-[16px] flex flex-col gap-[20px]">
-                                    <div class="border-t-[2px] border-l-[2px] border-main dark:border-white w-[64px] h-[64px] absolute left-0 top-0"></div>
-                                    <div class="hidden md:block border-t-[2px] border-r-[2px] border-main dark:border-white w-[64px] h-[64px] absolute right-0 top-0"></div>
-                                    <h1 class="text-[2.25rem] font-bold text-dark dark:text-white">Muhasebenizi Kolaylaştırın</h1>
-                                    <p class="text-[1.2rem] text-text dark:text-white">Yüzlerce fatura, irsaliye ve diğer dökümanlarınızı manuel olarak takip etmeye çalışmak zor olabilir. Ancak Tamsoft Ön Muhasebe Programı, muhasebe süreçlerinizi otomatize ederek, hatasız ve hızlı bir iş akışı sunar.</p>
-                                    <div class="hidden md:block border-b-[2px] border-l-[2px] border-main dark:border-white w-[64px] h-[64px] absolute left-0 bottom-0"></div>
-                                    <div class="border-b-[2px] border-r-[2px] border-main dark:border-white w-[64px] h-[64px] absolute right-0 bottom-0"></div>
-                                </div>
-                                <div class="w-[50%] xl:w-[40%] md:w-full flex justify-center items-center">
-                                    <img class="w-full max-w-[410px] xl:max-w-[300px] max-h-[320px] xl:max-h-[210px] object-cover object-bottom" src="../images/trafficData.gif">
+                                    <img class="w-full max-w-[410px] xl:max-w-[300px] max-h-[320px] xl:max-h-[210px] object-cover object-bottom" :src="$t(`propertiesPage.banners[${item-1}].img`)">
                                 </div>
                             </div>
                         </div>
