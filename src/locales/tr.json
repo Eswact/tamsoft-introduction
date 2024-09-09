@@ -39,5 +39,11 @@
         "yourMailAddress": "Mail Adresiniz",
         "yourMessage": "Mesajınız",
         "submit": "Gönder"
+    },
+    "aboutPage": {
+        "aboutUs": "Hakkımızda",
+        "visionAndMission": "Vizyonumuz & Misyonumuz",
+        "ourTeam": "Ekibimiz",
+        "meetOurTeam": "Ekibimiz ile tanışın"
     }
 }

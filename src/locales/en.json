@@ -39,5 +39,11 @@
         "yourMailAddress": "Your Mail Address",
         "yourMessage": "Your Message",
         "submit": "Submit"    
+    },
+    "aboutPage": {
+        "aboutUs": "About Us",
+        "visionAndMission": "Our Vision & Mission",
+        "ourTeam": "Our Team",
+        "meetOurTeam": "Meet Our Team"
     }
 }

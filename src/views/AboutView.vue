@@ -1,15 +1,22 @@
+<script setup>
+    import { onMounted } from 'vue';
+    import { useFadeIn } from '../scripts/common';
+    useFadeIn();
+</script>
+
 <template>
   <div class="w-full flex flex-col relative justify-center items-center">
     <div class="w-full max-w-[1600px] relative flex flex-col justify-center items-center gap-[20px]">
-      <div class="w-full lg:flex-col-reverse lg:p-0 flex gap-[30px] justify-between items-center p-[20px] pb-0">
+      <!-- About Us -->
+      <div class="fade-in w-full lg:flex-col-reverse lg:p-0 flex gap-[30px] justify-between items-center p-[20px] pb-0">
           <div class="lg:w-full lg:max-w-[100%] lg:min-h-0 flex flex-col gap-[40px] max-w-[50%] px-[40px]">
-            <p class="h-0 text-[1.2rem] font-bold text-third">About Us</p>
+            <p class="h-0 text-[1.2rem] font-bold text-third">{{$t('aboutPage.aboutUs')}}</p>
             <h1 class="text-[3.2rem] xl:text-[2.5rem] lg:text-[2rem] sm:text-[1.5rem] font-bold pl-[24px] md:pl-0">Türkiye’nin yeni nesil web tabanlı ERP yazılımı</h1>
             <div class="relative flex flex-col gap-[10px] text-[1.2rem] sm:text-[1.1rem] p-[10px] text-justify">
-              <div class="absolute top-[-20px] left-[-20px] bg-main-light w-[120px] h-[80px] border-t border-l border-main-shadow rounded-tl-md rounded-br-[50%]"></div>
+              <div class="absolute top-[-20px] left-[-20px] bg-main-light w-[80px] h-[60px] border-t border-l border-main-shadow rounded-tl-md rounded-br-md"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.</p>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?</p>
-              <div class="absolute bottom-[-20px] right-[-20px] bg-main-light w-[120px] h-[80px] border-b border-r border-main-shadow rounded-br-md rounded-tl-[50%]"></div>
+              <div class="absolute bottom-[-20px] right-[-20px] bg-main-light w-[80px] h-[60px] border-b border-r border-main-shadow rounded-br-md rounded-tl-md"></div>
             </div>
           </div>
           <div class="lg:w-full lg:h-[unset] lg:gap-0 lg:p-0 relative flex flex-col items-center justify-center w-[50%] h-[520px]">
@@ -18,7 +25,8 @@
             <img class="absolute xl:hidden object-cover w-[50%] h-[200px] bottom-[30px] left-[50px] rounded-md shadow-sm" src="https://asperbrothers.com/wp-content/uploads/2022/01/software-team_BB-853x470.jpg" />
           </div>
       </div>
-      <div class="w-full p-[20px] flex flex-col justify-center items-center gap-[20px]">
+      <!-- statistics -->
+      <div class="fade-in w-full p-[20px] flex flex-col justify-center items-center gap-[20px]">
         <div class="relative md:flex-wrap md:gap-[20px] md:h-auto w-full max-w-[1100px] h-[120px] px-[40px] py-[20px] flex justify-around items-center border-[2px] border-main-shadow rounded-xl dark:bg-main-light shadow-lg overflow-hidden">
           <div class="topWave h-[40px]"></div>
           <div class="flex flex-col justify-center items-center">
@@ -41,32 +49,33 @@
             <span class="text-[3rem] max-h-[60px] text-main font-newAmsterdam">20+</span>
             <h3 class="text-[1.2rem] font-semibold pr-[10px] font-ptSans">Personel</h3>
           </div>
-          <!-- <div class="bottomWave h-[40px]"></div> -->
         </div>
       </div>
-      <div class="w-full lg:flex-col flex gap-[30px] justify-between items-center p-[20px] pt-0">
+      <!-- Our Vision & Mission -->
+      <div class="fade-in w-full lg:flex-col flex gap-[30px] justify-between items-center p-[20px] pt-0">
         <div class="relative w-[500px] h-[500px] lg:w-full lg:h-[400px] lg:p-[20px] p-[50px]">
           <div class="w-full h-full bg-main-light rounded-lg lg:hidden"></div>
           <img class="absolute bottom-0 right-0 lg:relative lg:w-full lg:h-full w-[400px] h-[400px] object-cover rounded-lg" src="https://img.freepik.com/free-photo/young-business-woman-working-laptop-office_1303-22814.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid">
         </div>
         <div class="lg:w-full lg:max-w-[100%] lg:min-h-0 flex flex-col gap-[40px] max-w-[50%] px-[40px] lg:p-[20px]">
-            <p class="h-0 text-[1.2rem] font-bold text-third">Our Vision & Mission</p>
+            <p class="h-0 text-[1.2rem] font-bold text-third">{{$t('aboutPage.visionAndMission')}}</p>
             <h1 class="text-[3.2rem] xl:text-[2.5rem] lg:text-[2rem] sm:text-[1.5rem] font-bold pl-[24px] md:pl-0">Türkiye’nin yeni nesil web tabanlı ERP yazılımı</h1>
             <div class="relative flex flex-col gap-[10px] text-[1.2rem] sm:text-[1.1rem] p-[10px] text-justify">
-              <div class="absolute top-[-20px] left-[-20px] bg-main-light w-[120px] h-[80px] border-t border-l border-main-shadow rounded-tl-md rounded-br-[50%]"></div>
+              <div class="absolute top-[-20px] left-[-20px] bg-main-light w-[80px] h-[60px] border-t border-l border-main-shadow rounded-tl-md rounded-br-md"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.</p>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?</p>
-              <div class="absolute bottom-[-20px] right-[-20px] bg-main-light w-[120px] h-[80px] border-b border-r border-main-shadow rounded-br-md rounded-tl-[50%]"></div>
+              <div class="absolute bottom-[-20px] right-[-20px] bg-main-light w-[80px] h-[60px] border-b border-r border-main-shadow rounded-tl-md rounded-br-md"></div>
             </div>
         </div>
       </div>
-      <div class="w-full flex-col flex gap-[30px] p-[20px]">
+      <!-- Our Team -->
+      <div class="fade-in w-full flex-col flex gap-[30px] p-[20px]">
         <div class="w-full flex flex-col gap-[40px] max-w-[50%] lg:max-w-[100%] px-[40px]">
-          <p class="h-0 text-[1.2rem] font-bold text-third">Our Team</p>
-          <h1 class="text-[3.2rem] xl:text-[2.5rem] lg:text-[2rem] sm:text-[1.5rem] font-bold pl-[24px] md:pl-0">Meet Our Team</h1>
+          <p class="h-0 text-[1.2rem] font-bold text-third">{{$t('aboutPage.ourTeam')}}</p>
+          <h1 class="text-[3.2rem] xl:text-[2.5rem] lg:text-[2rem] sm:text-[1.5rem] font-bold pl-[24px] md:pl-0">{{$t('aboutPage.meetOurTeam')}}</h1>
         </div>
+        <!-- team cards -->
         <div class="w-full flex flex-wrap items-center justify-center lgs:justify-center gap-[20px] lg:gap-[20px] px-[10px] lg:px-0">
-          <!-- team cards -->
           <div class="relative overflow-hidden w-[370px] h-[180px] p-[20px] flex items-start justify-between border-[2px] border-main-shadow shadow-md rounded-xl dark:bg-main-light">
             <div class="z-20 flex flex-col justify-between items-start h-full">
               <div>

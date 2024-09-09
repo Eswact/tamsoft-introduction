@@ -18,7 +18,8 @@ export default {
         'main-shadow': '#C326405e',
         'second-shadow': '#5456575e',
         'third-shadow': '#FAA5505e',
-        'main-light': '#C326401a'
+        'main-light': '#C326401a',
+        'third-light': '#FAA5501a'
       },
     },
     screens: {

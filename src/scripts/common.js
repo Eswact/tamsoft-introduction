@@ -5,7 +5,7 @@ function useFadeIn() {
         const elements = document.querySelectorAll('.fade-in');
         const handleScroll = () => {
             elements.forEach((element) => {
-                if (element.getBoundingClientRect().top < window.innerHeight) {
+                if (element.getBoundingClientRect().top + 20 < window.innerHeight) {
                     element.classList.add('active');
                 }
             });
