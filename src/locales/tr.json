@@ -14,6 +14,13 @@
     "smartPos": "SmartPos Hızlı Satış Yazılımı",
     "support": "Destek",
     "copyright": "© 2024 Tamsoft, Tüm hakları saklıdır.",
+    "social": {
+        "facebook":"",
+        "x":"",
+        "instagram":"https://www.instagram.com/tamsoft_/",
+        "in":"https://www.linkedin.com/company/%C3%A7aml%C4%B1ca-barkod/mycompany/",
+        "youtube":"https://www.youtube.com/@tamsoft3257"
+    },
     "404": {
         "title": "Sayfa Bulunamadı",
         "description": "Aradığınız sayfa mevcut değil. İşte bazı yararlı bağlantılar:",
@@ -26,6 +33,13 @@
         "basic": "Temel Plan",
         "standard": "Standart Plan",
         "pro": "Pro Plan",
+        "basicPrice": "10.000",
+        "standardPrice": "15.000",
+        "proPrice": "20.000",
+        "priceIcon": "fa-solid fa-turkish-lira-sign",
+        "basicDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam! Corporis vel quasi dolorum libero.",
+        "standardDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam! Corporis vel quasi dolorum libero.",
+        "proDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam! Corporis vel quasi dolorum libero.",
         "recommend": "Önerilen",
         "buyNow": "Hemen Al",
         "price": "Fiyat"
@@ -38,13 +52,107 @@
         "yourName": "Adınız",
         "yourMailAddress": "Mail Adresiniz",
         "yourMessage": "Mesajınız",
-        "submit": "Gönder"
+        "submit": "Gönder",
+        "img": "/src/images/address.png"
     },
     "aboutPage": {
-        "aboutUs": "Hakkımızda",
-        "visionAndMission": "Vizyonumuz & Misyonumuz",
-        "ourTeam": "Ekibimiz",
-        "meetOurTeam": "Ekibimiz ile tanışın"
+        "companyInfos": {
+            "customer": "Mutlu Müşteri",
+            "software": "Yazılım",
+            "lorem": "Lorem Ipsum",
+            "dealer": "Bayi",
+            "personnel": "Personel",
+            "customerNumber": "2000+",
+            "softwareNumber": "10+",
+            "loremNumber": "200+",
+            "dealerNumber": "100+",
+            "personnelNumber": "20+"
+        },
+        "aboutUs": {
+            "head": "Hakkımızda",
+            "header": "Türkiye’nin yeni nesil web tabanlı ERP yazılımı",
+            "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.",
+            "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?",
+            "img1": "https://dbh-group.com/blog/wp-content/uploads/2023/05/3d-office-design-interior-2021-12-09-02-43-07-utc-scaled.jpg",
+            "img2": "https://asperbrothers.com/wp-content/uploads/2022/01/software-team_BB-853x470.jpg"
+        },
+        "visionAndMission": {
+            "head": "Vizyonumuz & Misyonumuz",
+            "header": "Tamsoft ile işine özgürlük kat",
+            "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.",
+            "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?",
+            "img": "https://img.freepik.com/free-photo/young-business-woman-working-laptop-office_1303-22814.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid"
+        },
+        "ourTeam": {
+            "head": "Ekibimiz",
+            "header": "Ekibimiz ile tanışın",
+            "team": [
+                {
+                    "name": "Eren Sarıbay",
+                    "title": "Frontend Developer",
+                    "img": "/src/images/team/eren.png",
+                    "social": {
+                        "in": "https://www.linkedin.com/in/eren-saribay/"
+                    }
+                },
+                {
+                    "name": "Eren Sarıbay",
+                    "title": "Frontend Developer",
+                    "img": "/src/images/team/eren.png",
+                    "social": {
+                        "in": "https://www.linkedin.com/in/eren-saribay/"
+                    }
+                },
+                {
+                    "name": "Eren Sarıbay",
+                    "title": "Frontend Developer",
+                    "img": "/src/images/team/eren.png",
+                    "social": {
+                        "in": "https://www.linkedin.com/in/eren-saribay/"
+                    }
+                },
+                {
+                    "name": "Eren Sarıbay",
+                    "title": "Frontend Developer",
+                    "img": "/src/images/team/eren.png",
+                    "social": {
+                        "in": "https://www.linkedin.com/in/eren-saribay/"
+                    }
+                },
+                {
+                    "name": "Eren Sarıbay",
+                    "title": "Frontend Developer",
+                    "img": "/src/images/team/eren.png",
+                    "social": {
+                        "in": "https://www.linkedin.com/in/eren-saribay/"
+                    }
+                },
+                {
+                    "name": "Eren Sarıbay",
+                    "title": "Frontend Developer",
+                    "img": "/src/images/team/eren.png",
+                    "social": {
+                        "in": "https://www.linkedin.com/in/eren-saribay/"
+                    }
+                },
+                {
+                    "name": "Eren Sarıbay",
+                    "title": "Frontend Developer",
+                    "img": "/src/images/team/eren.png",
+                    "social": {
+                        "in": "https://www.linkedin.com/in/eren-saribay/"
+                    }
+                },
+                {
+                    "name": "Eren Sarıbay",
+                    "title": "Frontend Developer",
+                    "img": "/src/images/team/eren.png",
+                    "social": {
+                        "in": "https://www.linkedin.com/in/eren-saribay/"
+                    }
+                }
+            ]
+        }
     },
     "propertiesPage": {
         "banners": [

@@ -10,11 +10,11 @@
                     <img class="w-full max-w-[280px] ml-[-24px] md:ml-0" src="../images/tamsoft-dark.png" alt="Tamsoft">
                     <p class="text-[1.2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id magnam ab culpa cumque.</p>
                     <div class="flex justify-end items-center gap-[20px] py-[10px] text-[1.5rem]">
-                        <a class="hover:text-main duration-200" href=""><font-awesome-icon icon="fa-brands fa-facebook" size="lg" /></a> 
-                        <a class="hover:text-main duration-200" href=""><font-awesome-icon icon="fa-brands fa-twitter" size="lg" /></a> 
-                        <a class="hover:text-main duration-200" href="https://www.instagram.com/tamsoft_/"><font-awesome-icon icon="fa-brands fa-instagram" size="lg" /></a> 
-                        <a class="hover:text-main duration-200" href="https://www.linkedin.com/company/%C3%A7aml%C4%B1ca-barkod/mycompany/"><font-awesome-icon icon="fa-brands fa-linkedin" size="lg" /></a> 
-                        <a class="hover:text-main duration-200" href="https://www.youtube.com/@tamsoft3257"><font-awesome-icon icon="fa-brands fa-youtube" size="lg" /></a> 
+                        <a class="hover:text-main duration-200" target="_blank" :href="$t('social.facebook')"><font-awesome-icon icon="fa-brands fa-facebook" size="lg" /></a> 
+                        <a class="hover:text-main duration-200" target="_blank" :href="$t('social.x')"><font-awesome-icon icon="fa-brands fa-twitter" size="lg" /></a> 
+                        <a class="hover:text-main duration-200" target="_blank" :href="$t('social.instagram')"><font-awesome-icon icon="fa-brands fa-instagram" size="lg" /></a> 
+                        <a class="hover:text-main duration-200" target="_blank" :href="$t('social.in')"><font-awesome-icon icon="fa-brands fa-linkedin" size="lg" /></a> 
+                        <a class="hover:text-main duration-200" target="_blank" :href="$t('social.youtube')"><font-awesome-icon icon="fa-brands fa-youtube" size="lg" /></a> 
                     </div>
                 </div>
                 <div class="min-w-[calc(100%-400px)] flex flex-wrap items-start justify-end gap-[80px] full:gap-[60px] 2xl:gap-[40px] px-[10px] py-[40px] xl:px-[20px] xl:py-[20px] lg:flex-col">
