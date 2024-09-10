@@ -13,10 +13,10 @@
             <p class="h-0 text-[1.2rem] font-bold text-third">{{$t('aboutPage.aboutUs')}}</p>
             <h1 class="text-[3.2rem] xl:text-[2.5rem] lg:text-[2rem] sm:text-[1.5rem] font-bold pl-[24px] md:pl-0">Türkiye’nin yeni nesil web tabanlı ERP yazılımı</h1>
             <div class="relative flex flex-col gap-[10px] text-[1.2rem] sm:text-[1.1rem] p-[10px] text-justify">
-              <div class="absolute top-[-20px] left-[-20px] bg-main-light w-[80px] h-[60px] border-t border-l border-main-shadow rounded-tl-md rounded-br-md"></div>
+              <div style="background: linear-gradient(135deg, #C326401a, transparent);" class="absolute top-[-20px] left-[-20px] w-[80px] h-[60px] border-t border-l border-main-shadow rounded-tl-md rounded-br-md"></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.</p>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?</p>
-              <div class="absolute bottom-[-20px] right-[-20px] bg-main-light w-[80px] h-[60px] border-b border-r border-main-shadow rounded-br-md rounded-tl-md"></div>
+              <div style="background: linear-gradient(135deg, transparent, #C326401a);" class="absolute bottom-[-20px] right-[-20px] w-[80px] h-[60px] border-b border-r border-main-shadow rounded-br-md rounded-tl-md"></div>
             </div>
           </div>
           <div class="lg:w-full lg:h-[unset] lg:gap-0 lg:p-0 relative flex flex-col items-center justify-center w-[50%] h-[520px]">
@@ -61,10 +61,10 @@
             <p class="h-0 text-[1.2rem] font-bold text-third">{{$t('aboutPage.visionAndMission')}}</p>
             <h1 class="text-[3.2rem] xl:text-[2.5rem] lg:text-[2rem] sm:text-[1.5rem] font-bold pl-[24px] md:pl-0">Türkiye’nin yeni nesil web tabanlı ERP yazılımı</h1>
             <div class="relative flex flex-col gap-[10px] text-[1.2rem] sm:text-[1.1rem] p-[10px] text-justify">
-              <div class="absolute top-[-20px] left-[-20px] bg-main-light w-[80px] h-[60px] border-t border-l border-main-shadow rounded-tl-md rounded-br-md"></div>
+              <div style="background: linear-gradient(135deg, #C326401a, transparent);" class="absolute top-[-20px] left-[-20px] w-[80px] h-[60px] border-t border-l border-main-shadow rounded-tl-md rounded-br-md "></div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.</p>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?</p>
-              <div class="absolute bottom-[-20px] right-[-20px] bg-main-light w-[80px] h-[60px] border-b border-r border-main-shadow rounded-tl-md rounded-br-md"></div>
+              <div style="background: linear-gradient(135deg, transparent, #C326401a);" class="absolute bottom-[-20px] right-[-20px] w-[80px] h-[60px] border-b border-r border-main-shadow rounded-tl-md rounded-br-md"></div>
             </div>
         </div>
       </div>

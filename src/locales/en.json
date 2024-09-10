@@ -56,8 +56,383 @@
             {
                 "header": "Accelerate Your Workflow",
                 "description": "Tamsoft software speeds up your business processes, providing a more efficient and organized work environment.",
-                "img": "/src/images/trafficData.gif"
+                "img": "/src/images/time.gif"
             }
-        ]
+        ],
+        "allProps": {
+            "head": "All Features",
+            "header": "What you can do with Tamsoft",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem omnis distinctio doloribus hic? Quidem impedit ut dicta natus, asperiores fugit. Atque non cupiditate dolorum odio, totam rem eius vel natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem omnis distinctio doloribus hic? Quidem impedit ut dicta natus, asperiores fugit. Atque non cupiditate dolorum odio, totam rem eius vel natus.",
+            "cards": [
+                {
+                    "href": "#stockManagement",
+                    "header": "Stock Management",
+                    "description": "Provides many features to help businesses effectively and efficiently manage their stock.",
+                    "icon": "fa-solid fa-layer-group"
+                },
+                {
+                    "href": "#cariManagement",
+                    "header": "Account Management",
+                    "description": "A comprehensive solution that enables businesses to efficiently manage their current accounts.",
+                    "icon": "fa-solid fa-users"
+                },
+                {
+                    "href": "#buyManagement",
+                    "header": "Procurement",
+                    "description": "Designed as a system that provides effective procurement process management for businesses.",
+                    "icon": "fa-solid fa-cart-shopping"
+                },
+                {
+                    "href": "#sellManagement",
+                    "header": "Sales Management",
+                    "description": "Sales management makes it very easy to plan, execute, and monitor your sales.",
+                    "icon": "fa-solid fa-store"
+                },
+                {
+                    "href": "#",
+                    "header": "Financial Management",
+                    "description": "Take control of your money, funds, and capital digitally with financial management.",
+                    "icon": "fa-solid fa-sack-dollar"
+                },
+                {
+                    "href": "#",
+                    "header": "Market Management",
+                    "description": "The market module strengthens your hand in retail with its perfect integration, making your job easier.",
+                    "icon": "fa-solid fa-cash-register"
+                },
+                {
+                    "href": "#",
+                    "header": "CRM Management",
+                    "description": "Managing connections with existing and potential customers is very easy with customer relationship management.",
+                    "icon": "fa-solid fa-address-book"
+                },
+                {
+                    "href": "#",
+                    "header": "Integration",
+                    "description": "Data flow and transfer are now much easier and more practical with integration processes.",
+                    "icon": "fa-solid fa-circle-nodes"
+                },
+                {
+                    "href": "#",
+                    "header": "E-Commerce",
+                    "description": "Enjoy conducting all your e-commerce transactions without leaving your seat.",
+                    "icon": "fa-solid fa-comments-dollar"
+                }
+            ],
+            "props": [
+                {
+                    "id": "stockManagement",
+                    "head": "Stock Management",
+                    "header": "Tamsoft Stock Management Module",
+                    "p1": "Tamsoft's Pre-Accounting Program Stock Management module is a cloud-based system that allows businesses to manage their stocks anytime and anywhere. With features such as detailed stock cards, flexible unit and barcode management, and group and category management, it provides efficient stock tracking. Multi-branch and warehouse management and flexible pricing strategies enable stock optimization.",
+                    "p2": "Additionally, with mobile application integration, field sales, inter-branch shipping, and quick price updates can be easily carried out. These features help businesses reduce costs and increase efficiency in stock management.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/mldzgea2x0cc-tmsftcm-cndteem/w:auto/h:auto/q:auto/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-depo-stok-yonetimi-02-1024x683.jpg",
+                    "cards": [
+                        {
+                            "header": "Remote Access",
+                            "description": "Access stocks from anywhere with cloud technology."
+                        },
+                        {
+                            "header": "Detailed Stock Cards",
+                            "description": "Detailed tracking of stocks such as products, services, serial numbers, and batch lots."
+                        },
+                        {
+                            "header": "Flexible Unit and Barcode Management",
+                            "description": "Track stocks in different units and create unit-specific barcodes."
+                        },
+                        {
+                            "header": "Group and Category Management",
+                            "description": "Defining different price types and associating them with accounts."
+                        },
+                        {
+                            "header": "Price Management",
+                            "description": "Assigning stocks to field sales representatives in sales operations."
+                        },
+                        {
+                            "header": "Multi-Branch and Warehouse Management",
+                            "description": "Processing orders, receiving goods, and shipping with mobile devices."
+                        },
+                        {
+                            "header": "Field Sales Management",
+                            "description": "Instant updating of sales prices."
+                        },
+                        {
+                            "header": "Integration and Mobility",
+                            "description": "Access stocks from anywhere with cloud technology."
+                        },
+                        {
+                            "header": "Quick Price Update",
+                            "description": "Access stocks from anywhere with cloud technology."
+                        }
+                    ]
+                },
+                {
+                    "id": "cariManagement",
+                    "head": "Account Management",
+                    "header": "Tamsoft Account Management Module",
+                    "p1": "Tamsoft Account Management is a comprehensive solution that allows businesses to efficiently manage all their commercial transactions with customers and suppliers. Features such as real-time information tracking, working with different currencies, and mobile access make financial processes more transparent and controllable. Digital solutions like e-Reconciliation and e-Producer ensure faster and more accurate accounting processes.",
+                    "p2": "This system ensures that commercial relationships remain sustainable by managing accounts accurately and enables businesses to develop healthier financial strategies. While tracking both receivables and payables becomes easier, various precautions can be taken against inflation risk.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/mldzgea2x0cc-tmsftcm-cndteem/w:auto/h:auto/q:auto/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-eticaret-yonetimi-04-1024x683.jpg",
+                    "cards": [
+                        {
+                            "header": "Real-Time Information Tracking",
+                            "description": "Monitor financial status in real-time and make strategic decisions accordingly."
+                        },
+                        {
+                            "header": "Mobile Access and Cloud Technology",
+                            "description": "Access account information and reporting from anywhere."
+                        },
+                        {
+                            "header": "Multi-Currency Operations",
+                            "description": "Process transactions in different currencies and calculate interest based on product type."
+                        },
+                        {
+                            "header": "E-Reconciliation",
+                            "description": "Electronic reconciliation of account balances between buyer and seller."
+                        },
+                        {
+                            "header": "E-Producer",
+                            "description": "An electronic receipt documenting the sale of goods or services from producer to buyer."
+                        },
+                        {
+                            "header": "Sustainability of Relations",
+                            "description": "Maintain healthy and sustainable commercial relationships through proper management."
+                        }
+                    ]
+                },
+                {
+                    "id": "buyManagement",
+                    "head": "Procurement Management",
+                    "header": "Tamsoft Procurement Management Module",
+                    "p1": "Tamsoft Procurement Management is a comprehensive system that allows businesses to manage their procurement processes effectively. With features such as correct stock management, mobile access, optimized purchasing for different sales channels, and formula-based pricing, it helps businesses control their costs while increasing their profit margins. This system makes purchasing processes more efficient and flexible, providing businesses with sustainable profitability.",
+                    "p2": "With a wide range of functionality, businesses can easily manage all purchasing steps, from quoting to invoicing. This provides businesses with more effective cost management and flexibility in the supply processes.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-satinalma-yonetimi-02.jpg",
+                    "cards": [
+                        {
+                            "header": "Accurate Stock Management",
+                            "description": "Ensure timely and accurate product supply with effective stock tracking."
+                        },
+                        {
+                            "header": "Mobile and Cloud Access",
+                            "description": "Access procurement processes from anywhere."
+                        },
+                        {
+                            "header": "Optimized Purchasing for Multiple Sales Channels",
+                            "description": "Easily manage purchasing processes for online, marketplace, and field sales channels."
+                        },
+                        {
+                            "header": "Formula-Based Pricing and Cost Control",
+                            "description": "Control stock costs and maintain profit margins."
+                        },
+                        {
+                            "header": "Comprehensive Functionality",
+                            "description": "Manage quotations, orders, dispatch notes, invoices, and reporting with powerful tools."
+                        }
+                    ]
+                },
+                {
+                    "id": "sellManagement",
+                    "head": "Sales Management",
+                    "header": "Tamsoft Sales Management Module",
+                    "p1": "Tamsoft Sales Management is a comprehensive solution that enables businesses to manage their sales transactions in an integrated and efficient way. With features like easy management of all sales processes from quoting to invoicing, creating special price lists for different customer groups, and making sales with a handheld terminal in the field, it optimizes sales operations. With integrated modules and cloud technology, businesses can access sales data from anywhere, making strategic decisions more informed.",
+                    "p2": "This system makes sales processes more efficient by offering multi-branch management, assigning different price types to accounts, and detailed reporting capabilities. It enhances customer relationships and increases sales efficiency with the flexibility and comprehensive analysis it provides to businesses.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-satis-yonetimi-2.jpg",
+                    "cards": [
+                        {
+                            "header": "Accurate Account Management Setup",
+                            "description": "Efficiently track customer accounts."
+                        },
+                        {
+                            "header": "Price Lists for Different Customer Groups",
+                            "description": "Create special price lists tailored to specific customer groups."
+                        },
+                        {
+                            "header": "Multi-Branch Management",
+                            "description": "Offer the same sales conditions through branch-specific representative applications."
+                        },
+                        {
+                            "header": "Tamsaha Field Sales Program",
+                            "description": "Make hot and cold sales in the field using handheld terminals."
+                        },
+                        {
+                            "header": "Assign Different Sales Price Types",
+                            "description": "Speed up sales processes without needing to create price lists."
+                        },
+                        {
+                            "header": "Integrated Module Use and Cloud Technology",
+                            "description": "Integrate with customer management, collections, and order-taking via cloud technology."
+                        },
+                        {
+                            "header": "Detailed Reports and Analysis",
+                            "description": "Generate comprehensive reports and analyses on sales processes."
+                        }
+                    ]
+                },
+                {
+                    "id": "financeManagement",
+                    "head": "Finance Management",
+                    "header": "Tamsoft Finance Management Module",
+                    "p1": "Tamsoft Finance Management is a comprehensive accounting software that enables businesses to manage their financial transactions accurately and efficiently. This software supports businesses in conducting their financial transactions in an organized and efficient manner through the integration of the finance module with the accounts module.",
+                    "p2": "This software allows businesses to manage their financial transactions regularly, preventing financial difficulties and unnecessary credit costs. Thanks to cloud technology, it becomes accessible from both mobile and PC platforms, providing businesses with the flexibility to handle financial transactions from anywhere.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-finans-yonetimi-01-1.jpg",
+                    "cards": [
+                        {
+                            "header": "Integration and Configuration",
+                            "description": "The finance module integrates with the accounts module, streamlining financial transactions."
+                        },
+                        {
+                            "header": "Payment Methods Support",
+                            "description": "Supports various payment methods such as cash, checks, promissory notes, and credit cards."
+                        },
+                        {
+                            "header": "Bank System Integration",
+                            "description": "Includes a bank module for tracking credit card payments and balances."
+                        },
+                        {
+                            "header": "Inter-Account Transfer Transactions",
+                            "description": "Facilitates payments to other companies and simplifies account management."
+                        },
+                        {
+                            "header": "Check and Promissory Note Tracking",
+                            "description": "Manages the payment of due checks and check return processes."
+                        },
+                        {
+                            "header": "Bank and Accounts Monitoring",
+                            "description": "Simplifies monitoring and management of bank and accounts."
+                        },
+                        {
+                            "header": "Transactions Available from the Finance Menu",
+                            "description": "Enables various financial operations such as managing documents, collections, and payments."
+                        },
+                        {
+                            "header": "Mobile and PC Access",
+                            "description": "Offers the ability to perform financial transactions from anywhere using cloud technology."
+                        }
+                    ]
+                },
+                {
+                    "id": "marketManagement",
+                    "head": "Market Management",
+                    "header": "Tamsoft Market Management Module",
+                    "p1": "Tamsoft Market Management is a highly efficient solution for managing the largest retail trade volume through the market and store module within the accounting software. This comprehensive market module serves as the backbone of traditional trade by combining various elements together.",
+                    "p2": "Tamsoft Market Management allows you to monitor your cash registers and cashiers, oversee branches and warehouses, and utilize functions such as label printing. Here are some of the capabilities provided by this system:",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-Tamsoft-Market-yonetimi-01.jpg",
+                    "cards": [
+                        {
+                            "header": "Sending Information to Cash Registers",
+                            "description": "Integrates with various POS cash registers, enabling centralized management of transactions."
+                        },
+                        {
+                            "header": "Transferring Sales to ERP System",
+                            "description": "Facilitates daily or end-of-day sales transfers to ERP systems for consistent and up-to-date financial and accounting data."
+                        },
+                        {
+                            "header": "Cash Register and Cashier Monitoring",
+                            "description": "Provides an efficient system to track cashier and cash register performance in real-time."
+                        },
+                        {
+                            "header": "Branch Management",
+                            "description": "Allows effective management of multiple branches, including reviewing sales, inventory, and performance data."
+                        },
+                        {
+                            "header": "Warehouse Management",
+                            "description": "Helps optimize stock management and improve order management processes by efficiently managing warehouse inventories."
+                        },
+                        {
+                            "header": "Label Printing",
+                            "description": "Supports label printing for price changes or promotional pricing and sending information to scales."
+                        },
+                        {
+                            "header": "Mobile and PC Access",
+                            "description": "With cloud technology, market functions can be performed from anywhere using mobile devices or computers."
+                        }
+                    ]
+                },
+                {
+                    "id": "crmManagement",
+                    "head": "CRM Management",
+                    "header": "Tamsoft Accounting Software CRM Management",
+                    "p1": "CRM stands for customer relationship management, and Tamsoft CRM is a software solution that provides companies with tools in this area. So, what is Tamsoft CRM, and what does it do?",
+                    "p2": "Building and maintaining customer loyalty is one of the primary goals of any business. But what are you doing to achieve this?",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:auto/h:auto/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-crm-yonetimi-01.jpg",
+                    "cards": [
+                      {
+                        "header": "Service Ticket",
+                        "description": "Customer products or complaints are recorded, and assignments are made to the appropriate department."
+                      },
+                      {
+                        "header": "Service Ticket Auth Groups",
+                        "description": "Assigned service tickets are taken by authorized personnel in the department and can be assigned to the relevant team member."
+                      },
+                      {
+                        "header": "Sending Offers to Customers",
+                        "description": "For services not under warranty, offers are sent to customers through the CRM module."
+                      },
+                      {
+                        "header": "Solution for Services Under Warranty",
+                        "description": "Solutions for issues covered by warranty are provided and recorded in the service ticket."
+                      },
+                      {
+                        "header": "Status of Customer Offers",
+                        "description": "After the offer is approved, the necessary operations are completed, and the service ticket is closed."
+                      },
+                      {
+                        "header": "Cloud-Based Structure",
+                        "description": "Manage your work from anywhere and access customer data."
+                      },
+                      {
+                        "header": "Mobile and PC Compatible",
+                        "description": "Manage your business using a computer, tablet, or mobile phone."
+                      }
+                    ]
+                },
+                {
+                    "id": "eCommerceManagement",
+                    "head": "E-Commerce Management",
+                    "header": "Tamsoft Accounting Software E-Commerce Management",
+                    "p1": "Tamsoft E-Commerce Management is a solution that allows businesses to manage their e-commerce operations from a centralized platform. Here are some of the advantages and features this system can provide to businesses:",
+                    "p2": "These features and benefits demonstrate that Tamsoft E-Commerce Management offers a comprehensive solution to help businesses manage their e-commerce operations more efficiently, effectively, and automatically.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-eticaret-yonetimi-01.jpg",
+                    "cards": [
+                      {
+                        "header": "Integrated Management Platform",
+                        "description": "Provides integration with various marketplaces such as Amazon, Hepsi Burada, Trendyol, N11, and fast market platforms like Getir and Hepsi Express."
+                      },
+                      {
+                        "header": "Remote Access and Mobile Usage",
+                        "description": "Thanks to cloud technology, you can access and manage e-commerce settings from anywhere using mobile devices or computers."
+                      },
+                      {
+                        "header": "Automatic Stock Updates",
+                        "description": "Updates stock statuses on different platforms in real-time and prevents the sale of out-of-stock items."
+                      },
+                      {
+                        "header": "Formula-Based Price Updates",
+                        "description": "Offers a formula-based pricing feature to automate price updates across different platforms."
+                      },
+                      {
+                        "header": "Management Through a Single Panel",
+                        "description": "All integrations and processes can be managed from Tamsoft's central management panel."
+                      },
+                      {
+                        "header": "Traditional and E-Commerce Integration",
+                        "description": "Combines traditional trade transactions with e-commerce operations."
+                      },
+                      {
+                        "header": "Market and POS Integration",
+                        "description": "Provides market integration and POS integration for retail outlets."
+                      },
+                      {
+                        "header": "Field Sales Program Integration",
+                        "description": "Offers integration with field sales programs for businesses engaged in field sales."
+                      },
+                      {
+                        "header": "Free Trial",
+                        "description": "Offers businesses the opportunity to try the Tamsoft e-commerce management system for free."
+                      }
+                    ]
+                }                                                                  
+            ]
+        }
     }
 }

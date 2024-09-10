@@ -56,11 +56,12 @@
             {
                 "header": "İş Akışınızı Hızlandırın",
                 "description": "Tamsoft yazılımı, işletmenizin iş süreçlerini hızlandırarak daha verimli ve düzenli bir çalışma ortamı sağlar.",
-                "img": "/src/images/trafficData.gif"
+                "img": "/src/images/time.gif"
             }
         ],
         "allProps": {
-            "header": "Tüm Özellikler",
+            "head": "Tüm Özellikler",
+            "header": "Tamsoft ile yapabilecekleriniz",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem omnis distinctio doloribus hic? Quidem impedit ut dicta natus, asperiores fugit. Atque non cupiditate dolorum odio, totam rem eius vel natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem omnis distinctio doloribus hic? Quidem impedit ut dicta natus, asperiores fugit. Atque non cupiditate dolorum odio, totam rem eius vel natus.",
             "cards": [
                 {
@@ -88,54 +89,351 @@
                     "icon": "fa-solid fa-store"
                 },
                 {
-                    "href": "#",
+                    "href": "#financeManagement",
                     "header": "Finans Yönetimi",
                     "description": "Finansal yönetim ile Para, fon ve sermayenize dijital ortamda da hakim olun.",
                     "icon": "fa-solid fa-sack-dollar"
                 },
                 {
-                    "href": "#",
+                    "href": "#marketManagement",
                     "header": "Market Yönetimi",
                     "description": "Market modülü mükemmel entegrasyonu sayesinde Perakende de elinizi güçlendirir, işinizi kolaylaştırır.",
                     "icon": "fa-solid fa-cash-register"
                 },
                 {
-                    "href": "#",
+                    "href": "#crmManagement",
                     "header": "CRM Yönetimi",
                     "description": "Müşteri ilişkileri yönetimi ile mevcut ve potansiyel müşterileri bağlantılarınızı yönetmek çok kolay.",
                     "icon": "fa-solid fa-address-book"
                 },
                 {
-                    "href": "#",
+                    "href": "#eCommerceManagement",
                     "header": "Entegrasyon",
                     "description": "Entegrasyon işlemleri ile veri akışı ve veri transferi artık çok kolay ve kullanışlı.",
                     "icon": "fa-solid fa-circle-nodes"
                 },
                 {
-                    "href": "#",
+                    "href": "#eCommerceManagement",
                     "header": "E-Ticaret",
                     "description": "Yerinizden kalkmadan tüm E-Ticaret işlemlerinizi yapmanın tadını çıkarın.",
                     "icon": "fa-solid fa-comments-dollar"
                 }
             ],
-            "stockManagement": {
-                "head": "Stok Yönetimi",
-                "header": "Tamsoft Stok Yönetimi Modulü",
-                "p1": "Tamsoft'un Ön Muhasebe Programı Stok Yönetimi modülü, işletmelere stoklarını her yerden ve her zaman yönetme imkanı sunan bulut tabanlı bir sistemdir. Detaylı stok kartları, esnek birim ve barkod yönetimi, grup ve kategori yönetimi gibi özelliklerle stokları etkin şekilde takip etmeyi sağlar. Çoklu şube ve depo yönetimi, fiyatlandırma stratejilerinin esnek yönetimi ile stokları optimize etmeye olanak tanır.",
-                "p2": "Ayrıca, mobil uygulama entegrasyonu sayesinde saha satışları, şubeler arası sevkiyat ve hızlı fiyat güncelleme işlemleri kolayca yapılabilir. Bu özellikler, işletmelerin maliyetleri düşürerek stok yönetiminde verimliliği artırmasına yardımcı olur.",
-                "cards": [
-                    
-                ]
-            },
-            "cariManagement": {
-                "head": "Stok Yönetimi",
-                "header": "Tamsoft Stok Yönetimi Modulü",
-                "p1": "",
-                "p2": "",
-                "cards": [
-                    
-                ]
-            }
+            "props": [
+                {
+                    "id": "stockManagement",
+                    "head": "Stok Yönetimi",
+                    "header": "Tamsoft stok yönetimi modulü",
+                    "p1": "Tamsoft'un Ön Muhasebe Programı Stok Yönetimi modülü, işletmelere stoklarını her yerden ve her zaman yönetme imkanı sunan bulut tabanlı bir sistemdir. Detaylı stok kartları, esnek birim ve barkod yönetimi, grup ve kategori yönetimi gibi özelliklerle stokları etkin şekilde takip etmeyi sağlar. Çoklu şube ve depo yönetimi, fiyatlandırma stratejilerinin esnek yönetimi ile stokları optimize etmeye olanak tanır.",
+                    "p2": "Ayrıca, mobil uygulama entegrasyonu sayesinde saha satışları, şubeler arası sevkiyat ve hızlı fiyat güncelleme işlemleri kolayca yapılabilir. Bu özellikler, işletmelerin maliyetleri düşürerek stok yönetiminde verimliliği artırmasına yardımcı olur.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/mldzgea2x0cc-tmsftcm-cndteem/w:auto/h:auto/q:auto/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-depo-stok-yonetimi-02-1024x683.jpg",
+                    "cards": [
+                        {
+                            "header": "Uzaktan Erişim",
+                            "description": "Bulut teknolojisi ile stoklara her yerden erişim."
+                        },
+                        {
+                            "header": "Detaylı Stok Kartları",
+                            "description": "Mamul, hizmet, seri numarası ve parti lot gibi stokların detaylı takibi."
+                        },
+                        {
+                            "header": "Esnek Birim ve Barkod Yönetimi",
+                            "description": "Farklı birimlerde stok takibi ve birime özgü barkod oluşturma."
+                        },
+                        {
+                            "header": "Grup ve Kategori Yönetimi",
+                            "description": "Farklı fiyat tiplerinin tanımlanması ve cari hesaplarla ilişkilendirilmesi."
+                        },
+                        {
+                            "header": "Fiyat Yönetimi",
+                            "description": "Saha satış operasyonlarında stokların plasiyerlere atanması."
+                        },
+                        {
+                            "header": "Çoklu Şube ve Depo Yönetimi",
+                            "description": "Mobil cihazlarla sipariş, mal kabul ve sevkiyat işlemleri."
+                        },
+                        {
+                            "header": "Saha Satış Yönetimi",
+                            "description": "Satış fiyatlarının anında güncellenmesi."
+                        },
+                        {
+                            "header": "Entegrasyon ve Mobilite",
+                            "description": "Bulut teknolojisi ile stoklara her yerden erişim."
+                        },
+                        {
+                            "header": "Hızlı Fiyat Güncelleme",
+                            "description": "Bulut teknolojisi ile stoklara her yerden erişim."
+                        }
+                    ]
+                },
+                {
+                    "id": "cariManagement",
+                    "head": "Cari Yönetimi",
+                    "header": "Tamsoft cari yönetim modülü",
+                    "p1": "Tamsoft Cari Yönetimi, işletmelerin müşteriler ve tedarikçilerle olan tüm ticari işlemlerini etkin bir şekilde yönetmelerini sağlayan kapsamlı bir çözümdür. Gerçek zamanlı bilgi takibi, farklı para birimleri ile çalışabilme ve mobil erişim gibi özelliklerle finansal süreçleri daha şeffaf ve kontrol edilebilir hale getirir. E-Mutabakat ve E-Müstahsil gibi dijital çözümlerle muhasebe süreçleri daha hızlı ve hatasız bir şekilde yönetilir.",
+                    "p2": "Bu sistem, cari hesapları doğru bir şekilde yöneterek ticari ilişkilerin sürdürülebilir olmasını sağlar ve işletmelere daha sağlıklı finansal stratejiler oluşturma imkanı sunar. Hem alacakların hem de borçların takibi kolaylaşırken, enflasyon riskine karşı çeşitli önlemler de alınabilir.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/mldzgea2x0cc-tmsftcm-cndteem/w:auto/h:auto/q:auto/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-eticaret-yonetimi-04-1024x683.jpg",
+                    "cards": [
+                        {
+                            "header": "Gerçek Zamanlı Bilgi Takibi",
+                            "description": "Finansal durumun anlık izlenmesi ve stratejik kararların buna göre alınması."
+                        },
+                        {
+                            "header": "Mobil Erişim ve Bulut Teknolojisi",
+                            "description": "Cari hesaplara her yerden erişim ve raporlama imkanı."
+                        },
+                        {
+                            "header": "Farklı Para Birimleri ile Çalışabilme",
+                            "description": "Ürün tipine göre farklı para birimleri ile işlem yapma ve vade farkı hesaplama."
+                        },
+                        {
+                            "header": "E-Mutabakat",
+                            "description": "Cari hesapların elektronik ortamda mutabakatı."
+                        },
+                        {
+                            "header": "E-Müstahsil",
+                            "description": "Üreticiden alıcıya mal veya hizmet satışını belgeleyen elektronik makbuz."
+                        },
+                        {
+                            "header": "İş İlişkilerinin Sürdürülebilirliği",
+                            "description": "Ticari ilişkilerin doğru yönetimle sürdürülebilir ve sağlıklı tutulması."
+                        }
+                    ]
+
+                },
+                {
+                    "id": "buyManagement",
+                    "head": "Satın Alma Yönetimi",
+                    "header": "Tamsoft satın alma yönetim modülü",
+                    "p1": "Tamsoft Satın Alma Yönetimi, işletmelerin satın alma süreçlerini etkili bir şekilde yönetmelerine olanak sağlayan kapsamlı bir sistemdir. Doğru stok yönetimi, mobil erişim, farklı satış kanalları için optimize edilmiş satın alma ve formüllü fiyatlandırma gibi özelliklerle, işletmelerin maliyetlerini kontrol altında tutarken kar marjlarını artırmalarına yardımcı olur. Bu sistem, satın alma süreçlerini daha verimli ve esnek hale getirerek işletmelere sürdürülebilir karlılık sağlar.",
+                    "p2": "Geniş işlevsellik yelpazesi ile işletmeler, tekliften faturalandırmaya kadar tüm satın alma adımlarını kolayca yönetebilir. Bu, işletmelere daha etkin bir maliyet yönetimi ve tedarik süreçlerinde esneklik kazandırır.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-satinalma-yonetimi-02.jpg",
+                    "cards": [
+                        {
+                            "header": "Doğru Stok Yönetimi",
+                            "description": "Etkin stok takibiyle doğru miktarda ve zamanda ürün tedariki."
+                        },
+                        {
+                            "header": "Mobil ve Bulut Erişimi",
+                            "description": "Her yerden satın alma süreçlerine erişim imkanı."
+                        },
+                        {
+                            "header": "Çeşitli Satış Kanalları İçin Optimize Edilmiş Satın Alma",
+                            "description": "Online, pazaryeri ve saha satış kanallarında satın alma süreçlerinin kolay yönetimi."
+                        },
+                        {
+                            "header": "Formüllü Fiyatlandırma ve Maliyet Kontrolü",
+                            "description": "Stok maliyetlerinin kontrol altına alınması ve kar marjlarının korunması."
+                        },
+                        {
+                            "header": "Geniş İşlevsellik",
+                            "description": "Teklif, sipariş, irsaliye, fatura ve raporlama gibi kapsamlı satın alma yönetim araçları."
+                        }
+                    ]
+                },
+                {
+                    "id": "sellManagement",
+                    "head": "Satış Yönetimi",
+                    "header": "Tamsoft satış yönetim modülü",
+                    "p1": "Tamsoft Satış Yönetimi, işletmelerin satış işlemlerini entegre ve verimli bir şekilde yönetmelerine olanak tanıyan kapsamlı bir çözümdür. Tekliften faturalandırmaya kadar tüm satış süreçlerini kolayca yönetme, farklı müşteri gruplarına özel fiyat listeleri oluşturma ve sahada el terminali ile satış yapma gibi özelliklerle satış operasyonlarını optimize eder. Entegre modüller ve bulut teknolojisi ile işletmeler, satış verilerine her yerden erişim sağlayarak stratejik kararlarını bilinçli bir şekilde alabilirler.",
+                    "p2": "Bu sistem, çoklu şube yönetimi, farklı fiyat tiplerini cari hesaplara atama ve detaylı raporlama imkanlarıyla işletmelerin satış süreçlerini daha verimli hale getirir. İşletmelere sunduğu esneklik ve kapsamlı analizlerle müşteri ilişkilerini güçlendirir ve satış verimliliğini artırır.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-satis-yonetimi-2.jpg",
+                    "cards": [
+                        {
+                            "header": "Cari Hesap Yönetiminin Doğru Kurgulanması",
+                            "description": "Müşteri hesaplarının etkin bir şekilde takip edilmesi."
+                        },
+                        {
+                            "header": "Farklı Müşteri Grupları İçin Satış Fiyat Listeleri",
+                            "description": "Müşteri bazlı özel fiyat listeleri oluşturma."
+                        },
+                        {
+                            "header": "Çoklu Şube Yönetimi",
+                            "description": "Şube bazlı plasiyer uygulamaları ile aynı satış şartları sunma."
+                        },
+                        {
+                            "header": "Tamsaha Saha Satış Programı",
+                            "description": "El terminali ile sahada sıcak ve soğuk satış yapma imkanı."
+                        },
+                        {
+                            "header": "Farklı Satış Fiyat Tiplerini Atama",
+                            "description": "Fiyat listesi oluşturmadan satış süreçlerini hızlandırma."
+                        },
+                        {
+                            "header": "Entegre Modül Kullanımı ve Bulut Teknolojisi",
+                            "description": "Müşteri yönetimi, tahsilat ve sipariş alma işlemlerinde bulut entegrasyonu."
+                        },
+                        {
+                            "header": "Detaylı Raporlar ve Analizler",
+                            "description": "Satış süreçleri hakkında kapsamlı raporlar ve analizler."
+                        }
+                    ]
+                },
+                {
+                    "id": "financeManagement",
+                    "head": "Finans Yönetimi",
+                    "header": "Tamsoft Finans Yönetimi Modülü",
+                    "p1": "Tamsoft Finans Yönetimi, işletmelerin finansal işlemlerini doğru ve etkin bir şekilde yönetmelerine olanak sağlayan kapsamlı bir ön muhasebe programıdır. Bu yazılım, finans modülü ile cari hesap modülünün entegrasyonu aracılığıyla işletmelerin finansal işlemlerini düzenli ve verimli bir şekilde yapmalarını destekler.",
+                    "p2": "Bu yazılım, işletmelerin ödeme güçlükleri yaşamasını önlemek ve gereksiz kredi maliyetlerinden kaçınmak için finansal işlemlerini düzenli bir şekilde yönetmelerine olanak sağlar. Bulut teknolojisi sayesinde, mobil ve PC platformlarından erişilebilir hale gelir, bu da işletmelerin finansal işlemlerini istedikleri her yerden gerçekleştirme imkanı sunar.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-finans-yonetimi-01-1.jpg",
+                    "cards": [
+                        {
+                            "header": "Entegrasyon ve Yapılandırma",
+                            "description": "Finans modülü, cari hesap modülü ile entegre çalışır, finansal işlemleri düzenli hale getirir."
+                        },
+                        {
+                            "header": "Ödeme Yöntemleri Desteği",
+                            "description": "Nakit, çek, senet ve kredi kartı gibi farklı ödeme yöntemlerini destekler."
+                        },
+                        {
+                            "header": "Banka Sistemi Entegrasyonu",
+                            "description": "Kredi kartı ödemeleri ve bakiye takibi için banka modülü içerir."
+                        },
+                        {
+                            "header": "Cari Hesaplar Arası Virman İşlemleri",
+                            "description": "Başka firmalara ödeme ve cari hesap yönetimi kolaylaştırılır."
+                        },
+                        {
+                            "header": "Çek ve Senet Takibi",
+                            "description": "Vadesi gelen çeklerin ödenmesi ve çek iade işlemleri yönetilir."
+                        },
+                        {
+                            "header": "Banka ve Cari Hesaplarının İzlenmesi",
+                            "description": "Banka ve cari hesaplar kolayca izlenir ve yönetilir."
+                        },
+                        {
+                            "header": "Finans Menüsünden Gerçekleştirilebilecek İşlemler",
+                            "description": "Finansal dokümanlar, tahsilat ve ödeme işlemleri gibi birçok finansal işlem yapılabilir."
+                        },
+                        {
+                            "header": "Mobil ve PC Erişim Olanağı",
+                            "description": "Bulut teknolojisi ile her yerden erişim ve işlem yapma imkanı sunar."
+                        }
+                    ]
+                },
+                {
+                    "id": "marketManagement",
+                    "head": "Market Yönetimi",
+                    "header": "Tamsoft Market Yönetim Modülü",
+                    "p1": "Tamsoft Market Yönetimi, muhasebe yazılımı içindeki market ve mağaza modülü aracılığıyla en büyük perakende ticaret hacmini yönetmek için son derece verimli bir çözüm sunar. Bu kapsamlı market modülü, çeşitli unsurları bir araya getirerek geleneksel ticaretin can damarı olarak hizmet vermektedir.",
+                    "p2": "Tamsoft Market Yönetimi, kasalarınızı ve kasiyerlerinizi takip etmenize, şubeleri ve depoları denetlemenize ve etiket baskısı gibi işlevleri kullanabilmenize olanak tanır. İşte bu sistemin sağladığı bazı özellikler:",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-Tamsoft-Market-yonetimi-01.jpg",
+                    "cards": [
+                        {
+                            "header": "Kasaya Bilgi Gönderme",
+                            "description": "Çeşitli POS kasaları ile entegre olarak çalışarak işlemleri merkezi ve düzenli bir şekilde yönetir."
+                        },
+                        {
+                            "header": "Satışların ERP Sistemine Aktarılması",
+                            "description": "Günlük veya gün sonu satışlarını ERP sistemlerine aktararak finans ve muhasebe verilerinin güncel ve tutarlı olmasını sağlar."
+                        },
+                        {
+                            "header": "Kasa ve Kasiyer Takibi",
+                            "description": "Kasa ve kasiyer performanslarını anlık olarak takip edebilmeniz için verimli bir sistem sunar."
+                        },
+                        {
+                            "header": "Şube Yönetimi",
+                            "description": "Birden fazla şubeyi etkin bir şekilde yönetmenizi sağlar ve şube bazında satış, envanter ve performans verilerini gözden geçirmenize olanak tanır."
+                        },
+                        {
+                            "header": "Depo Yönetimi",
+                            "description": "Depo stoklarınızı etkin bir şekilde yöneterek sipariş süreçlerinizi iyileştirmenize ve stok maliyetlerinizi optimize etmenize yardımcı olur."
+                        },
+                        {
+                            "header": "Etiket Baskısı",
+                            "description": "Fiyat değişiklikleri veya promosyonel fiyatlar için etiket baskısı yapmanızı ve terazilere bilgi göndermenizi sağlar."
+                        },
+                        {
+                            "header": "Mobil ve Bilgisayar Erişimi",
+                            "description": "Bulut teknolojisi ile istediğiniz yerden mobil cihazlar veya bilgisayarlarla market işlevlerini yerine getirme olanağı sunar."
+                        }
+                    ]
+                },
+                {
+                    "id": "crmManagement",
+                    "head": "CRM Yönetimi",
+                    "header": "Tamsoft Ön Muhasebe Programı CRM Yönetimi",
+                    "p1": "CRM, müşteri ilişkileri yönetimi anlamına gelir ve Tamsoft CRM, bu alanda şirketlere çözüm sunan bir yazılımdır. Peki, nedir bu Tamsoft CRM ve ne işe yarar?",
+                    "p2": "Müşteri sadakati oluşturmak ve sürdürmek, her işletmenin en temel hedeflerinden biridir. Peki ya siz ne yapıyorsunuz?",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:auto/h:auto/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-crm-yonetimi-01.jpg",
+                    "cards": [
+                      {
+                        "header": "Servis Fişi",
+                        "description": "Müşterilerden gelen ürünler veya şikayetler kayıt altına alınır ve ilgili bölüme atama yapılır."
+                      },
+                      {
+                        "header": "Servis Fişi Yetki Grupları",
+                        "description": "Atanan servis fişi, bölümdeki yetkili personel tarafından üstlenilir ve ilgili iş arkadaşına atanabilir."
+                      },
+                      {
+                        "header": "Müşteriye Teklif İletimi",
+                        "description": "Garanti kapsamında olmayan işler için CRM modülü üzerinden müşterilere teklif iletilir."
+                      },
+                      {
+                        "header": "Garanti Kapsamında İş Çözümü",
+                        "description": "Garanti kapsamında olan işlerin çözümü üretilir ve servis fişine eklenir."
+                      },
+                      {
+                        "header": "Müşteriye Verilen Tekliflerin Durumu",
+                        "description": "Teklif onaylandıktan sonra işlemler gerçekleştirilir ve servis fişi kapatılır."
+                      },
+                      {
+                        "header": "Bulut Tabanlı Yapı",
+                        "description": "İşinizi her yerden yönetebilir ve müşteri verilerinize erişebilirsiniz."
+                      },
+                      {
+                        "header": "Mobil ve PC Uyumlu Kullanım",
+                        "description": "Bilgisayardan, tabletten veya telefondan işlerinizi yönetin."
+                      }
+                    ]
+                },
+                {
+                    "id": "eCommerceManagement",
+                    "head": "E-Ticaret Yönetimi",
+                    "header": "Tamsoft Ön Muhasebe Programı E-Ticaret Yönetimi",
+                    "p1": "Tamsoft E-Ticaret Yönetimi, işletmelerin e-ticaret operasyonlarını merkezi bir platformdan yönetmelerine olanak sağlayan bir çözümdür. İşte, bu sistemin işletmelere sağlayabileceği avantajlar ve özelliklerden bazıları:",
+                    "p2": "Bu özellikler ve avantajlar, Tamsoft E-Ticaret Yönetimi’nin, işletmelerin e-ticaret operasyonlarını daha etkin, verimli ve otomatize bir şekilde yönetmelerine yardımcı olabilecek kapsamlı bir çözüm sunduğunu göstermektedir.",
+                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-eticaret-yonetimi-01.jpg",
+                    "cards": [
+                      {
+                        "header": "Entegre Yönetim Platformu",
+                        "description": "Amazon, Hepsi Burada, Trendyol, N11 gibi çeşitli pazaryerleri ve hızlı market platformları ile entegrasyon sağlar."
+                      },
+                      {
+                        "header": "Uzaktan Erişim ve Mobil Kullanım",
+                        "description": "Bulut teknolojisi sayesinde, her yerden e-ticaret ayarlarına erişebilir ve işlemleri yönetebilirsiniz."
+                      },
+                      {
+                        "header": "Otomatik Stok Güncellemesi",
+                        "description": "Farklı platformlardaki stok durumlarını anlık olarak günceller ve stokta olmayan ürünlerin satışını engeller."
+                      },
+                      {
+                        "header": "Formüllü Fiyat Güncellemeleri",
+                        "description": "Fiyatları otomatikleştirmek için formüllü fiyatlandırma özelliği sunar."
+                      },
+                      {
+                        "header": "Tek Panel Üzerinden Yönetim",
+                        "description": "Tüm entegrasyonlar ve süreçler, Tamsoft’un merkezi yönetim paneli üzerinden yönetilebilir."
+                      },
+                      {
+                        "header": "Geleneksel Ticaret ve E-Ticaret Entegrasyonu",
+                        "description": "Geleneksel ticaret ve e-ticaret işlemlerini birleştiren yapı sunar."
+                      },
+                      {
+                        "header": "Market ve POS Entegrasyonu",
+                        "description": "Perakende satış noktaları için market entegrasyonu ve POS entegrasyonu sağlar."
+                      },
+                      {
+                        "header": "Saha Satış Programı Entegrasyonu",
+                        "description": "Saha satışı yapan firmalar için saha satış programı entegrasyonu sunar."
+                      },
+                      {
+                        "header": "Ücretsiz Deneme",
+                        "description": "Tamsoft e-ticaret yönetimini ücretsiz olarak deneme imkanı sunar."
+                      }
+                    ]
+                }                                                                 
+            ]
         }
     }
 }
