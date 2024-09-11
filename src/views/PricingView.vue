@@ -1,6 +1,8 @@
 <script setup>
     import { onMounted } from 'vue';
     import { useFadeIn } from '../scripts/common';
+    import languageJson from '../locales/tr.json'
+    const propertyLength = languageJson.pricingPage.properties.length;
     useFadeIn();
 
     onMounted(() => {
@@ -100,59 +102,20 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 1</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 2</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 3</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Uzun Özellik 1</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Uzun Özellik 2</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Uzun Özellik 3</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 4</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 5</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">Özellik 6</td>
-                                <td class="select-column border p-[10px]" data-column="0"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="1"><font-awesome-icon icon="fa-solid fa-xmark" size="xl" class="text-red-700"/></td>
-                                <td class="select-column border p-[10px]" data-column="2"><font-awesome-icon icon="fa-solid fa-check" size="xl" class="text-green-700" /></td>
+                            <tr v-for="item in propertyLength" :key="item">
+                                <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">{{$t(`pricingPage.properties[${item-1}].property`)}}</td>
+                                <td class="select-column border p-[10px]" data-column="0">
+                                    <font-awesome-icon v-if="$t(`pricingPage.properties[${item-1}].basic`) == 'true'" icon="fa-solid fa-check" size="xl" class="text-green-700" />
+                                    <font-awesome-icon v-else icon="fa-solid fa-xmark" size="xl" class="text-red-700" />
+                                </td>
+                                <td class="select-column border p-[10px]" data-column="1">
+                                    <font-awesome-icon v-if="$t(`pricingPage.properties[${item-1}].standard`) == 'true'" icon="fa-solid fa-check" size="xl" class="text-green-700" />
+                                    <font-awesome-icon v-else icon="fa-solid fa-xmark" size="xl" class="text-red-700" />
+                                </td>
+                                <td class="select-column border p-[10px]" data-column="2">
+                                    <font-awesome-icon v-if="$t(`pricingPage.properties[${item-1}].pro`) == 'true'" icon="fa-solid fa-check" size="xl" class="text-green-700" />
+                                    <font-awesome-icon v-else icon="fa-solid fa-xmark" size="xl" class="text-red-700" />
+                                </td>
                             </tr>
                             <tr>
                                 <td class="font-semibold text-[1.2rem] py-[10px] px-[20px] text-start">{{$t('pricingPage.price')}}</td>

@@ -42,7 +42,72 @@
         "proDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam! Corporis vel quasi dolorum libero.",
         "recommend": "Önerilen",
         "buyNow": "Hemen Al",
-        "price": "Fiyat"
+        "price": "Fiyat",
+        "properties": [
+            {
+                "property": "Özellik 1",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam!",
+                "basic": "true",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Özellik 2",
+                "description": null,
+                "basic": "false",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Özellik 3",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam!",
+                "basic": "false",
+                "standard": "false",
+                "pro": "true"
+            },
+            {
+                "property": "Uzun Özellik 1",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam!",
+                "basic": "true",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Uzun Özellik 2",
+                "description": null,
+                "basic": "false",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Uzun Özellik 3",
+                "description": null,
+                "basic": "false",
+                "standard": "false",
+                "pro": "true"
+            },
+            {
+                "property": "Özellik 4",
+                "description": null,
+                "basic": "true",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Özellik 5",
+                "description": null,
+                "basic": "false",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Özellik 6",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam!",
+                "basic": "false",
+                "standard": "false",
+                "pro": "true"
+            }
+        ]
     },
     "contactPage": {
         "header": "Bize Ulaşın",

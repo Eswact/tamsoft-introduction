@@ -42,7 +42,72 @@
         "proDescription": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam! Corporis vel quasi dolorum libero.",
         "recommend": "Recommend",
         "buyNow": "Buy Now",
-        "price": "Price"
+        "price": "Price",
+        "properties": [
+            {
+                "property": "Property 1",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam!",
+                "basic": "true",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Property 2",
+                "description": null,
+                "basic": "false",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Property 3",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam!",
+                "basic": "false",
+                "standard": "false",
+                "pro": "true"
+            },
+            {
+                "property": "Long Property 1",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam!",
+                "basic": "true",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Long Property 2",
+                "description": null,
+                "basic": "false",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Long Property 3",
+                "description": null,
+                "basic": "false",
+                "standard": "false",
+                "pro": "true"
+            },
+            {
+                "property": "Property 4",
+                "description": null,
+                "basic": "true",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Property 5",
+                "description": null,
+                "basic": "false",
+                "standard": "true",
+                "pro": "true"
+            },
+            {
+                "property": "Property 6",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, sint tempora officiis quaerat ab porro excepturi a voluptate, asperiores dignissimos quibusdam nostrum odio autem aliquam!",
+                "basic": "false",
+                "standard": "false",
+                "pro": "true"
+            }
+        ]
     },
     "contactPage": {
         "header": "Contact Us",
