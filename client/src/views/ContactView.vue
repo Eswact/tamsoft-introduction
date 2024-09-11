@@ -1,3 +1,28 @@
+<script setup>
+    import AjaxScripts from '../scripts/ajaxScripts.js';
+    const handleSubmit = () => {
+        const data = {
+            name: document.getElementById('formName').value,
+            email: document.getElementById('formMail').value,
+            message: document.getElementById('formMessage').value,
+        };
+        const onSuccess = (res) => {
+            console.log(res);
+            document.getElementById('formName').value = '';
+            document.getElementById('formMail').value = '';
+            document.getElementById('formMessage').value = '';
+            alert('alo');
+            // toast($t("contactsendform.success"), { autoClose: 3000, type: "success", position: "bottom-right" });
+        };
+        const onError = (err) => {
+            console.log(err);
+            alert('alo2');
+            // toast("Mesajınız gönderilirken bir hata oluştu.", { autoClose: 3000, type: "error", position: "bottom-right" });
+        };
+        AjaxScripts.SendMail({data, onSuccess, onError});
+    }
+</script>
+
 <template>
     <div class="w-full flex flex-col justify-center items-center gap-[16px]">
         <!-- contact image -->
@@ -39,7 +64,7 @@
                         <h3 class="text-[2.25rem] font-semibold text-main">{{$t('contactPage.getInTouch')}}</h3>
                         <span class="text-[1.25rem] font-thin">{{$t('contactPage.description')}}</span>
                     </div>
-                    <form class="flex flex-col gap-[20px] px-[4px]">
+                    <form @submit.prevent="handleSubmit" class="flex flex-col gap-[20px] px-[4px]">
                         <div class="flex flex-col items-start justify-start gap-[2px]">
                             <input class="w-full border-[2px] px-[20px] py-[10px] bg-[#FAF9F9] rounded-md border-main-shadow shadow-md shadow-main-light placeholder:text-[#AAA0A2] text-[1.15rem]" type="text" name="formName" id="formName" :placeholder="$t('contactPage.yourName')"/>
                         </div>
@@ -49,7 +74,7 @@
                         <div class="flex flex-col items-start justify-start gap-[2px]">
                             <textarea class="w-full h-[240px] max-h-[320px] min-h-[100px] overflow-y-auto border-[2px] px-[20px] py-[10px] bg-[#FAF9F9] rounded-md border-main-shadow shadow-md shadow-main-light placeholder:text-[#AAA0A2] text-[1.15rem]" name="formMessage" id="formMessage" :placeholder="$t('contactPage.yourMessage')"></textarea>
                         </div>
-                        <button class="py-[6px] rounded-md border border-main bg-main text-white text-[1.4rem] font-semibold shadow-lg shadow-main-shadow duration-200 hover:bg-main-light hover:text-main">{{$t('contactPage.submit')}}</button>
+                        <button type="submit" class="py-[6px] rounded-md border border-main bg-main text-white text-[1.4rem] font-semibold shadow-lg shadow-main-shadow duration-200 hover:bg-main-light hover:text-main">{{$t('contactPage.submit')}}</button>
                     </form>
                 </div>
                 <!-- address image -->
