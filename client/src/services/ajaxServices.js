@@ -1,6 +1,7 @@
 import axios from 'axios';
+
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3000/api/',
+  baseURL: `${import.meta.env.VITE_REQUEST_URL}/api/`,
 });
 // BASIC GET
 const fetchData = async (endpoint, onSuccess, onError) => {
