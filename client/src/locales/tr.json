@@ -608,5 +608,45 @@
                 }                                                                 
             ]
         }
+    },
+    "homePage": {
+        "title": "Yeni Nesil Ön Muhasebe Programı",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, odit unde. Sint, expedita quidem quos fugit similique quia maiores officia recusandae aut nobis culpa! Rem nisi facilis quod voluptas voluptatem!",
+        "buttonText": "Hemen Deneyin",
+        "buttonLink": "https://demo.tamsoft.com.tr/",
+        "image1": "/src/images/report-bro.svg",
+        "image2": "/src/images/report-pana.svg",
+        "icons": [
+            {
+                "icon": "/src/images/star.svg",
+                "name": "Hızlı"
+            },
+            {
+                "icon": "/src/images/security.svg",
+                "name": "Güvenilir"
+            },
+            {
+                "icon": "/src/images/bulb.svg",
+                "name": "Çözüm Odaklı"
+            },
+            {
+                "icon": "/src/images/network.svg",
+                "name": "Çok Yönlü"
+            },
+            {
+                "icon": "/src/images/chat.svg",
+                "name": "Destek"
+            }
+        ],
+        "properties": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        ],
+        "youtubeLink": "https://www.youtube.com/embed/6xG7mXzOQW0?si=T9S6vYnSEbcFd8X9"
     }
 }
