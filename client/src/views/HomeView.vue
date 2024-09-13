@@ -22,13 +22,13 @@
           </div>
         </div>
         <div class="fade-in lg:hidden w-[46%] 2xl:w-[42%] xl:w-[300px] xl:p-0 px-[4%] pt-[6%] pb-[2%] flex justify-center items-center">
-          <img src="../images/report-bro.svg" alt="Tamsoft Ön Muhasebe Programı">
+          <img loading="lazy" src="../images/report-bro.svg" alt="Tamsoft Ön Muhasebe Programı">
         </div>
       </div>
       <div class="fade-in w-full max-w-[1600px] flex justify-around items-center gap-[20px] flex-wrap">
         <div v-for="item in iconCount" :key="item" class="flex flex-col justify-center items-center w-[120px] rounded-lg text-text dark:text-white gap-[8px] ">
-          <img class="w-[80px] xl:w-[64px]" :src="$t(`homePage.icons[${item-1}].icon`)" :alt="$t(`homePage.icons[${item-1}].name`)">
-          <span class="text-[1.25rem] xl:text-[1.1rem] font-semibold">{{ $t(`homePage.icons[${item-1}].name`) }}</span>
+          <img class="w-[80px] xl:w-[64px]" loading="lazy" :src="$t(`homePage.icons[${item-1}].icon`)" :alt="$t(`homePage.icons[${item-1}].name`)">
+          <span class="text-[1.25rem] text-center xl:text-[1.1rem] font-semibold">{{ $t(`homePage.icons[${item-1}].name`) }}</span>
         </div>
       </div>
     </div>
@@ -36,12 +36,12 @@
       <div class="bottomWave top-[-10px] mainWave h-[10px]"></div>
       <div class="w-full max-w-[1600px] flex justify-between items-center">
         <div class="w-[50%] p-[50px] xl:p-[40px] lg:hidden">
-          <img class="fade-in" src="../images/report-pana.svg" alt="Tamsoft Ön Muhasebe Programı">
+          <img class="fade-in" loading="lazy" src="../images/report-pana.svg" alt="Tamsoft Ön Muhasebe Programı">
         </div>
         <div class="w-[50%] lg:w-full flex justify-center items-center">
           <div class="fade-in w-[75%] sm:w-full bg-white flex flex-col gap-[32px] justify-start items-start p-[50px] xl:p-[30px] border rounded-lg shadow-xl">
             <div v-for="item in propertyCount" :key="item" class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
-              <img class="w-[3.2rem] xl:w-[2rem]" src="../images/check.svg" alt="check">
+              <img class="w-[3.2rem] xl:w-[2rem]" loading="lazy" src="../images/check.svg" alt="check">
               <span class="text-text text-[1.2rem] xl:text-[1rem]">{{$t(`homePage.properties[${item-1}]`)}}</span>
             </div>
           </div>
@@ -52,7 +52,7 @@
     <div class="w-full relative flex flex-col justify-center items-center">
       <div class="w-full max-w-[1600px] py-[20px] px-[100px] 2xl:px-[50px] xl:p-[25px] sm:p-[20px] flex justify-center items-center lg:flex-col lg:gap-[40px]">
         <div class="w-[100%] flex justify-center items-center px-[20px] sm:px-0">
-          <iframe class="fade-in w-full aspect-[560/315] rounded-lg border border-second shadow-md" :src="$t('homePage.youtubeLink')" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe class="fade-in w-full aspect-[560/315] rounded-lg shadow-md" :src="$t('homePage.youtubeLink')" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>

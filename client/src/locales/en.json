@@ -5,7 +5,10 @@
     "about": "About",
     "contact": "Contact",
     "login": "Login",
+    "loginLink": "https://demo.tamsoft.com.tr/",
     "signup": "Sign Up",
+    "signupLink": "#",
+    "footerDescription": "Add freedom to your business with our new generation accounting program.",
     "quickLinks": "Quick Links",
     "softwares": "Softwares",
     "tamsoft": "Tamsoft Cloud ERP Software",
@@ -19,7 +22,7 @@
         "x":"",
         "instagram":"https://www.instagram.com/tamsoft_/",
         "in":"https://www.linkedin.com/company/%C3%A7aml%C4%B1ca-barkod/mycompany/",
-        "youtube":"https://www.youtube.com/@tamsoft3257"
+        "youtube":"https://www.youtube.com/channel/UCGamyN-KLuglyx-9Va0Z9Tw"
     },
     "404": {
         "title": "Page not found",
@@ -646,6 +649,33 @@
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
         ],
-        "youtubeLink": "https://www.youtube.com/embed/6xG7mXzOQW0?si=T9S6vYnSEbcFd8X9"
+        "youtubeLink": "https://www.youtube-nocookie.com/embed/6xG7mXzOQW0?si=T9S6vYnSEbcFd8X9"
+    },
+    "meta": {
+        "home": {
+            "title": "Home Page",
+            "description": "Welcome to the homepage of the Tamsoft introduction site.",
+            "keywords": "home page, accounting software, tamsoft, trial, free trial"
+        },
+        "features": {
+            "title": "Features",
+            "description": "Get detailed information about Tamsoft's accounting software.",
+            "keywords": "all features, stock management, current account management, procurement, sales management, finance management, market management, CRM management, integration, e-commerce"
+        },
+        "pricing": {
+            "title": "Pricing",
+            "description": "Check out Tamsoft's annual plans.",
+            "keywords": "price, basic plan, standard plan, pro plan, buy now, plans, annual plans"
+        },
+        "about": {
+            "title": "About Us",
+            "description": "Get detailed information about our company.",
+            "keywords": "about us, company, our vision, our mission, team, crew"
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Check our contact information. Get in touch with us.",
+            "keywords": "contact, phone, email, location, address, form, message, send message"
+        }
     }
 }

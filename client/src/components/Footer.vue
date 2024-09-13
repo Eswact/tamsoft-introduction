@@ -7,8 +7,8 @@
         <div class="w-full flex flex-col justify-center items-center border-t-[2px] border-dark dark:border-black bg-dark dark:bg-black text-white">
             <div class="w-full max-w-[1600px] px-[40px] py-[20px] lg:p-[20px] flex justify-between flex-wrap items-start lg:justify-center lg:items-center sm:items-start lg:flex-col">
                 <div class="flex w-full max-w-[400px] p-[20px] flex-col justify-center items-start gap-[20px]">
-                    <img class="w-full max-w-[280px] ml-[-24px] md:ml-0" src="../images/tamsoft-dark.png" alt="Tamsoft">
-                    <p class="text-[1.2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id magnam ab culpa cumque.</p>
+                    <img class="w-full max-w-[280px] ml-[-24px] md:ml-0" loading="lazy" src="../images/tamsoft-dark.png" alt="Tamsoft">
+                    <p class="text-[1.2rem]">{{ $t('footerDescription') }}</p>
                     <div class="flex justify-end items-center gap-[20px] py-[10px] text-[1.5rem]">
                         <a class="hover:text-main duration-200" target="_blank" :href="$t('social.facebook')"><font-awesome-icon icon="fa-brands fa-facebook" size="lg" /></a> 
                         <a class="hover:text-main duration-200" target="_blank" :href="$t('social.x')"><font-awesome-icon icon="fa-brands fa-twitter" size="lg" /></a> 

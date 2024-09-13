@@ -74,7 +74,7 @@
                                         <div class="border-b-[2px] border-r-[2px] border-main dark:border-white w-[64px] h-[64px] absolute right-0 bottom-0"></div>
                                     </div>
                                     <div class="w-[50%] xl:w-[40%] md:w-full flex justify-center items-center">
-                                        <img class="w-full max-w-[410px] xl:max-w-[300px] max-h-[340px] xl:max-h-[240px] object-contain object-bottom" :src="$t(`propertiesPage.banners[${item-1}].img`)">
+                                        <img class="w-full max-w-[410px] xl:max-w-[300px] max-h-[340px] xl:max-h-[240px] object-contain object-bottom" loading="lazy" :src="$t(`propertiesPage.banners[${item-1}].img`)" :alt="$t(`propertiesPage.banners[${item-1}].header`)">
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +119,9 @@
                                     </div>
                                     <div class="relative w-[45%] h-[500px] lg:hidden p-[50px]">
                                         <img class="fade-in w-full h-full object-cover rounded-lg shadow-[50px_50px_0_0] shadow-third-shadow"
-                                            :src="$t(`propertiesPage.allProps.props[${item-1}].src`)">
+                                            loading="lazy"
+                                            :src="$t(`propertiesPage.allProps.props[${item-1}].src`)"
+                                            :alt="$t(`propertiesPage.allProps.props[${item-1}].head`)">
                                     </div>
                                 </div>
                                 <div v-if="propertiesPageJson.allProps.props[item-1].cards != ('' && null)" class="w-full px-[50px] pt-[40px] sm:p-0 md:p-[20px] flex flex-wrap justify-center items-center gap-[20px]">
@@ -155,7 +157,9 @@
                                 <div class="w-full flex justify-between items-center">
                                     <div class="relative w-[45%] h-[500px] lg:hidden p-[50px]">
                                         <img class="fade-in w-full h-full object-cover rounded-lg shadow-[-50px_-50px_0_0] shadow-third-shadow"
-                                            :src="$t(`propertiesPage.allProps.props[${item-1}].src`)">
+                                            loading="lazy"
+                                            :src="$t(`propertiesPage.allProps.props[${item-1}].src`)"
+                                            :alt="$t(`propertiesPage.allProps.props[${item-1}].head`)">
                                     </div>
                                     <div class="lg:w-full lg:max-w-[100%] lg:min-h-0 flex flex-col gap-[30px] max-w-[50%] px-[30px] lg:p-[20px]">
                                         <p class="h-0 text-[1.2rem] font-bold text-third">{{ $t(`propertiesPage.allProps.props[${item-1}].head`) }}</p>

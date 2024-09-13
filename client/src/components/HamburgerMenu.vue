@@ -19,8 +19,8 @@
         <!-- navigation -->
         <nav class="flex flex-col items-start gap-[10px] text-text dark:text-white">
             <RouterLink class="py-[10px]" to="/">
-                <img class="w-[200px] dark:hidden" src="../images/tamsoft.png" alt="Tamsoft">
-                <img class="w-[200px] hidden dark:block" src="../images/tamsoft-dark.png" alt="Tamsoft">
+                <img class="w-[200px] dark:hidden" loading="lazy" src="../images/tamsoft.png" alt="Tamsoft">
+                <img class="w-[200px] hidden dark:block" loading="lazy" src="../images/tamsoft-dark.png" alt="Tamsoft">
             </RouterLink>
             <RouterLink @click="closeHamburgerMenu" :class="{ 'text-main': isActive('/features') }" class="p-[10px] flex items-center gap-[8px] mt-[10px]" to="/features"><span class="text-[1.4rem] font-semibold">{{ $t('features') }}</span></RouterLink>
             <RouterLink @click="closeHamburgerMenu" :class="{ 'text-main': isActive('/pricing') }" class="p-[10px] flex items-center gap-[8px]" to="/pricing"><span class="text-[1.4rem] font-semibold">{{ $t('pricing') }}</span></RouterLink>

@@ -5,6 +5,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import i18n from './services/language'
+import { createHead } from '@unhead/vue';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -16,7 +17,10 @@ library.add(faCircleInfo, faHeadset, faBars, faCircleXmark, faDollarSign, faStar
 const app = createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
 
+const head = createHead();
+
 app.use(router)
 app.use(i18n)
+app.use(head); 
 
 app.mount('#app')

@@ -5,7 +5,10 @@
     "about": "Hakkımızda",
     "contact": "İletişim",
     "login": "Giriş Yap",
+    "loginLink": "https://demo.tamsoft.com.tr/",
     "signup": "Üye Ol",
+    "signupLink": "#",
+    "footerDescription": "Yeni nesil ön muhasebe programımız ile işinize özgürlük katın.",
     "quickLinks": "Hızlı Erişim",
     "softwares": "Yazılımlar",
     "tamsoft": "Tamsoft Bulut ERP Yazılımı",
@@ -19,7 +22,7 @@
         "x":"",
         "instagram":"https://www.instagram.com/tamsoft_/",
         "in":"https://www.linkedin.com/company/%C3%A7aml%C4%B1ca-barkod/mycompany/",
-        "youtube":"https://www.youtube.com/@tamsoft3257"
+        "youtube":"https://www.youtube.com/channel/UCGamyN-KLuglyx-9Va0Z9Tw"
     },
     "404": {
         "title": "Sayfa Bulunamadı",
@@ -647,6 +650,33 @@
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
         ],
-        "youtubeLink": "https://www.youtube.com/embed/6xG7mXzOQW0?si=T9S6vYnSEbcFd8X9"
+        "youtubeLink": "https://www.youtube-nocookie.com/embed/6xG7mXzOQW0?si=T9S6vYnSEbcFd8X9"
+    },
+    "meta": {
+        "home": {
+            "title": "Ana Sayfa",
+            "description": "Tamsoft tanıtım sitemizin ana sayfasına hoş geldiniz.",
+            "keywords": "ana sayfa, ön muhasebe, tamsoft, deneme, ücretsiz deneme"
+        },
+        "features": {
+            "title": "Özellikler",
+            "description": "Tamsoft ön muhasebe programı hakkında detaylı bilgi alın.",
+            "keywords": "tüm özellikler, stok yönetimi, cari yönetimi, satın alma, satış yönetimi, finans yönetimi, market yönetimi, crm yönetimi, entegrasyon, e-ticaret"
+        },
+        "pricing": {
+            "title": "Fiyatlandırma",
+            "description": "Tamsoft yıllık planlarını inceleyin.",
+            "keywords": "fiyat, temel plan, standart plan, pro plan, hemen al, planlar, yıllık planlar"
+        },
+        "about": {
+            "title": "Hakkımızda",
+            "description": "Şirketimiz hakkında detaylı bilgi alın.",
+            "keywords": "hakkımızda, şirket, vizyonumuz, misyonumuz, takım, ekip"
+        },
+        "contact": {
+            "title": "İletişim",
+            "description": "İletişim bilgilerimizi inceleyin. Bize ulaşın.",
+            "keywords": "iletişim, telefon, mail, konum, adres, form, mesaj, mesaj gönder"
+        }
     }
 }

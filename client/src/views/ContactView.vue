@@ -30,7 +30,7 @@
             <div
                 class="relative flex justify-center items-center w-full max-w-[1600px] h-[304px] before:absolute before:inset-0 before:right-auto before:pointer-events-none before:w-20 before:bg-gradient-to-r before:from-[#575456] before:to-[#57545600] before:z-20 after:absolute after:inset-0 after:left-auto after:pointer-events-none after:w-20 after:bg-gradient-to-l after:from-[#575456] after:to-[#57545600] after:z-20 2xl:before:w-0 2xl:after:w-0">
                 <img class="w-full h-full object-cover object-bottom"
-                    src="../images/contact.jpg">
+                    loading="lazy" src="../images/contact.jpg" alt="contact">
                 <div class="absolute inset-0 bg-black opacity-55 md:opacity-40"></div>
                 <h1 class="absolute text-[4rem] md:text-[3rem] font-semibold text-white">{{$t('contactPage.header')}}</h1>
             </div>
@@ -80,17 +80,17 @@
                 <!-- address image -->
                 <div class="w-full max-w-[50%] lg:max-w-[100%] flex flex-col items-center justify-center gap-[24px] p-[20px] sm:p-0">
                     <a class="w-full border-[2px] border-main-shadow dark:border-main shadow-md shadow-main-light rounded-lg overflow-hidden hover:shadow-lg hover:scale-[1.01] duration-200" target="_blank" href="https://www.google.com/maps/dir//Z%C3%BCmr%C3%BCtevler,+%C3%87aml%C4%B1ca+Barkod+Sistem+San.+Tic.+Ltd.+%C5%9Eti.,+Adalar+Sk.+No:14+Kat:6,+34852+Maltepe%2F%C4%B0stanbul/@40.9312371,29.1421348,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x14cabb24ce3805dd:0x7dd31a904f2f25f2!2m2!1d29.150632!2d40.928546!3e0?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">
-                        <img class="w-full" :src="$t('contactPage.img')" alt="address">
+                        <img class="w-full" loading="lazy" :src="$t('contactPage.img')" alt="address">
                     </a>
                 </div>
             </div>
         </div>
         <!-- social media -->
         <div class="fixed 2xl:hidden left-0 bottom-[400px] py-[24px] pl-[10px] pr-[16px] border border-l-0 bg-white z-20 dark:bg-dark border-main dark:border-white text-main dark:text-white text-[1.3rem] flex flex-col gap-[16px] justify-center items-center duration-200 hover:pl-[16px]" style="border-radius: 0 20px 20px 0;">
-            <a class="hover:scale-[1.1] duration-200" target="_blank" :href="$t('social.facebook')"><font-awesome-icon icon="fa-brands fa-facebook" size="lg" /></a> 
-            <a class="hover:scale-[1.1] duration-200" target="_blank" :href="$t('social.x')"><font-awesome-icon icon="fa-brands fa-twitter" size="lg" /></a> 
-            <a class="hover:scale-[1.1] duration-200" target="_blank" :href="$t('social.instagram')"><font-awesome-icon icon="fa-brands fa-instagram" size="lg" /></a> 
-            <a class="hover:scale-[1.1] duration-200" target="_blank" :href="$t('social.in')"><font-awesome-icon icon="fa-brands fa-linkedin" size="lg" /></a> 
+            <a class="hover:scale-[1.1] duration-200" rel="canonical" target="_blank" :href="$t('social.facebook')"><font-awesome-icon icon="fa-brands fa-facebook" size="lg" /></a> 
+            <a class="hover:scale-[1.1] duration-200" rel="canonical" target="_blank" :href="$t('social.x')"><font-awesome-icon icon="fa-brands fa-twitter" size="lg" /></a> 
+            <a class="hover:scale-[1.1] duration-200" rel="canonical" target="_blank" :href="$t('social.instagram')"><font-awesome-icon icon="fa-brands fa-instagram" size="lg" /></a> 
+            <a class="hover:scale-[1.1] duration-200" rel="canonical" target="_blank" :href="$t('social.in')"><font-awesome-icon icon="fa-brands fa-linkedin" size="lg" /></a> 
         </div>
     </div>
 </template>

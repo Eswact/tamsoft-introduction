@@ -14,7 +14,7 @@
     <section class="bg-white dark:bg-dark">
         <div class="container flex items-center min-h-screen px-6 py-12 mx-auto">
             <div class="flex flex-col items-center max-w-sm mx-auto text-center">
-                <img src="../images/404.gif" alt="404 Not Found" />
+                <img loading="lazy" src="../images/404.gif" alt="404 Not Found" />
                 <h1 class="mt-3 text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">{{ $t('404.title') }}</h1>
                 <p class="mt-4 text-gray-500 dark:text-gray-400">{{ $t('404.description') }}</p>
                 <div class="flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">

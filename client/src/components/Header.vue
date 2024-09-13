@@ -18,9 +18,9 @@
     <div class="w-full h-full flex justify-between items-center max-w-[1600px] pt-[20px] pb-[10px] px-[20px] lg:px-[10px]">
         <nav class="flex items-center gap-[20px] xl:gap-[10px] text-text dark:text-white md:hidden">
             <RouterLink class="py-[6px] pr-[12px] xl:pr-[10px] xl:pl-[10px]" to="/">
-                <img class="h-[58px] dark:hidden xl:hidden" src="../images/tamsoft.png" alt="Tamsoft">
-                <img class="h-[58px] hidden dark:block xl:dark:hidden" src="../images/tamsoft-dark.png" alt="Tamsoft">
-                <img class="h-[70px] hidden xl:block" src="../images/logo.png" alt="Tamsoft">
+                <img class="h-[58px] dark:hidden xl:hidden" loading="lazy" src="../images/tamsoft.png" alt="Tamsoft">
+                <img class="h-[58px] hidden dark:block xl:dark:hidden" loading="lazy" src="../images/tamsoft-dark.png" alt="Tamsoft">
+                <img class="h-[70px] hidden xl:block" loading="lazy" src="../images/logo.png" alt="Tamsoft">
             </RouterLink>
             <RouterLink :class="{ 'text-main': isActive('/features') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] relative group font-ptSans font-semibold" to="/features"> 
                 <span class="text-[1.2rem] font-semibold">{{ $t('features') }}</span>
@@ -49,8 +49,8 @@
             <DarkModeToggle />
             <!-- buttons -->
             <div class="flex items-center justify-end gap-[12px] md:hidden">
-                <a href="https://demo.tamsoft.com.tr/" target="_blank" class="gelatine cursor-pointer text-[1.15rem] md:text-[1rem] font-semibold border-[1px] border-main text-main shadow-sm shadow-main-shadow py-[6px] text-center w-[90px] md:w-[80px] rounded-md dark:text-white dark:border-white duration-200">{{ $t('login') }}</a>
-                <a class="gelatine cursor-pointer text-[1.15rem] md:text-[1rem] font-semibold border-[1px] border-main bg-main text-white shadow-md shadow-main-shadow py-[6px] text-center w-[90px] md:w-[80px] rounded-md dark:border-white duration-200">{{ $t('signup') }}</a>
+                <a :href="$t('loginLink')" target="_blank" class="gelatine cursor-pointer text-[1.15rem] md:text-[1rem] font-semibold border-[1px] border-main text-main shadow-sm shadow-main-shadow py-[6px] text-center w-[90px] md:w-[80px] rounded-md dark:text-white dark:border-white duration-200">{{ $t('login') }}</a>
+                <a :href="$t('signupLink')" class="gelatine cursor-pointer text-[1.15rem] md:text-[1rem] font-semibold border-[1px] border-main bg-main text-white shadow-md shadow-main-shadow py-[6px] text-center w-[90px] md:w-[80px] rounded-md dark:border-white duration-200">{{ $t('signup') }}</a>
             </div>
         </div>
     </div>
