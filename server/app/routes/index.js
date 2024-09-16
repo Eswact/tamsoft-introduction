@@ -5,6 +5,7 @@ const upload = multer({ storage: storage });
 
 const router = express.Router();
 const contactRoutes = require("./contact-routes");
+const adminRoutes = require("./admin-routes");
 
 chooseMethod = (method, path, func) => { 
     switch (method) {
@@ -30,6 +31,9 @@ chooseMethod = (method, path, func) => {
 
 contactRoutes.forEach(({ method, path, func }) => {
     chooseMethod(method, `/contact/${path}`, func);
+});
+adminRoutes.forEach(({ method, path, func }) => {
+    chooseMethod(method, `/admin/${path}`, func);
 });
 
 module.exports = router;

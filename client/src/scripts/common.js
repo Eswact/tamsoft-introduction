@@ -18,4 +18,9 @@ function useFadeIn() {
     });
 }
 
-export {useFadeIn};
+const uploadsUrl=`${import.meta.env.VITE_REQUEST_URL}/uploads/images/`
+function getImageFromUploads(name) {
+    return `${uploadsUrl}${name}`;
+}
+
+export {useFadeIn, getImageFromUploads};

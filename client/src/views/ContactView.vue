@@ -1,5 +1,6 @@
 <script setup>
     import AjaxScripts from '../scripts/ajaxScripts.js';
+    import { getImageFromUploads } from '../scripts/common';
     import { toast } from 'vue3-toastify';
     import { useI18n } from 'vue-i18n';
     const { t } = useI18n();
@@ -89,8 +90,8 @@
                 </div>
                 <!-- address image -->
                 <div class="w-full max-w-[50%] lg:max-w-[100%] flex flex-col items-center justify-center gap-[24px] p-[20px] sm:p-0">
-                    <a class="w-full border-[2px] border-main-shadow dark:border-main shadow-md shadow-main-light rounded-lg overflow-hidden hover:shadow-lg hover:scale-[1.01] duration-200" target="_blank" href="https://www.google.com/maps/dir//Z%C3%BCmr%C3%BCtevler,+%C3%87aml%C4%B1ca+Barkod+Sistem+San.+Tic.+Ltd.+%C5%9Eti.,+Adalar+Sk.+No:14+Kat:6,+34852+Maltepe%2F%C4%B0stanbul/@40.9312371,29.1421348,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x14cabb24ce3805dd:0x7dd31a904f2f25f2!2m2!1d29.150632!2d40.928546!3e0?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">
-                        <img class="w-full" loading="lazy" :src="$t('contactPage.img')" alt="address">
+                    <a class="w-full border-[2px] border-main-shadow dark:border-main shadow-md shadow-main-light rounded-lg overflow-hidden hover:shadow-lg hover:scale-[1.01] duration-200" target="_blank" :href="$t('contactPage.addressLink')">
+                        <img class="w-full" loading="lazy" :src="getImageFromUploads($t('contactPage.img'))" alt="address">
                     </a>
                 </div>
             </div>

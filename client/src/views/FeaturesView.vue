@@ -5,7 +5,7 @@
     import 'swiper/css/pagination';
     import 'swiper/css/navigation';
     import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-    import { useFadeIn } from '../scripts/common';
+    import { useFadeIn, getImageFromUploads } from '../scripts/common';
     import languageJson from '../locales/tr.json'
 
     const modules = [Autoplay, Pagination, Navigation];
@@ -74,7 +74,7 @@
                                         <div class="border-b-[2px] border-r-[2px] border-main dark:border-white w-[64px] h-[64px] absolute right-0 bottom-0"></div>
                                     </div>
                                     <div class="w-[50%] xl:w-[40%] md:w-full flex justify-center items-center">
-                                        <img class="w-full max-w-[410px] xl:max-w-[300px] max-h-[340px] xl:max-h-[240px] object-contain object-bottom" loading="lazy" :src="$t(`propertiesPage.banners[${item-1}].img`)" :alt="$t(`propertiesPage.banners[${item-1}].header`)">
+                                        <img class="w-full max-w-[410px] xl:max-w-[300px] max-h-[340px] xl:max-h-[240px] object-contain object-bottom" loading="lazy" :src="getImageFromUploads($t(`propertiesPage.banners[${item-1}].img`))" :alt="$t(`propertiesPage.banners[${item-1}].header`)">
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                                     <div class="relative w-[45%] h-[500px] lg:hidden p-[50px]">
                                         <img class="fade-in w-full h-full object-cover rounded-lg shadow-[50px_50px_0_0] shadow-third-shadow"
                                             loading="lazy"
-                                            :src="$t(`propertiesPage.allProps.props[${item-1}].src`)"
+                                            :src="getImageFromUploads($t(`propertiesPage.allProps.props[${item-1}].src`))"
                                             :alt="$t(`propertiesPage.allProps.props[${item-1}].head`)">
                                     </div>
                                 </div>
@@ -158,7 +158,7 @@
                                     <div class="relative w-[45%] h-[500px] lg:hidden p-[50px]">
                                         <img class="fade-in w-full h-full object-cover rounded-lg shadow-[-50px_-50px_0_0] shadow-third-shadow"
                                             loading="lazy"
-                                            :src="$t(`propertiesPage.allProps.props[${item-1}].src`)"
+                                            :src="getImageFromUploads($t(`propertiesPage.allProps.props[${item-1}].src`))"
                                             :alt="$t(`propertiesPage.allProps.props[${item-1}].head`)">
                                     </div>
                                     <div class="lg:w-full lg:max-w-[100%] lg:min-h-0 flex flex-col gap-[30px] max-w-[50%] px-[30px] lg:p-[20px]">

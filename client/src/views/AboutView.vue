@@ -1,6 +1,6 @@
 <script setup>
     import { onMounted } from 'vue';
-    import { useFadeIn } from '../scripts/common';
+    import { useFadeIn, getImageFromUploads } from '../scripts/common';
     import languageJson from '../locales/tr.json'
     const teamSize = languageJson.aboutPage.ourTeam.team.length;
     useFadeIn();
@@ -22,9 +22,9 @@
             </div>
           </div>
           <div class="lg:w-full lg:h-[unset] lg:gap-0 lg:p-0 relative flex flex-col items-center justify-center w-[50%] h-[520px]">
-            <img class="absolute lg:rounded-none lg:max-h-[300px] xl:relative xl:w-full xl:top-0 xl:right-0 xl:h-auto object-cover w-[50%] h-[200px] top-[30px] right-[50px] rounded-md shadow-sm" loading="lazy" :src="$t('aboutPage.aboutUs.img1')" alt="About Us"/>
+            <img class="absolute lg:rounded-none lg:max-h-[300px] xl:relative xl:w-full xl:top-0 xl:right-0 xl:h-auto object-cover w-[50%] h-[200px] top-[30px] right-[50px] rounded-md shadow-sm" loading="lazy" :src="getImageFromUploads($t('aboutPage.aboutUs.img1'))" alt="About Us"/>
             <div class="xl:hidden w-[360px] h-[340px] bg-main-light rounded-md border border-main-shadow shadow-sm"></div>
-            <img class="absolute xl:hidden object-cover w-[50%] h-[200px] bottom-[30px] left-[50px] rounded-md shadow-sm" loading="lazy" :src="$t('aboutPage.aboutUs.img2')" alt="About Us"/>
+            <img class="absolute xl:hidden object-cover w-[50%] h-[200px] bottom-[30px] left-[50px] rounded-md shadow-sm" loading="lazy" :src="getImageFromUploads($t('aboutPage.aboutUs.img2'))" alt="About Us"/>
           </div>
       </div>
       <!-- statistics -->
@@ -57,7 +57,7 @@
       <div class="fade-in w-full lg:flex-col flex gap-[30px] justify-between items-center p-[20px] pt-0">
         <div class="relative w-[500px] h-[500px] lg:w-full lg:h-[400px] lg:p-[20px] p-[50px]">
           <div class="w-full h-full bg-main-light rounded-lg lg:hidden"></div>
-          <img class="absolute bottom-0 right-0 lg:relative lg:w-full lg:h-full w-[400px] h-[400px] object-cover rounded-lg" loading="lazy" :src="$t('aboutPage.visionAndMission.img')" alt="Vision And Mission">
+          <img class="absolute bottom-0 right-0 lg:relative lg:w-full lg:h-full w-[400px] h-[400px] object-cover rounded-lg" loading="lazy" :src="getImageFromUploads($t('aboutPage.visionAndMission.img'))" alt="Vision And Mission">
         </div>
         <div class="lg:w-full lg:max-w-[100%] lg:min-h-0 flex flex-col gap-[40px] max-w-[50%] px-[40px] lg:p-[20px]">
             <p class="h-0 text-[1.2rem] font-bold text-third">{{$t('aboutPage.visionAndMission.head')}}</p>
@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="z-20">
-              <img class="bg-[#F9E9EC] w-[120px] h-[120px] rounded-full" loading="lazy" :src="$t(`aboutPage.ourTeam.team[${item-1}].img`)" :alt="$t(`aboutPage.ourTeam.team[${item-1}].name`)">
+              <img class="bg-[#F9E9EC] w-[120px] h-[120px] rounded-full" loading="lazy" :src="getImageFromUploads($t(`aboutPage.ourTeam.team[${item-1}].img`))" :alt="$t(`aboutPage.ourTeam.team[${item-1}].name`)">
             </div>
             <div class="profileBg z-10 absolute top-[-200px] right-[-200px] w-[400px] h-[400px] rounded-full"></div>
           </div>

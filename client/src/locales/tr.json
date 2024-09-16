@@ -148,7 +148,8 @@
         "yourMailAddress": "Mail Adresiniz",
         "yourMessage": "Mesajınız",
         "submit": "Gönder",
-        "img": "/src/images/address.png"
+        "img": "address.png",
+        "addressLink": "https://www.google.com/maps/dir//Z%C3%BCmr%C3%BCtevler,+%C3%87aml%C4%B1ca+Barkod+Sistem+San.+Tic.+Ltd.+%C5%9Eti.,+Adalar+Sk.+No:14+Kat:6,+34852+Maltepe%2F%C4%B0stanbul/@40.9312371,29.1421348,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x14cabb24ce3805dd:0x7dd31a904f2f25f2!2m2!1d29.150632!2d40.928546!3e0?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
     },
     "aboutPage": {
         "companyInfos": {
@@ -168,15 +169,15 @@
             "header": "Türkiye’nin yeni nesil web tabanlı ERP yazılımı",
             "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.",
             "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?",
-            "img1": "https://dbh-group.com/blog/wp-content/uploads/2023/05/3d-office-design-interior-2021-12-09-02-43-07-utc-scaled.jpg",
-            "img2": "https://asperbrothers.com/wp-content/uploads/2022/01/software-team_BB-853x470.jpg"
+            "img1": "about-1.jpg",
+            "img2": "about-2.jpg"
         },
         "visionAndMission": {
             "head": "Vizyonumuz & Misyonumuz",
             "header": "Tamsoft ile işine özgürlük kat",
             "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.",
             "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?",
-            "img": "https://img.freepik.com/free-photo/young-business-woman-working-laptop-office_1303-22814.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid"
+            "img": "about-3.jpg"
         },
         "ourTeam": {
             "head": "Ekibimiz",
@@ -185,7 +186,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -193,7 +194,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -201,7 +202,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -209,7 +210,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -217,7 +218,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -225,7 +226,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -233,7 +234,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -241,7 +242,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -254,12 +255,12 @@
             {
                 "header": "Muhasebenizi Kolaylaştırın",
                 "description": "Yüzlerce fatura, irsaliye ve diğer dökümanlarınızı manuel olarak takip etmeye çalışmak zor olabilir. Ancak Tamsoft Ön Muhasebe Programı, muhasebe süreçlerinizi otomatize ederek, hatasız ve hızlı bir iş akışı sunar.",
-                "img": "/src/images/trafficData.gif"
+                "img": "trafficData.gif"
             },
             {
                 "header": "İş Akışınızı Hızlandırın",
                 "description": "Tamsoft yazılımı, işletmenizin iş süreçlerini hızlandırarak daha verimli ve düzenli bir çalışma ortamı sağlar.",
-                "img": "/src/images/time.gif"
+                "img": "time.gif"
             }
         ],
         "allProps": {
@@ -329,7 +330,7 @@
                     "header": "Tamsoft stok yönetimi modulü",
                     "p1": "Tamsoft'un Ön Muhasebe Programı Stok Yönetimi modülü, işletmelere stoklarını her yerden ve her zaman yönetme imkanı sunan bulut tabanlı bir sistemdir. Detaylı stok kartları, esnek birim ve barkod yönetimi, grup ve kategori yönetimi gibi özelliklerle stokları etkin şekilde takip etmeyi sağlar. Çoklu şube ve depo yönetimi, fiyatlandırma stratejilerinin esnek yönetimi ile stokları optimize etmeye olanak tanır.",
                     "p2": "Ayrıca, mobil uygulama entegrasyonu sayesinde saha satışları, şubeler arası sevkiyat ve hızlı fiyat güncelleme işlemleri kolayca yapılabilir. Bu özellikler, işletmelerin maliyetleri düşürerek stok yönetiminde verimliliği artırmasına yardımcı olur.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/mldzgea2x0cc-tmsftcm-cndteem/w:auto/h:auto/q:auto/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-depo-stok-yonetimi-02-1024x683.jpg",
+                    "src": "stok-yonetimi.png",
                     "cards": [
                         {
                             "header": "Uzaktan Erişim",
@@ -375,7 +376,7 @@
                     "header": "Tamsoft cari yönetim modülü",
                     "p1": "Tamsoft Cari Yönetimi, işletmelerin müşteriler ve tedarikçilerle olan tüm ticari işlemlerini etkin bir şekilde yönetmelerini sağlayan kapsamlı bir çözümdür. Gerçek zamanlı bilgi takibi, farklı para birimleri ile çalışabilme ve mobil erişim gibi özelliklerle finansal süreçleri daha şeffaf ve kontrol edilebilir hale getirir. E-Mutabakat ve E-Müstahsil gibi dijital çözümlerle muhasebe süreçleri daha hızlı ve hatasız bir şekilde yönetilir.",
                     "p2": "Bu sistem, cari hesapları doğru bir şekilde yöneterek ticari ilişkilerin sürdürülebilir olmasını sağlar ve işletmelere daha sağlıklı finansal stratejiler oluşturma imkanı sunar. Hem alacakların hem de borçların takibi kolaylaşırken, enflasyon riskine karşı çeşitli önlemler de alınabilir.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/mldzgea2x0cc-tmsftcm-cndteem/w:auto/h:auto/q:auto/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-eticaret-yonetimi-04-1024x683.jpg",
+                    "src": "cari-yonetimi.png",
                     "cards": [
                         {
                             "header": "Gerçek Zamanlı Bilgi Takibi",
@@ -410,7 +411,7 @@
                     "header": "Tamsoft satın alma yönetim modülü",
                     "p1": "Tamsoft Satın Alma Yönetimi, işletmelerin satın alma süreçlerini etkili bir şekilde yönetmelerine olanak sağlayan kapsamlı bir sistemdir. Doğru stok yönetimi, mobil erişim, farklı satış kanalları için optimize edilmiş satın alma ve formüllü fiyatlandırma gibi özelliklerle, işletmelerin maliyetlerini kontrol altında tutarken kar marjlarını artırmalarına yardımcı olur. Bu sistem, satın alma süreçlerini daha verimli ve esnek hale getirerek işletmelere sürdürülebilir karlılık sağlar.",
                     "p2": "Geniş işlevsellik yelpazesi ile işletmeler, tekliften faturalandırmaya kadar tüm satın alma adımlarını kolayca yönetebilir. Bu, işletmelere daha etkin bir maliyet yönetimi ve tedarik süreçlerinde esneklik kazandırır.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-satinalma-yonetimi-02.jpg",
+                    "src": "satinalma-yonetimi.png",
                     "cards": [
                         {
                             "header": "Doğru Stok Yönetimi",
@@ -440,7 +441,7 @@
                     "header": "Tamsoft satış yönetim modülü",
                     "p1": "Tamsoft Satış Yönetimi, işletmelerin satış işlemlerini entegre ve verimli bir şekilde yönetmelerine olanak tanıyan kapsamlı bir çözümdür. Tekliften faturalandırmaya kadar tüm satış süreçlerini kolayca yönetme, farklı müşteri gruplarına özel fiyat listeleri oluşturma ve sahada el terminali ile satış yapma gibi özelliklerle satış operasyonlarını optimize eder. Entegre modüller ve bulut teknolojisi ile işletmeler, satış verilerine her yerden erişim sağlayarak stratejik kararlarını bilinçli bir şekilde alabilirler.",
                     "p2": "Bu sistem, çoklu şube yönetimi, farklı fiyat tiplerini cari hesaplara atama ve detaylı raporlama imkanlarıyla işletmelerin satış süreçlerini daha verimli hale getirir. İşletmelere sunduğu esneklik ve kapsamlı analizlerle müşteri ilişkilerini güçlendirir ve satış verimliliğini artırır.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-satis-yonetimi-2.jpg",
+                    "src": "satis-yonetimi.png",
                     "cards": [
                         {
                             "header": "Cari Hesap Yönetiminin Doğru Kurgulanması",
@@ -478,7 +479,7 @@
                     "header": "Tamsoft Finans Yönetimi Modülü",
                     "p1": "Tamsoft Finans Yönetimi, işletmelerin finansal işlemlerini doğru ve etkin bir şekilde yönetmelerine olanak sağlayan kapsamlı bir ön muhasebe programıdır. Bu yazılım, finans modülü ile cari hesap modülünün entegrasyonu aracılığıyla işletmelerin finansal işlemlerini düzenli ve verimli bir şekilde yapmalarını destekler.",
                     "p2": "Bu yazılım, işletmelerin ödeme güçlükleri yaşamasını önlemek ve gereksiz kredi maliyetlerinden kaçınmak için finansal işlemlerini düzenli bir şekilde yönetmelerine olanak sağlar. Bulut teknolojisi sayesinde, mobil ve PC platformlarından erişilebilir hale gelir, bu da işletmelerin finansal işlemlerini istedikleri her yerden gerçekleştirme imkanı sunar.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-finans-yonetimi-01-1.jpg",
+                    "src": "finans-yonetimi.png",
                     "cards": [
                         {
                             "header": "Entegrasyon ve Yapılandırma",
@@ -520,7 +521,7 @@
                     "header": "Tamsoft Market Yönetim Modülü",
                     "p1": "Tamsoft Market Yönetimi, muhasebe yazılımı içindeki market ve mağaza modülü aracılığıyla en büyük perakende ticaret hacmini yönetmek için son derece verimli bir çözüm sunar. Bu kapsamlı market modülü, çeşitli unsurları bir araya getirerek geleneksel ticaretin can damarı olarak hizmet vermektedir.",
                     "p2": "Tamsoft Market Yönetimi, kasalarınızı ve kasiyerlerinizi takip etmenize, şubeleri ve depoları denetlemenize ve etiket baskısı gibi işlevleri kullanabilmenize olanak tanır. İşte bu sistemin sağladığı bazı özellikler:",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-Tamsoft-Market-yonetimi-01.jpg",
+                    "src": "Market-yonetimi.png",
                     "cards": [
                         {
                             "header": "Kasaya Bilgi Gönderme",
@@ -558,7 +559,7 @@
                     "header": "Tamsoft Ön Muhasebe Programı CRM Yönetimi",
                     "p1": "CRM, müşteri ilişkileri yönetimi anlamına gelir ve Tamsoft CRM, bu alanda şirketlere çözüm sunan bir yazılımdır. Peki, nedir bu Tamsoft CRM ve ne işe yarar?",
                     "p2": "Müşteri sadakati oluşturmak ve sürdürmek, her işletmenin en temel hedeflerinden biridir. Peki ya siz ne yapıyorsunuz?",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:auto/h:auto/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-crm-yonetimi-01.jpg",
+                    "src": "crm-yonetimi.png",
                     "cards": [
                       {
                         "header": "Servis Fişi",
@@ -596,7 +597,7 @@
                     "header": "Tamsoft Ön Muhasebe Programı E-Ticaret Yönetimi",
                     "p1": "Tamsoft E-Ticaret Yönetimi, işletmelerin e-ticaret operasyonlarını merkezi bir platformdan yönetmelerine olanak sağlayan bir çözümdür. İşte, bu sistemin işletmelere sağlayabileceği avantajlar ve özelliklerden bazıları:",
                     "p2": "Bu özellikler ve avantajlar, Tamsoft E-Ticaret Yönetimi’nin, işletmelerin e-ticaret operasyonlarını daha etkin, verimli ve otomatize bir şekilde yönetmelerine yardımcı olabilecek kapsamlı bir çözüm sunduğunu göstermektedir.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-eticaret-yonetimi-01.jpg",
+                    "src": "eticaret-yonetimi.png",
                     "cards": [
                       {
                         "header": "Entegre Yönetim Platformu",
@@ -644,27 +645,27 @@
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, odit unde. Sint, expedita quidem quos fugit similique quia maiores officia recusandae aut nobis culpa! Rem nisi facilis quod voluptas voluptatem!",
         "buttonText": "Hemen Deneyin",
         "buttonLink": "https://demo.tamsoft.com.tr/",
-        "image1": "/src/images/report-bro.svg",
-        "image2": "/src/images/report-pana.svg",
+        "image1": "report-bro.svg",
+        "image2": "report-pana.svg",
         "icons": [
             {
-                "icon": "/src/images/star.svg",
+                "icon": "star.svg",
                 "name": "Hızlı"
             },
             {
-                "icon": "/src/images/security.svg",
+                "icon": "security.svg",
                 "name": "Güvenilir"
             },
             {
-                "icon": "/src/images/bulb.svg",
+                "icon": "bulb.svg",
                 "name": "Çözüm Odaklı"
             },
             {
-                "icon": "/src/images/network.svg",
+                "icon": "network.svg",
                 "name": "Çok Yönlü"
             },
             {
-                "icon": "/src/images/chat.svg",
+                "icon": "chat.svg",
                 "name": "Destek"
             }
         ],

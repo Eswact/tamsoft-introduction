@@ -148,7 +148,8 @@
         "yourMailAddress": "Your Mail Address",
         "yourMessage": "Your Message",
         "submit": "Submit",
-        "img": "/src/images/address.png"
+        "img": "address.png",
+        "addressLink": "https://www.google.com/maps/dir//Z%C3%BCmr%C3%BCtevler,+%C3%87aml%C4%B1ca+Barkod+Sistem+San.+Tic.+Ltd.+%C5%9Eti.,+Adalar+Sk.+No:14+Kat:6,+34852+Maltepe%2F%C4%B0stanbul/@40.9312371,29.1421348,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x14cabb24ce3805dd:0x7dd31a904f2f25f2!2m2!1d29.150632!2d40.928546!3e0?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
     },
     "aboutPage": {
         "companyInfos": {
@@ -168,15 +169,15 @@
             "header": "Turkey's new generation web-based ERP software",
             "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.",
             "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?",
-            "img1": "https://dbh-group.com/blog/wp-content/uploads/2023/05/3d-office-design-interior-2021-12-09-02-43-07-utc-scaled.jpg",
-            "img2": "https://asperbrothers.com/wp-content/uploads/2022/01/software-team_BB-853x470.jpg"
+            "img1": "about-1.jpg",
+            "img2": "about-2.jpg"
         },
         "visionAndMission": {
             "head": "Our Vision & Mission",
             "header": "Freedom to your business with Tamsoft",
             "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nostrum deserunt ad totam nulla corporis et dolores odio vel laborum optio laboriosam labore voluptates, architecto ut laudantium amet distinctio repellat.",
             "p2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium quae pariatur dolorum! Sit accusantium illum odit soluta blanditiis quasi iure, ad incidunt vitae, dolore veniam maxime nam et commodi?",
-            "img": "https://img.freepik.com/free-photo/young-business-woman-working-laptop-office_1303-22814.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid"
+            "img": "about-3.jpg"
         },
         "ourTeam": {
             "head": "Our Team",
@@ -185,7 +186,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -193,7 +194,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -201,7 +202,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -209,7 +210,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -217,7 +218,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -225,7 +226,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -233,7 +234,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -241,7 +242,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -254,12 +255,12 @@
             {
                 "header": "Simplify Your Accounting",
                 "description": "Tracking hundreds of invoices, waybills, and other documents manually can be challenging. However, the Tamsoft Pre-Accounting Program automates your accounting processes, offering an error-free and swift workflow.",
-                "img": "/src/images/trafficData.gif"
+                "img": "trafficData.gif"
             },
             {
                 "header": "Accelerate Your Workflow",
                 "description": "Tamsoft software speeds up your business processes, providing a more efficient and organized work environment.",
-                "img": "/src/images/time.gif"
+                "img": "time.gif"
             }
         ],
         "allProps": {
@@ -329,7 +330,7 @@
                     "header": "Tamsoft Stock Management Module",
                     "p1": "Tamsoft's Pre-Accounting Program Stock Management module is a cloud-based system that allows businesses to manage their stocks anytime and anywhere. With features such as detailed stock cards, flexible unit and barcode management, and group and category management, it provides efficient stock tracking. Multi-branch and warehouse management and flexible pricing strategies enable stock optimization.",
                     "p2": "Additionally, with mobile application integration, field sales, inter-branch shipping, and quick price updates can be easily carried out. These features help businesses reduce costs and increase efficiency in stock management.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/mldzgea2x0cc-tmsftcm-cndteem/w:auto/h:auto/q:auto/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-depo-stok-yonetimi-02-1024x683.jpg",
+                    "src": "stok-yonetimi.png",
                     "cards": [
                         {
                             "header": "Remote Access",
@@ -375,7 +376,7 @@
                     "header": "Tamsoft Account Management Module",
                     "p1": "Tamsoft Account Management is a comprehensive solution that allows businesses to efficiently manage all their commercial transactions with customers and suppliers. Features such as real-time information tracking, working with different currencies, and mobile access make financial processes more transparent and controllable. Digital solutions like e-Reconciliation and e-Producer ensure faster and more accurate accounting processes.",
                     "p2": "This system ensures that commercial relationships remain sustainable by managing accounts accurately and enables businesses to develop healthier financial strategies. While tracking both receivables and payables becomes easier, various precautions can be taken against inflation risk.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/mldzgea2x0cc-tmsftcm-cndteem/w:auto/h:auto/q:auto/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-eticaret-yonetimi-04-1024x683.jpg",
+                    "src": "eticaret-yonetimi.png",
                     "cards": [
                         {
                             "header": "Real-Time Information Tracking",
@@ -409,7 +410,7 @@
                     "header": "Tamsoft Procurement Management Module",
                     "p1": "Tamsoft Procurement Management is a comprehensive system that allows businesses to manage their procurement processes effectively. With features such as correct stock management, mobile access, optimized purchasing for different sales channels, and formula-based pricing, it helps businesses control their costs while increasing their profit margins. This system makes purchasing processes more efficient and flexible, providing businesses with sustainable profitability.",
                     "p2": "With a wide range of functionality, businesses can easily manage all purchasing steps, from quoting to invoicing. This provides businesses with more effective cost management and flexibility in the supply processes.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-satinalma-yonetimi-02.jpg",
+                    "src": "satinalma-yonetimi.png",
                     "cards": [
                         {
                             "header": "Accurate Stock Management",
@@ -439,7 +440,7 @@
                     "header": "Tamsoft Sales Management Module",
                     "p1": "Tamsoft Sales Management is a comprehensive solution that enables businesses to manage their sales transactions in an integrated and efficient way. With features like easy management of all sales processes from quoting to invoicing, creating special price lists for different customer groups, and making sales with a handheld terminal in the field, it optimizes sales operations. With integrated modules and cloud technology, businesses can access sales data from anywhere, making strategic decisions more informed.",
                     "p2": "This system makes sales processes more efficient by offering multi-branch management, assigning different price types to accounts, and detailed reporting capabilities. It enhances customer relationships and increases sales efficiency with the flexibility and comprehensive analysis it provides to businesses.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-satis-yonetimi-2.jpg",
+                    "src": "satis-yonetimi.png",
                     "cards": [
                         {
                             "header": "Accurate Account Management Setup",
@@ -477,7 +478,7 @@
                     "header": "Tamsoft Finance Management Module",
                     "p1": "Tamsoft Finance Management is a comprehensive accounting software that enables businesses to manage their financial transactions accurately and efficiently. This software supports businesses in conducting their financial transactions in an organized and efficient manner through the integration of the finance module with the accounts module.",
                     "p2": "This software allows businesses to manage their financial transactions regularly, preventing financial difficulties and unnecessary credit costs. Thanks to cloud technology, it becomes accessible from both mobile and PC platforms, providing businesses with the flexibility to handle financial transactions from anywhere.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-finans-yonetimi-01-1.jpg",
+                    "src": "finans-yonetimi.png",
                     "cards": [
                         {
                             "header": "Integration and Configuration",
@@ -519,7 +520,7 @@
                     "header": "Tamsoft Market Management Module",
                     "p1": "Tamsoft Market Management is a highly efficient solution for managing the largest retail trade volume through the market and store module within the accounting software. This comprehensive market module serves as the backbone of traditional trade by combining various elements together.",
                     "p2": "Tamsoft Market Management allows you to monitor your cash registers and cashiers, oversee branches and warehouses, and utilize functions such as label printing. Here are some of the capabilities provided by this system:",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-Tamsoft-Market-yonetimi-01.jpg",
+                    "src": "Market-yonetimi.png",
                     "cards": [
                         {
                             "header": "Sending Information to Cash Registers",
@@ -557,7 +558,7 @@
                     "header": "Tamsoft Accounting Software CRM Management",
                     "p1": "CRM stands for customer relationship management, and Tamsoft CRM is a software solution that provides companies with tools in this area. So, what is Tamsoft CRM, and what does it do?",
                     "p2": "Building and maintaining customer loyalty is one of the primary goals of any business. But what are you doing to achieve this?",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:auto/h:auto/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-crm-yonetimi-01.jpg",
+                    "src": "crm-yonetimi.png",
                     "cards": [
                       {
                         "header": "Service Ticket",
@@ -595,7 +596,7 @@
                     "header": "Tamsoft Accounting Software E-Commerce Management",
                     "p1": "Tamsoft E-Commerce Management is a solution that allows businesses to manage their e-commerce operations from a centralized platform. Here are some of the advantages and features this system can provide to businesses:",
                     "p2": "These features and benefits demonstrate that Tamsoft E-Commerce Management offers a comprehensive solution to help businesses manage their e-commerce operations more efficiently, effectively, and automatically.",
-                    "src": "https://mldzgea2x0cc.i.optimole.com/cb:RTl3.d8a4/w:1024/h:683/q:mauto/f:best/https://tamsoft.com.tr/wp-content/uploads/Tamsoft-bulut-yazilimi-eticaret-yonetimi-01.jpg",
+                    "src": "eticaret-yonetimi.png",
                     "cards": [
                       {
                         "header": "Integrated Management Platform",
@@ -643,27 +644,27 @@
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, odit unde. Sint, expedita quidem quos fugit similique quia maiores officia recusandae aut nobis culpa! Rem nisi facilis quod voluptas voluptatem!",
         "buttonText": "Try Now",
         "buttonLink": "https://demo.tamsoft.com.tr/",
-        "image1": "/src/images/report-bro.svg",
-        "image2": "/src/images/report-pana.svg",
+        "image1": "report-bro.svg",
+        "image2": "report-pana.svg",
         "icons": [
             {
-                "icon": "/src/images/star.svg",
+                "icon": "star.svg",
                 "name": "Fast"
             },
             {
-                "icon": "/src/images/security.svg",
+                "icon": "security.svg",
                 "name": "Trustworthy"
             },
             {
-                "icon": "/src/images/bulb.svg",
+                "icon": "bulb.svg",
                 "name": "Solution Oriented"
             },
             {
-                "icon": "/src/images/network.svg",
+                "icon": "network.svg",
                 "name": "Versatile"
             },
             {
-                "icon": "/src/images/chat.svg",
+                "icon": "chat.svg",
                 "name": "Support"
             }
         ],
