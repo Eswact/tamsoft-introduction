@@ -16,7 +16,7 @@
         <div class="fade-in lg:justify-center lg:w-full lg:items-center flex flex-col justify-start items-start xl:gap-[20px] w-[50%] 2xl:w-[55%]">
           <img class="w-[575px] 2xl:w-[420px] xl:w-[320px]" src="../images/tamsoft-text-logo.png" alt="Tamsoft">
           <div class="flex flex-col justify-start items-start lg:justify-center lg:items-center gap-[20px] xl:gap-[30px] px-[44px] xl:px-[20px]">
-            <h1 class="text-[2.2rem] 2xl:text-[2rem] xl:text-[1.5rem] lg:text-center text-third font-bold underline">{{ $t('homePage.title') }}</h1>
+            <h1 class="text-[2.2rem] 2xl:text-[2rem] xl:text-[1.5rem] lg:text-center text-third font-bold underline whitespace-nowrap">{{ $t('homePage.title') }}</h1>
             <p class="text-[1.25rem] 2xl:text-[1.2rem] xl:text-[1.1rem] font-semibold text-justify">{{ $t('homePage.description') }}</p>
             <a :href="$t('homePage.buttonLink')" class="text-[1.4rem] mt-[10px] font-bold px-[24px] py-[12px] border border-third rounded-xl bg-third-light text-third shadow-lg shadow-third-shadow hover:bg-third hover:text-white duration-200">{{ $t('homePage.buttonText') }}</a>
           </div>
@@ -28,7 +28,7 @@
       <div class="fade-in w-full max-w-[1600px] flex justify-around items-center gap-[20px] flex-wrap">
         <div v-for="item in iconCount" :key="item" class="flex flex-col justify-center items-center w-[120px] rounded-lg text-text dark:text-white gap-[8px] ">
           <img class="w-[80px] xl:w-[64px]" loading="lazy" :src="getImageFromUploads($t(`homePage.icons[${item-1}].icon`))" :alt="$t(`homePage.icons[${item-1}].name`)">
-          <span class="text-[1.25rem] text-center xl:text-[1.1rem] font-semibold">{{ $t(`homePage.icons[${item-1}].name`) }}</span>
+          <span class="text-[1.25rem] text-center xl:text-[1.1rem] font-semibold whitespace-nowrap">{{ $t(`homePage.icons[${item-1}].name`) }}</span>
         </div>
       </div>
     </div>
