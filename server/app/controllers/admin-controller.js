@@ -1,12 +1,22 @@
 const db = require("../models");
 const languages = db.languages;
 
-const aboutCompanyInfos = async (req, res) => {
+const VerifyToken = async (req, res) => {
+  //auth middleware
+  res.json({ valid: true });
+}
+
+const AboutCompanyInfos = async (req, res) => {
   try {
     const thisLanguage = await languages.findOne({ name: req.params.name });
+    // const updatedData = req.body.companyInfos;
+    // const thisLanguage = await languages.findOneAndUpdate(
+    //   { name: req.params.name },
+    //   { $set: { 'data.aboutPage.companyInfos': updatedData } },
+    //   { new: true }
+    // );
     if (thisLanguage) {
-      res.json(thisLanguage.data.aboutPage.companyInfos);
-      //update
+      res.json(thisLanguage);
     } else {
       res.status(404).send({ message: "Language not found." });
     }
@@ -16,5 +26,6 @@ const aboutCompanyInfos = async (req, res) => {
 };
 
 module.exports = {
-    aboutCompanyInfos
+    VerifyToken,
+    AboutCompanyInfos
 };

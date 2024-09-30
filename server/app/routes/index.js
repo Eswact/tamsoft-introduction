@@ -3,11 +3,11 @@ const multer = require('multer');
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 const router = express.Router();
+const authMiddleware = require('../middlewares/auth-middleware');
 const contactRoutes = require("./contact-routes");
 const languageRoutes = require("./language-routes");
 const userRoutes = require("./user-routes");
 const adminRoutes = require("./admin-routes");
-const authMiddleware = require('../middlewares/auth-middleware');
 
 const methodHandler = {
     get: router.get.bind(router),
@@ -36,9 +36,9 @@ const addRoutes = (routes, basePath = '', middleware = null) => {
     });
 };
 
+addRoutes(adminRoutes, '/admin', authMiddleware); // user control
 addRoutes(contactRoutes, '/contact');
 addRoutes(languageRoutes, '/language');
 addRoutes(userRoutes, '/user');
-addRoutes(adminRoutes, '/admin', authMiddleware); // user control
 
 module.exports = router;

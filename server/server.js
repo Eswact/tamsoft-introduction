@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require('path');
-const session = require('express-session');
+const cookieSession = require('cookie-session');
 require("dotenv").config();
 
 const app = express();
@@ -40,20 +40,17 @@ db.mongoose
     process.exit();
   });
 
-
-// cookie & session
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: false,
-  // store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }), // MongoDB'de sakla
-  cookie: {
-    secure: process.env.NODE_ENV === 'production',
+// cookie-session
+app.use(
+  cookieSession({
+    name: 'session',
+    keys: [process.env.SESSION_SECRET],
+    // maxAge: 60 * 60 * 1000,
     httpOnly: true,
-    sameSite: 'none',
-    maxAge: 1000 * 60 * 60 * 1 // 1 hour
-  }
-}));
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+  })
+);
 
 // route
 app.get("/", (req, res) => { res.json({ message: "Welcome to Server." }); });

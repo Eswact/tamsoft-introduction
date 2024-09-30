@@ -5,9 +5,12 @@ const User = db.users;
 
 const authMiddleware = async (req, res, next) => {
   let token;
+  console.log(req.session.user);
+  
   if (req.session && req.session.user) {
     token = req.session.user;
-  } else if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) { //postman
+  } 
+  else if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) { //postman
     token = req.headers.authorization.split(' ')[1];
   }
 
