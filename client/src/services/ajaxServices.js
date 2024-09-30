@@ -15,7 +15,7 @@ const fetchData = async (endpoint, onSuccess, onError) => {
 // BASIC POST
 const postData = async (endpoint, data, onSuccess, onError) => {
   try {
-    const response = await apiClient.post(endpoint, data);
+    const response = await apiClient.post(endpoint, data, { withCredentials: true }); // with Cookies
     onSuccess(response.data);
   } catch (error) {
     onError(error);

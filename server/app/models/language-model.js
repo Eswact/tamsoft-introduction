@@ -3,7 +3,6 @@ module.exports = mongoose => {
       "languages",
       mongoose.Schema(
         {
-            _id: String,
             name: String,
             data: mongoose.Schema.Types.Mixed
         },

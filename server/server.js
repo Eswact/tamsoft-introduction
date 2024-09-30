@@ -2,12 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require('path');
+const session = require('express-session');
 require("dotenv").config();
 
 const app = express();
 
 const corsOptions = {
-  origin: ['http://localhost:3752'],
+  origin: ['http://localhost:3752', 'http://localhost:3072'],
+  credentials: true
 };
 app.use(cors(corsOptions));
 
@@ -37,6 +39,21 @@ db.mongoose
     console.log("Cannot connect to the database!", err);
     process.exit();
   });
+
+
+// cookie & session
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false,
+  // store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }), // MongoDB'de sakla
+  cookie: {
+    secure: process.env.NODE_ENV === 'production',
+    httpOnly: true,
+    sameSite: 'none',
+    maxAge: 1000 * 60 * 60 * 1 // 1 hour
+  }
+}));
 
 // route
 app.get("/", (req, res) => { res.json({ message: "Welcome to Server." }); });
