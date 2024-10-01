@@ -5,7 +5,6 @@ const User = db.users;
 
 const authMiddleware = async (req, res, next) => {
   let token;
-  console.log(req.session.user);
   
   if (req.session && req.session.user) {
     token = req.session.user;

@@ -34,6 +34,12 @@ const login = async (req, res) => {
   }
 };
 
+const logout = async (req, res) => {
+  req.session = null;
+  res.clearCookie('session');
+  res.send('Logged out successfully');
+}
+
 // const register = async (req, res) => {
 //   const { username, password, mail } = req.body;
 //   const usersData = await User.find();
@@ -81,6 +87,7 @@ const login = async (req, res) => {
 
 module.exports = {
   login,
+  logout,
   // register,
   //verifyEmail,
 };

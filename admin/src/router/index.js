@@ -13,6 +13,23 @@ const routes = [
     component: () => import('../views/HomeView.vue'),
     meta: { requiresAuth: true }
   },
+  {
+    path: '/features',
+    name: 'features',
+    component: () => import('../views/FeaturesView.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/pricing',
+    name: 'pricing',
+    component: () => import('../views/PricingView.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'notFound',
+    component: () => import('../views/NotFound.vue')
+  }
 ];
 
 const router = createRouter({
