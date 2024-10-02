@@ -5,7 +5,7 @@ const AjaxScripts = {
     postData(`contact/sendMail`, data, onSuccess, onError);
   },
   FindLanguage: function({ data, onSuccess, onError }) {
-    postData(`admin/findLanguage/${data}`, null, onSuccess, onError);
+    postData(`language/findLanguage/${data}`, null, onSuccess, onError);
   },
 };
 

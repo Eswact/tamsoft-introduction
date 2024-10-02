@@ -3,6 +3,12 @@
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
     import { useRoute, useRouter } from 'vue-router';
     import AjaxScripts from '@/scripts/ajaxScripts';
+    import { switchLanguage, selectedLanguage } from '@/services/languageServices';
+
+    const toggleLanguage = () => {
+      const newLanguage = selectedLanguage.value === 'tr' ? 'en' : 'tr';
+      switchLanguage(newLanguage);
+    };
 
     const route = useRoute();
     const router = useRouter();
@@ -83,8 +89,21 @@
           </div>
           <div class="flex gap-[34px] md:gap-[20px] items-center justify-end">
             <!-- Settings Button -->
-            <button class="text-second hover:text-main text-[1.5rem] px-[4px]">
-              <font-awesome-icon icon="fa-solid fa-gear"/>
+            <button @click="toggleLanguage" class="text-[1.5rem] px-[4px]">
+              <img
+                  loading="lazy"
+                  :class="{ 'hidden': selectedLanguage != 'en' }"
+                  class="w-[36px] md:w-[40px] cursor-pointer rounded-sm border-[1px] border-main dark:border-white"
+                  src="../images/tr-flag.png"
+                  alt="TR"
+              />
+              <img
+                  loading="lazy"
+                  :class="{ 'hidden': selectedLanguage != 'tr' }"
+                  class="w-[36px] md:w-[40px] cursor-pointer rounded-sm border-[1px] border-main dark:border-white"
+                  src="../images/uk-flag.png"
+                  alt="EN"
+              />
             </button>
             <!-- Logout Button -->
             <button @click="exit" class="text-main hover:text-main text-[1.5rem] px-[4px]">

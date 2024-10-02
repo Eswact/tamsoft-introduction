@@ -10,8 +10,11 @@ const AjaxScripts = {
     Logout: function ({ data, onSuccess, onError }) {
         postData(`user/logout`, data, onSuccess, onError);
     },
+    GetLanguages: function ({ onSuccess, onError }) {
+        fetchData(`language/languages`, onSuccess, onError);
+    },
     FindLanguage: function ({ data, onSuccess, onError }) {
-        postData(`admin/findLanguage/${data}`, null, onSuccess, onError);
+        postData(`language/findLanguage/${data}`, null, onSuccess, onError);
     },
 };
 
