@@ -57,7 +57,7 @@
               <span :class="['p-[8px] w-[44px] border-box flex justify-center items-center', { 'bg-main rounded-lg': isActive('/home') }]">
                 <font-awesome-icon class="min-w-[30px] flex justify-center items-center text-[26px]" icon="fa-solid fa-home"/>
               </span>
-              <span class="text-[1.45rem] font-semibold">Home</span>
+              <span class="text-[1.45rem] font-semibold">Anasayfa</span>
             </router-link>
           </li>
           <li class="flex justify-start items-center w-full">
@@ -65,7 +65,7 @@
               <span :class="['p-[8px] w-[44px] border-box flex justify-center items-center', { 'bg-main rounded-lg': isActive('/features') }]">
                 <font-awesome-icon class="min-w-[30px] flex justify-center items-center text-[26px]" icon="fa-solid fa-award"/>
               </span>
-              <span class="text-[1.45rem] font-semibold">Features</span>
+              <span class="text-[1.45rem] font-semibold">Özellikler</span>
             </router-link>
           </li>
           <li class="flex justify-start items-center w-full">
@@ -73,7 +73,7 @@
               <span :class="['p-[8px] w-[44px] border-box flex justify-center items-center', { 'bg-main rounded-lg': isActive('/pricing') }]">
                 <font-awesome-icon class="min-w-[30px] flex justify-center items-center text-[26px]" icon="fa-solid fa-sack-dollar"/>
               </span>
-              <span class="text-[1.45rem] font-semibold">Pricing</span>
+              <span class="text-[1.45rem] font-semibold">Fiyatlandırma</span>
             </router-link>
           </li>
         </ul>

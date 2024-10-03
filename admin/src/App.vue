@@ -12,8 +12,9 @@ const showNavbar = computed(() => {
 <template>
   <div>
     <Navbar v-if="showNavbar" />
-    <main :class="['', { 'w-[calc(100%-80px)] md:w-full px-[54px] md:px-[24px] mt-[120px] ml-[80px] md:ml-0': showNavbar }]">
+    <main :class="['pb-[120px]', { 'w-[calc(100%-80px)] md:w-full px-[54px] md:px-[24px] mt-[120px] ml-[80px] md:ml-0': showNavbar }]">
       <RouterView />
+      <!-- saveNewChanges Modal -->
     </main>
   </div>
 </template>

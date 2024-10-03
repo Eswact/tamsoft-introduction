@@ -14,6 +14,10 @@ const handleImageSelection = (file, imagePreview, newImage) => {
     }
 };
 
-//genel func saveChanges (yolu, obje)
+//general func updateWithPath (path, object)
+
+//are you sure modal
+
+//saveNewChanges(func)
 
 export { getImageFromUploads, handleImageSelection };

@@ -144,7 +144,7 @@
     // if (images2upload.value != '') uploadImagesArray(images2upload);
     // updateWithPath(newHomePageObject, 'homePage');
   };
-  // saveNewUpdates(saveUpdates4Home);
+  // saveNewChanges(saveUpdates4Home);
 </script>
 
 <template>
@@ -183,12 +183,12 @@
         <small>İkonlar</small>
         <div class="w-full flex justify-center items-center gap-[20px] flex-wrap">
           <div v-for="(icon, index) in icons" :key="icon" class="relative h-[90px] w-[120px] text-[12px] flex flex-col justify-center items-center border border-main-shadow rounded-md">
-            <button @click="deleteIcon(index)" class="absolute top-[-4px] right-[-4px]">sil</button>
+            <button @click="deleteIcon(index)" class="absolute top-[-13px] right-[-9px] text-red-600 text-[24px]"><font-awesome-icon icon="fa-solid fa-circle-xmark" /></button>
             <img class="w-[50px] aspect-square" :src="icon.preview ? icon.preview : getImageFromUploads(icon.icon)" />
             <span>{{ icon.name }}</span>
           </div>
-          <div class="h-[90px] w-[120px] flex flex-col justify-center items-center border border-main-shadow rounded-md">
-            <button @click="openIconModal" class="text-[24px] text-main">+</button>
+          <div class="h-[90px] w-[120px] flex flex-col justify-center items-center border border-green-600 rounded-md">
+            <button @click="openIconModal" class="text-green-600 text-[24px]"><font-awesome-icon icon="fa-solid fa-plus" /></button>
           </div>
         </div>
       </div>
@@ -210,11 +210,11 @@
           <small>Özellikler</small>
           <div class="w-full relative flex items-center" v-for="(prop, index) in properties" :key="prop">
             <input type="text" v-model="properties[index]" class="properties w-full p-[8px] pr-[24px] border border-[#efefef] rounded-md text-text" />
-            <button @click="deleteFromPropsArray(index)" class="absolute right-0">Sil</button>
+            <button @click="deleteFromPropsArray(index)" class="absolute right-[4px] text-red-600 text-[24px]"><font-awesome-icon icon="fa-solid fa-circle-xmark" /></button>
           </div>
           <div class="w-full relative flex items-center"> 
             <input v-model="newProperty" type="text" placeholder="Yeni Özellik" class="properties w-full p-[8px] pr-[24px] border border-[#efefef] rounded-md text-text" />
-            <button @click="add4PropsArray" class="absolute right-0">Ekle</button>
+            <button @click="add4PropsArray" class="absolute right-[6px] text-green-600 text-[24px]"><font-awesome-icon icon="fa-solid fa-plus" /></button>
           </div>
         </div>
       </div>
