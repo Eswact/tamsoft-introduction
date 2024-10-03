@@ -16,7 +16,9 @@ const fetchLanguageData = () => {
     });
 };
 
-fetchLanguageData();
+if (window.location.pathname !== '/') {
+    fetchLanguageData();
+}
 
 const switchLanguage = (lang) => {
     selectedLanguage.value = lang;
@@ -24,4 +26,4 @@ const switchLanguage = (lang) => {
     fetchLanguageData();
 };
 
-export { selectedJson, selectedLanguage, switchLanguage };
+export { fetchLanguageData, selectedJson, selectedLanguage, switchLanguage };

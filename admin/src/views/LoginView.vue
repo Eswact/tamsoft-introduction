@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router'; 
+import { fetchLanguageData } from '@/services/languageServices';
 import AjaxScripts from '@/scripts/ajaxScripts';
 
 const email = ref('');
@@ -21,6 +22,7 @@ const login = async () => {
   let onSuccess = function(res) {
     console.log(res);
     sessionStorage.setItem('user', res.token);
+    fetchLanguageData();
     router.push('/home'); 
   }
   let onError = function(err) {

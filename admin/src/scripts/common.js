@@ -3,16 +3,17 @@ function getImageFromUploads(name) {
     return `${uploadsUrl}${name}`;
 }
 
-const handleImageSelection = (file, imagePreviews, newImages, index) => {
+const handleImageSelection = (file, imagePreview, newImage) => {
     if (file) {
         const reader = new FileReader();
         reader.onload = (e) => {
-            imagePreviews[index] = e.target.result;
-            newImages[index] = file;
+            imagePreview.value = e.target.result;
+            newImage.value = file;
         };
         reader.readAsDataURL(file);
     }
 };
-  
+
+//genel func saveChanges (yolu, obje)
 
 export { getImageFromUploads, handleImageSelection };
