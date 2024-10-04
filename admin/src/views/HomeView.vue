@@ -1,7 +1,11 @@
 <script setup>
   import { ref, watch } from 'vue';
   import { selectedJson } from '@/services/languageServices';
-  import { getImageFromUploads, handleImageSelection } from '@/scripts/common';
+  import { getImageFromUploads, handleImageSelection, uploadImagesArray, updateWithPath, saveNewChanges } from '@/scripts/common';
+
+  // Initial state
+  const originalHomePage = ref(selectedJson.value?.homePage);
+  const hasChanges = ref(false);
 
   // homePage Object
   const title = ref(selectedJson.value?.homePage.title || '');
@@ -114,6 +118,27 @@
     icons.value.splice(index, 1);
   };
 
+  // check Changes
+  const checkForChanges = () => {
+    const currentHomePage = {
+      title: title.value,
+      description: description.value,
+      buttonText: buttonText.value,
+      buttonLink: buttonLink.value,
+      image1: image1.value,
+      image2: image2.value,
+      icons: icons.value,
+      properties: properties.value,
+      youtubeLink: youtubeLink.value,
+    };
+
+    hasChanges.value = JSON.stringify(currentHomePage) !== JSON.stringify(originalHomePage.value);
+    (hasChanges.value) 
+      ? document.getElementById('saveNewChanges').classList.add('show')
+      : document.getElementById('saveNewChanges').classList.remove('show');
+  };
+  watch([title, description, buttonText, buttonLink, youtubeLink, icons, properties, image1, image2], checkForChanges);
+
   // saveUpdates
   const saveUpdates4Home = () => {
     // Create new home object
@@ -139,12 +164,10 @@
     if (imageFile1) images2upload.value.push(imageFile1);
     if (imageFile2) images2upload.value.push(imageFile2);
 
-    console.log(newHomePageObject);
-    console.log(images2upload.value);
-    // if (images2upload.value != '') uploadImagesArray(images2upload);
-    // updateWithPath(newHomePageObject, 'homePage');
+    if (images2upload.value.length > 0) uploadImagesArray(images2upload.value);
+    updateWithPath('homePage', newHomePageObject);
   };
-  // saveNewChanges(saveUpdates4Home);
+  saveNewChanges(saveUpdates4Home);
 </script>
 
 <template>

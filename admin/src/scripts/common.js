@@ -14,10 +14,23 @@ const handleImageSelection = (file, imagePreview, newImage) => {
     }
 };
 
-//general func updateWithPath (path, object)
-
 //are you sure modal
 
-//saveNewChanges(func)
+const uploadImagesArray = (images) => {
+    console.log(images)
+}
 
-export { getImageFromUploads, handleImageSelection };
+const updateWithPath = (path, object) => {
+    console.log(path);
+    console.log(object);
+}
+
+const saveNewChanges = (func) => {
+    const button = document.getElementById('saveChangesButton');
+    button.replaceWith(button.cloneNode(true));
+    document.getElementById('saveChangesButton').addEventListener('click', function() {
+        func();
+    });
+}
+
+export { getImageFromUploads, handleImageSelection, uploadImagesArray, updateWithPath, saveNewChanges };
