@@ -6,14 +6,15 @@
     import 'swiper/css/navigation';
     import { Autoplay, Pagination, Navigation } from 'swiper/modules';
     import { useFadeIn, getImageFromUploads } from '../scripts/common';
-    import languageJson from '../locales/tr.json'
+    import { langCounts } from '@/services/language'
+    const propertiesPageJson = langCounts.value.propertiesPage;
+    const bannerLength = langCounts.value.propertiesPage.banners.length;
+    const propCardLength = langCounts.value.propertiesPage.allProps.cards.length;
+    const propsLength = langCounts.value.propertiesPage.allProps.props.length;
 
     const modules = [Autoplay, Pagination, Navigation];
 
-    const propertiesPageJson = languageJson.propertiesPage;
-    const bannerLength = propertiesPageJson.banners.length;
-    const propCardLength = propertiesPageJson.allProps.cards.length;
-    const propsLength = propertiesPageJson.allProps.props.length;
+    
 
     const itemsToShow = ref(4);
     const handleResize = () => {

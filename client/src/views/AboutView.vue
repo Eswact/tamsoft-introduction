@@ -1,8 +1,8 @@
 <script setup>
     import { onMounted } from 'vue';
     import { useFadeIn, getImageFromUploads } from '../scripts/common';
-    import languageJson from '../locales/tr.json'
-    const teamSize = languageJson.aboutPage.ourTeam.team.length;
+    import { langCounts } from '@/services/language'
+    const teamSize = langCounts.value.teamSize;
     useFadeIn();
 </script>
 

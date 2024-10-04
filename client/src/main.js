@@ -5,7 +5,7 @@ import 'vue3-toastify/dist/index.css';
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import i18n from './services/language'
+import i18n from './services/i18n'
 import { createHead } from '@unhead/vue';
 
 import { library } from '@fortawesome/fontawesome-svg-core'

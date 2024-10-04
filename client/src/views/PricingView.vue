@@ -1,8 +1,8 @@
 <script setup>
     import { onMounted } from 'vue';
     import { useFadeIn } from '../scripts/common';
-    import languageJson from '../locales/tr.json'
-    const propertyLength = languageJson.pricingPage.properties.length;
+    import { langCounts } from '@/services/language'
+    const propertyLength = langCounts.value.propertyLengthPricing;
     useFadeIn();
 
     onMounted(() => {

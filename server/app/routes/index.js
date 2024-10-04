@@ -12,7 +12,7 @@ const adminRoutes = require("./admin-routes");
 const methodHandler = {
     get: router.get.bind(router),
     post: router.post.bind(router),
-    file: (path, middleware, func) => router.post(path, middleware, upload.single('file'), func),
+    file: (path, middleware, func) => router.post(path, middleware, upload.array('files', 10), func),
     put: router.put.bind(router),
     delete: router.delete.bind(router)
 };

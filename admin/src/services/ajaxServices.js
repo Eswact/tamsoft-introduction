@@ -21,4 +21,13 @@ const postData = async (endpoint, data, onSuccess, onError) => {
     onError(error);
   }
 };
-export { fetchData, postData };
+// POST FORM DATA
+const postFormData = async (endpoint, formData, onSuccess, onError) => {
+  try {
+    const response = await apiClient.post(endpoint, formData, { headers: { 'Content-Type': 'multipart/form-data', } });
+    onSuccess(response.data);
+  } catch (error) {
+    onError(error);
+  }
+};
+export { fetchData, postData, postFormData };

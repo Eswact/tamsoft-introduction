@@ -16,6 +16,12 @@ const AjaxScripts = {
     FindLanguage: function ({ data, onSuccess, onError }) {
         postData(`language/findLanguage/${data}`, null, onSuccess, onError);
     },
+    UploadImages: function ({ formData, onSuccess, onError }) {
+        postData(`admin/uploadImages`, formData, onSuccess, onError);
+    },
+    UpdateLanguageWithPath: function ({ language, data, onSuccess, onError }) {
+        postData(`admin/updateWithPath/${language}`, data, onSuccess, onError);
+    },
 };
 
 export default AjaxScripts;

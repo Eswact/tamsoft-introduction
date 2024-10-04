@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import { useHead } from '@unhead/vue';
-import i18n from '../services/language';
+import i18n from '../services/i18n';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

@@ -164,7 +164,7 @@
     if (imageFile1) images2upload.value.push(imageFile1);
     if (imageFile2) images2upload.value.push(imageFile2);
 
-    if (images2upload.value.length > 0) uploadImagesArray(images2upload.value);
+    if (images2upload.value.length > 0) uploadImagesArray(null, images2upload.value);
     updateWithPath('homePage', newHomePageObject);
   };
   saveNewChanges(saveUpdates4Home);

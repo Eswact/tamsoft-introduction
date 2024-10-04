@@ -1,9 +1,8 @@
 <script setup>
-    import { onMounted } from 'vue';
     import { useFadeIn, getImageFromUploads } from '../scripts/common';
-    import languageJson from '../locales/tr.json';
-    const iconCount = languageJson.homePage.icons.length;
-    const propertyCount = languageJson.homePage.properties.length;
+    import { langCounts } from '@/services/language'
+    const iconLength = langCounts.value.iconLength;
+    const propertyLengthHome = langCounts.value.propertyLengthHome;
     useFadeIn();
 </script>
 
@@ -22,11 +21,11 @@
           </div>
         </div>
         <div class="fade-in lg:hidden w-[46%] 2xl:w-[42%] xl:w-[300px] xl:p-0 px-[4%] pt-[6%] pb-[2%] flex justify-center items-center">
-          <img loading="lazy" :src="getImageFromUploads('report-bro.svg')" alt="Tamsoft Ön Muhasebe Programı">
+          <img loading="lazy" :src="getImageFromUploads($t('homePage.image1'))" alt="Tamsoft Ön Muhasebe Programı">
         </div>
       </div>
       <div class="fade-in w-full max-w-[1600px] flex justify-around items-center gap-[20px] flex-wrap">
-        <div v-for="item in iconCount" :key="item" class="flex flex-col justify-center items-center w-[120px] rounded-lg text-text dark:text-white gap-[8px] ">
+        <div v-for="item in iconLength" :key="item"  class="flex flex-col justify-center items-center w-[120px] rounded-lg text-text dark:text-white gap-[8px] ">
           <img class="w-[80px] xl:w-[64px]" loading="lazy" :src="getImageFromUploads($t(`homePage.icons[${item-1}].icon`))" :alt="$t(`homePage.icons[${item-1}].name`)">
           <span class="text-[1.25rem] text-center xl:text-[1.1rem] font-semibold whitespace-nowrap">{{ $t(`homePage.icons[${item-1}].name`) }}</span>
         </div>
@@ -40,7 +39,7 @@
         </div>
         <div class="w-[50%] lg:w-full flex justify-center items-center">
           <div class="fade-in w-[75%] sm:w-full bg-white flex flex-col gap-[32px] justify-start items-start p-[50px] xl:p-[30px] border rounded-lg shadow-xl">
-            <div v-for="item in propertyCount" :key="item" class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
+            <div v-for="item in propertyLengthHome" :key="item" class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
               <img class="w-[3.2rem] xl:w-[2rem]" loading="lazy" src="../images/check.svg" alt="check">
               <span class="text-text text-[1.2rem] xl:text-[1rem]">{{$t(`homePage.properties[${item-1}]`)}}</span>
             </div>

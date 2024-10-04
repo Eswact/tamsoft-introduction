@@ -15,7 +15,7 @@ const showNavbar = computed(() => {
     <main :class="['pb-[120px]', { 'w-[calc(100%-80px)] md:w-full px-[54px] md:px-[24px] mt-[120px] ml-[80px] md:ml-0': showNavbar }]">
       <RouterView />
       <!-- saveNewChanges Modal -->
-       <div id="saveNewChanges" class="fixed left-[80px] w-[calc(100%-80px)] py-[12px] px-[24px] bg-white border-t-[3px] border-[#ddd] bottom-0 flex-col justify-center items-center gap-[10px]">
+       <div v-if="showNavbar" id="saveNewChanges" class="fixed left-[80px] w-[calc(100%-80px)] py-[12px] px-[24px] bg-white border-t-[3px] border-[#ddd] bottom-0 flex-col justify-center items-center gap-[10px]">
           <span class="text-[14px] font-bold">Bazı değişiklikler farkedildi.</span>
           <div class="flex items-center gap-[20px]">
             <button id="saveChangesButton" class="py-[6px] px-[12px] text-[16px] font-mono font-bold rounded-lg text-white bg-green-600">Kaydet</button>
