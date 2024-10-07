@@ -125,19 +125,22 @@
       description: description.value,
       buttonText: buttonText.value,
       buttonLink: buttonLink.value,
-      image1: image1.value,
-      image2: image2.value,
+      youtubeLink: youtubeLink.value,
       icons: icons.value,
       properties: properties.value,
-      youtubeLink: youtubeLink.value,
+      image1: image1.value,
+      image2: image2.value,
     };
 
+    console.log(JSON.stringify(currentHomePage));
+    console.log(JSON.stringify(originalHomePage.value));
     hasChanges.value = JSON.stringify(currentHomePage) !== JSON.stringify(originalHomePage.value);
-    (hasChanges.value) 
-      ? document.getElementById('saveNewChanges').classList.add('show')
-      : document.getElementById('saveNewChanges').classList.remove('show');
+    if (hasChanges.value) document.getElementById('saveNewChanges').classList.add('show');
+    else document.getElementById('saveNewChanges').classList.remove('show');
   };
-  watch([title, description, buttonText, buttonLink, youtubeLink, icons, properties, image1, image2], checkForChanges);
+
+  watch([title, description, buttonText, buttonLink, youtubeLink, image1, image2], checkForChanges);
+  watch([icons, properties], checkForChanges, { deep: true });
 
   // saveUpdates
   const saveUpdates4Home = () => {
@@ -228,17 +231,19 @@
           <input id="image2" type="file" accept="image/*" @change="(event) => handleImageChange(event, 2)" class="hidden" />
         </label>
       </div>
-      <div class="w-full flex flex-col gap-[10px] justify-start items-start">
-        <div class="w-full flex flex-col justify-start items-start gap-[2px]">
-          <small>Özellikler</small>
-          <div class="w-full relative flex items-center" v-for="(prop, index) in properties" :key="prop">
-            <input type="text" v-model="properties[index]" class="properties w-full p-[8px] pr-[24px] border border-[#efefef] rounded-md text-text" />
-            <button @click="deleteFromPropsArray(index)" class="absolute right-[4px] text-red-600 text-[24px]"><font-awesome-icon icon="fa-solid fa-circle-xmark" /></button>
-          </div>
-          <div class="w-full relative flex items-center"> 
-            <input v-model="newProperty" type="text" placeholder="Yeni Özellik" class="properties w-full p-[8px] pr-[24px] border border-[#efefef] rounded-md text-text" />
-            <button @click="add4PropsArray" class="absolute right-[6px] text-green-600 text-[24px]"><font-awesome-icon icon="fa-solid fa-plus" /></button>
-          </div>
+      <div class="w-full flex flex-col justify-start items-start gap-[2px]">
+        <small>Özellikler</small>
+        <div class="w-full relative flex items-center" v-for="(prop, index) in properties" :key="index"> <!-- Key değerini index ile değiştiriyoruz -->
+          <input type="text" v-model="properties[index]" class="properties w-full p-[8px] pr-[24px] border border-[#efefef] rounded-md text-text" />
+          <button @click="deleteFromPropsArray(index)" class="absolute right-[4px] text-red-600 text-[24px]">
+            <font-awesome-icon icon="fa-solid fa-circle-xmark" />
+          </button>
+        </div>
+        <div class="w-full relative flex items-center">
+          <input v-model="newProperty" type="text" placeholder="Yeni Özellik" class="properties w-full p-[8px] pr-[24px] border border-[#efefef] rounded-md text-text" />
+          <button @click="add4PropsArray" class="absolute right-[6px] text-green-600 text-[24px]">
+            <font-awesome-icon icon="fa-solid fa-plus" />
+          </button>
         </div>
       </div>
     </div>
