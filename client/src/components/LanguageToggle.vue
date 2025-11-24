@@ -49,7 +49,7 @@
             @click="switchLanguage('tr')"
             :class="{ 'hidden': currentLocale !== 'en' }"
             class="w-[36px] md:w-[40px] cursor-pointer rounded-sm border-[1px] border-main dark:border-white"
-            src="../images/tr-flag.png"
+            src="/images/tr-flag.png"
             alt="TR"
         />
         <img
@@ -57,7 +57,7 @@
             @click="switchLanguage('en')"
             :class="{ 'hidden': currentLocale !== 'tr' }"
             class="w-[36px] md:w-[40px] cursor-pointer rounded-sm border-[1px] border-main dark:border-white"
-            src="../images/uk-flag.png"
+            src="/images/uk-flag.png"
             alt="EN"
         />
     </div>

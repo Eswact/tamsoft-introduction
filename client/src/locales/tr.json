@@ -44,6 +44,7 @@
     "smartPos": "SmartPos Hızlı Satış Yazılımı",
     "support": "Destek",
     "copyright": "© 2024 Tamsoft, Tüm hakları saklıdır.",
+    "createdBy": "Eswact tarafından Tasarlandı ve Geliştirildi.",
     "social": {
         "facebook":"",
         "x":"",
@@ -148,7 +149,7 @@
         "yourMailAddress": "Mail Adresiniz",
         "yourMessage": "Mesajınız",
         "submit": "Gönder",
-        "img": "/src/images/address.png"
+        "img": "/images/address.png"
     },
     "aboutPage": {
         "companyInfos": {
@@ -185,7 +186,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -193,7 +194,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -201,7 +202,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -209,7 +210,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -217,7 +218,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -225,7 +226,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -233,7 +234,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -241,7 +242,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -254,12 +255,12 @@
             {
                 "header": "Muhasebenizi Kolaylaştırın",
                 "description": "Yüzlerce fatura, irsaliye ve diğer dökümanlarınızı manuel olarak takip etmeye çalışmak zor olabilir. Ancak Tamsoft Ön Muhasebe Programı, muhasebe süreçlerinizi otomatize ederek, hatasız ve hızlı bir iş akışı sunar.",
-                "img": "/src/images/trafficData.gif"
+                "img": "/images/trafficData.gif"
             },
             {
                 "header": "İş Akışınızı Hızlandırın",
                 "description": "Tamsoft yazılımı, işletmenizin iş süreçlerini hızlandırarak daha verimli ve düzenli bir çalışma ortamı sağlar.",
-                "img": "/src/images/time.gif"
+                "img": "/images/time.gif"
             }
         ],
         "allProps": {
@@ -644,27 +645,27 @@
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, odit unde. Sint, expedita quidem quos fugit similique quia maiores officia recusandae aut nobis culpa! Rem nisi facilis quod voluptas voluptatem!",
         "buttonText": "Hemen Deneyin",
         "buttonLink": "https://demo.tamsoft.com.tr/",
-        "image1": "/src/images/report-bro.svg",
-        "image2": "/src/images/report-pana.svg",
+        "image1": "/images/report-bro.svg",
+        "image2": "/images/report-pana.svg",
         "icons": [
             {
-                "icon": "/src/images/star.svg",
+                "icon": "/images/star.svg",
                 "name": "Hızlı"
             },
             {
-                "icon": "/src/images/security.svg",
+                "icon": "/images/security.svg",
                 "name": "Güvenilir"
             },
             {
-                "icon": "/src/images/bulb.svg",
+                "icon": "/images/bulb.svg",
                 "name": "Çözüm Odaklı"
             },
             {
-                "icon": "/src/images/network.svg",
+                "icon": "/images/network.svg",
                 "name": "Çok Yönlü"
             },
             {
-                "icon": "/src/images/chat.svg",
+                "icon": "/images/chat.svg",
                 "name": "Destek"
             }
         ],

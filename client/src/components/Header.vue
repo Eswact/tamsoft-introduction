@@ -18,9 +18,9 @@
     <div class="w-full h-full flex justify-between items-center max-w-[1600px] pt-[20px] pb-[10px] px-[20px] lg:px-[10px]">
         <nav class="flex items-center gap-[20px] xl:gap-[10px] text-text dark:text-white md:hidden">
             <RouterLink class="py-[6px] pr-[12px] xl:pr-[10px] xl:pl-[10px]" to="/">
-                <img class="h-[58px] dark:hidden xl:hidden" loading="lazy" src="../images/tamsoft.png" alt="Tamsoft">
-                <img class="h-[58px] hidden dark:block xl:dark:hidden" loading="lazy" src="../images/tamsoft-dark.png" alt="Tamsoft">
-                <img class="h-[70px] hidden xl:block" loading="lazy" src="../images/logo.png" alt="Tamsoft">
+                <img class="h-[58px] dark:hidden xl:hidden" loading="lazy" src="/images/tamsoft.png" alt="Tamsoft">
+                <img class="h-[58px] hidden dark:block xl:dark:hidden" loading="lazy" src="/images/tamsoft-dark.png" alt="Tamsoft">
+                <img class="h-[70px] hidden xl:block" loading="lazy" src="/images/logo.png" alt="Tamsoft">
             </RouterLink>
             <RouterLink :class="{ 'text-main': isActive('/features') }" class="py-[6px] px-[12px] xl:px-[6px] flex items-center gap-[8px] relative group font-ptSans font-semibold" to="/features"> 
                 <span class="text-[1.2rem] font-semibold">{{ $t('features') }}</span>

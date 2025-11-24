@@ -44,6 +44,7 @@
     "smartPos": "SmartPos Fast Sales Software",
     "support": "Support",
     "copyright": "© 2024 Tamsoft, All rights reserved.",
+    "createdBy": "Designed & Developed by Eswact.",
     "social": {
         "facebook":"",
         "x":"",
@@ -148,7 +149,7 @@
         "yourMailAddress": "Your Mail Address",
         "yourMessage": "Your Message",
         "submit": "Submit",
-        "img": "/src/images/address.png"
+        "img": "/images/address.png"
     },
     "aboutPage": {
         "companyInfos": {
@@ -185,7 +186,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -193,7 +194,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -201,7 +202,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -209,7 +210,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -217,7 +218,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -225,7 +226,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -233,7 +234,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -241,7 +242,7 @@
                 {
                     "name": "Eren Sarıbay",
                     "title": "Frontend Developer",
-                    "img": "/src/images/team/eren.png",
+                    "img": "/images/team/eren.png",
                     "social": {
                         "in": "https://www.linkedin.com/in/eren-saribay/"
                     }
@@ -254,12 +255,12 @@
             {
                 "header": "Simplify Your Accounting",
                 "description": "Tracking hundreds of invoices, waybills, and other documents manually can be challenging. However, the Tamsoft Pre-Accounting Program automates your accounting processes, offering an error-free and swift workflow.",
-                "img": "/src/images/trafficData.gif"
+                "img": "/images/trafficData.gif"
             },
             {
                 "header": "Accelerate Your Workflow",
                 "description": "Tamsoft software speeds up your business processes, providing a more efficient and organized work environment.",
-                "img": "/src/images/time.gif"
+                "img": "/images/time.gif"
             }
         ],
         "allProps": {
@@ -643,27 +644,27 @@
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, odit unde. Sint, expedita quidem quos fugit similique quia maiores officia recusandae aut nobis culpa! Rem nisi facilis quod voluptas voluptatem!",
         "buttonText": "Try Now",
         "buttonLink": "https://demo.tamsoft.com.tr/",
-        "image1": "/src/images/report-bro.svg",
-        "image2": "/src/images/report-pana.svg",
+        "image1": "/images/report-bro.svg",
+        "image2": "/images/report-pana.svg",
         "icons": [
             {
-                "icon": "/src/images/star.svg",
+                "icon": "/images/star.svg",
                 "name": "Fast"
             },
             {
-                "icon": "/src/images/security.svg",
+                "icon": "/images/security.svg",
                 "name": "Trustworthy"
             },
             {
-                "icon": "/src/images/bulb.svg",
+                "icon": "/images/bulb.svg",
                 "name": "Solution Oriented"
             },
             {
-                "icon": "/src/images/network.svg",
+                "icon": "/images/network.svg",
                 "name": "Versatile"
             },
             {
-                "icon": "/src/images/chat.svg",
+                "icon": "/images/chat.svg",
                 "name": "Support"
             }
         ],

@@ -40,7 +40,7 @@
             <div
                 class="relative flex justify-center items-center w-full max-w-[1600px] h-[304px] before:absolute before:inset-0 before:right-auto before:pointer-events-none before:w-20 before:bg-gradient-to-r before:from-[#575456] before:to-[#57545600] before:z-20 after:absolute after:inset-0 after:left-auto after:pointer-events-none after:w-20 after:bg-gradient-to-l after:from-[#575456] after:to-[#57545600] after:z-20 2xl:before:w-0 2xl:after:w-0">
                 <img class="w-full h-full object-cover object-bottom"
-                    loading="lazy" src="../images/contact.jpg" alt="contact">
+                    loading="lazy" src="/images/contact.jpg" alt="contact">
                 <div class="absolute inset-0 bg-black opacity-55 md:opacity-40"></div>
                 <h1 class="absolute text-[4rem] md:text-[3rem] font-semibold text-white">{{$t('contactPage.header')}}</h1>
             </div>

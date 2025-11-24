@@ -7,7 +7,7 @@
         <div class="w-full flex flex-col justify-center items-center border-t-[2px] border-dark dark:border-black bg-dark dark:bg-black text-white">
             <div class="w-full max-w-[1600px] px-[40px] py-[20px] lg:p-[20px] flex justify-between flex-wrap items-start lg:justify-center lg:items-center sm:items-start lg:flex-col">
                 <div class="flex w-full max-w-[400px] p-[20px] flex-col justify-center items-start gap-[20px]">
-                    <img class="w-full max-w-[280px] ml-[-24px] md:ml-0" loading="lazy" src="../images/tamsoft-dark.png" alt="Tamsoft">
+                    <img class="w-full max-w-[280px] ml-[-24px] md:ml-0" loading="lazy" src="/images/tamsoft-dark.png" alt="Tamsoft">
                     <p class="text-[1.2rem]">{{ $t('footerDescription') }}</p>
                     <div class="flex justify-end items-center gap-[20px] py-[10px] text-[1.5rem]">
                         <a class="hover:text-main duration-200" target="_blank" :href="$t('social.facebook')"><font-awesome-icon icon="fa-brands fa-facebook" size="lg" /></a> 
@@ -47,8 +47,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full flex items-center max-w-[1600px] border-t-[1px] px-[60px] lg:px-[6px] py-[6px] lg:justify-center text-[1.05rem]">
+            <div class="w-full flex items-center justify-between gap-2 max-w-[1600px] border-t-[1px] px-[60px] lg:px-[6px] py-[6px] lg:justify-center lg:flex-col text-[1.05rem]">
                 <span>{{$t('copyright')}}</span>
+                <a href="https://github.com/Eswact" target="_blank" class="text-third font-semibold">{{$t('createdBy')}}</a>
             </div>
         </div>
     </div>

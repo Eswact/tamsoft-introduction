@@ -14,7 +14,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="z-0 w-full absolute top-0 fill-third-light"><path fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,181.3C384,149,480,75,576,80C672,85,768,171,864,176C960,181,1056,107,1152,90.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
       <div class="w-full max-w-[1600px] px-[80px] lg:px-[40px] md:px-[10px] xl:py-[40px] flex justify-between items-center">
         <div class="fade-in lg:justify-center lg:w-full lg:items-center flex flex-col justify-start items-start xl:gap-[20px] w-[50%] 2xl:w-[55%]">
-          <img class="w-[575px] 2xl:w-[420px] xl:w-[320px]" src="../images/tamsoft-text-logo.png" alt="Tamsoft">
+          <img class="w-[575px] 2xl:w-[420px] xl:w-[320px]" src="/images/tamsoft-text-logo.png" alt="Tamsoft">
           <div class="flex flex-col justify-start items-start lg:justify-center lg:items-center gap-[20px] xl:gap-[30px] px-[44px] xl:px-[20px]">
             <h1 class="text-[2.2rem] 2xl:text-[2rem] xl:text-[1.5rem] lg:text-center text-third font-bold underline">{{ $t('homePage.title') }}</h1>
             <p class="text-[1.25rem] 2xl:text-[1.2rem] xl:text-[1.1rem] font-semibold text-justify">{{ $t('homePage.description') }}</p>
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="fade-in lg:hidden w-[46%] 2xl:w-[42%] xl:w-[300px] xl:p-0 px-[4%] pt-[6%] pb-[2%] flex justify-center items-center">
-          <img loading="lazy" src="../images/report-bro.svg" alt="Tamsoft Ön Muhasebe Programı">
+          <img loading="lazy" src="/images/report-bro.svg" alt="Tamsoft Ön Muhasebe Programı">
         </div>
       </div>
       <div class="fade-in w-full max-w-[1600px] flex justify-around items-center gap-[20px] flex-wrap">
@@ -36,12 +36,12 @@
       <div class="bottomWave top-[-10px] mainWave h-[10px]"></div>
       <div class="w-full max-w-[1600px] flex justify-between items-center">
         <div class="w-[50%] p-[50px] xl:p-[40px] lg:hidden">
-          <img class="fade-in" loading="lazy" src="../images/report-pana.svg" alt="Tamsoft Ön Muhasebe Programı">
+          <img class="fade-in" loading="lazy" src="/images/report-pana.svg" alt="Tamsoft Ön Muhasebe Programı">
         </div>
         <div class="w-[50%] lg:w-full flex justify-center items-center">
           <div class="fade-in w-[75%] sm:w-full bg-white flex flex-col gap-[32px] justify-start items-start p-[50px] xl:p-[30px] border rounded-lg shadow-xl">
             <div v-for="item in propertyCount" :key="item" class="flex items-center justify-start gap-[28px] xl:gap-[16px]">
-              <img class="w-[3.2rem] xl:w-[2rem]" loading="lazy" src="../images/check.svg" alt="check">
+              <img class="w-[3.2rem] xl:w-[2rem]" loading="lazy" src="/images/check.svg" alt="check">
               <span class="text-text text-[1.2rem] xl:text-[1rem]">{{$t(`homePage.properties[${item-1}]`)}}</span>
             </div>
           </div>
