@@ -1,7 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const mongoose = require("mongoose");
 require("dotenv").config();
+
+const dbConfig = require("./app/config/db-config.js");
+mongoose.connect(dbConfig.url)
+  .then(() => console.log("Connected to MongoDB."))
+  .catch(err => console.error("MongoDB connection error:", err));
 
 const app = express();
 

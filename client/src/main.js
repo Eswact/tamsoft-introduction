@@ -3,6 +3,7 @@ import './assets/index.css'
 import 'vue3-toastify/dist/index.css';
 
 import { createApp } from 'vue'
+import axios from 'axios'
 import App from './App.vue'
 import router from './router'
 import i18n from './services/language'
@@ -22,6 +23,19 @@ const head = createHead();
 
 app.use(router)
 app.use(i18n)
-app.use(head); 
+app.use(head);
 
-app.mount('#app')
+const loadLanguages = async () => {
+  try {
+    const response = await axios.get(`${import.meta.env.VITE_REQUEST_URL}/api/language/getLanguages`);
+    const languages = response.data;
+    Object.keys(languages).forEach(locale => {
+      i18n.global.setLocaleMessage(locale, languages[locale]);
+    });
+  } catch {
+    // API'den dil verisi alınamazsa statik JSON dosyaları kullanılır
+  }
+  app.mount('#app');
+};
+
+loadLanguages();
