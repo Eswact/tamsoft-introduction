@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import { useHead } from '@unhead/vue';
 import i18n from '../services/language';
+import { adminService } from '../services/adminService';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -49,6 +50,18 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('../views/NotFound.vue')
+    },
+    {
+      path: '/admin',
+      name: 'admin-login',
+      component: () => import('../views/admin/AdminLogin.vue'),
+      meta: { isAdmin: true }
+    },
+    {
+      path: '/admin/dashboard',
+      name: 'admin-dashboard',
+      component: () => import('../views/admin/AdminDashboard.vue'),
+      meta: { isAdmin: true, requiresAuth: true }
     }
   ],
   scrollBehavior(to, from, savedPosition) {
@@ -61,6 +74,13 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth && !adminService.isLoggedIn()) {
+    return next('/admin');
+  }
+  if (to.name === 'admin-login' && adminService.isLoggedIn()) {
+    return next('/admin/dashboard');
+  }
+
   const { t } = i18n.global;
 
   if (to.meta.i18nKey) {

@@ -6,14 +6,18 @@
     import 'swiper/css/navigation';
     import { Autoplay, Pagination, Navigation } from 'swiper/modules';
     import { useFadeIn } from '../scripts/common';
-    import languageJson from '../locales/tr.json'
+    import { computed } from 'vue';
+    import { useI18n } from 'vue-i18n';
 
     const modules = [Autoplay, Pagination, Navigation];
 
-    const propertiesPageJson = languageJson.propertiesPage;
-    const bannerLength = propertiesPageJson.banners.length;
-    const propCardLength = propertiesPageJson.allProps.cards.length;
-    const propsLength = propertiesPageJson.allProps.props.length;
+    const { tm } = useI18n();
+    const bannerLength = computed(() => tm('propertiesPage.banners')?.length || 0);
+    const propCardLength = computed(() => tm('propertiesPage.allProps.cards')?.length || 0);
+    const propsLength = computed(() => tm('propertiesPage.allProps.props')?.length || 0);
+    const getPropCards = (idx) => tm('propertiesPage.allProps.props')?.[idx]?.cards;
+    const getPropCardsLength = (idx) => getPropCards(idx)?.length || 0;
+    const hasPropCards = (idx) => { const c = getPropCards(idx); return Array.isArray(c) && c.length > 0; };
 
     const itemsToShow = ref(4);
     const handleResize = () => {
@@ -124,7 +128,7 @@
                                             :alt="$t(`propertiesPage.allProps.props[${item-1}].head`)">
                                     </div>
                                 </div>
-                                <div v-if="propertiesPageJson.allProps.props[item-1].cards != ('' && null)" class="w-full px-[50px] pt-[40px] sm:p-0 md:p-[20px] flex flex-wrap justify-center items-center gap-[20px]">
+                                <div v-if="hasPropCards(item-1)" class="w-full px-[50px] pt-[40px] sm:p-0 md:p-[20px] flex flex-wrap justify-center items-center gap-[20px]">
                                     <swiper
                                     :slidesPerView=itemsToShow
                                     :loop="true"
@@ -139,7 +143,7 @@
                                     :modules="modules"
                                     class="w-full min-h-[230px]"
                                     >
-                                        <swiper-slide v-for="item2 in propertiesPageJson.allProps.props[item-1].cards.length" :key="item2">
+                                        <swiper-slide v-for="item2 in getPropCardsLength(item-1)" :key="item2">
                                             <div class="w-full h-full flex justify-center items-center">
                                                 <div class="p-[20px] flex flex-col gap-[10px] justify-start items-start max-w-full w-[350px] h-[170px] border-[2px] border-third bg-white rounded-lg shadow-md shadow-third-shadow">
                                                     <h4 class="text-[1.25rem] font-bold dark:text-third">{{$t(`propertiesPage.allProps.props[${item-1}].cards[${item2-1}].header`)}}</h4>
@@ -170,7 +174,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div v-if="propertiesPageJson.allProps.props[item-1].cards != ('' && null)" class="w-full px-[50px] pt-[40px] sm:p-0 md:p-[20px] flex flex-wrap justify-center items-center gap-[20px]">
+                                <div v-if="hasPropCards(item-1)" class="w-full px-[50px] pt-[40px] sm:p-0 md:p-[20px] flex flex-wrap justify-center items-center gap-[20px]">
                                     <swiper
                                     :slidesPerView=itemsToShow
                                     :loop="true"
@@ -185,7 +189,7 @@
                                     :modules="modules"
                                     class="w-full min-h-[230px]"
                                     >
-                                        <swiper-slide v-for="item2 in propertiesPageJson.allProps.props[item-1].cards.length" :key="item2">
+                                        <swiper-slide v-for="item2 in getPropCardsLength(item-1)" :key="item2">
                                             <div class="w-full h-full flex justify-center items-center">
                                                 <div class="p-[20px] flex flex-col gap-[10px] justify-start items-start max-w-full w-[350px] h-[170px] border-[2px] border-third bg-white rounded-lg shadow-md shadow-third-shadow">
                                                     <h4 class="text-[1.25rem] font-bold dark:text-third">{{$t(`propertiesPage.allProps.props[${item-1}].cards[${item2-1}].header`)}}</h4>

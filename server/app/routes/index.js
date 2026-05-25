@@ -6,23 +6,27 @@ const upload = multer({ storage: storage });
 const router = express.Router();
 const contactRoutes = require("./contact-routes");
 const languageRoutes = require("./language-routes");
+const adminRoutes = require("./admin-routes");
 
-chooseMethod = (method, path, func) => { 
+const toHandlers = (func) => Array.isArray(func) ? func : [func];
+
+chooseMethod = (method, path, func) => {
+    const handlers = toHandlers(func);
     switch (method) {
         case "get":
-            router.get(path, func);
+            router.get(path, ...handlers);
             break;
         case "post":
-            router.post(path, func);
+            router.post(path, ...handlers);
             break;
         case "file":
-            router.post(path, upload.single('file'), func);
+            router.post(path, upload.single('file'), ...handlers);
             break;
         case "put":
-            router.put(path, func);
+            router.put(path, ...handlers);
             break;
         case "delete":
-            router.delete(path, func);
+            router.delete(path, ...handlers);
             break;
         default:
             break;
@@ -35,6 +39,10 @@ contactRoutes.forEach(({ method, path, func }) => {
 
 languageRoutes.forEach(({ method, path, func }) => {
     chooseMethod(method, `/language/${path}`, func);
+});
+
+adminRoutes.forEach(({ method, path, func }) => {
+    chooseMethod(method, `/admin/${path}`, func);
 });
 
 module.exports = router;

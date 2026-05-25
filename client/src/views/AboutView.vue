@@ -1,8 +1,10 @@
 <script setup>
-    import { onMounted } from 'vue';
+    import { computed } from 'vue';
+    import { useI18n } from 'vue-i18n';
     import { useFadeIn } from '../scripts/common';
-    import languageJson from '../locales/tr.json'
-    const teamSize = languageJson.aboutPage.ourTeam.team.length;
+
+    const { tm } = useI18n();
+    const teamSize = computed(() => tm('aboutPage.ourTeam.team')?.length || 0);
     useFadeIn();
 </script>
 

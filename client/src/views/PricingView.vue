@@ -1,8 +1,11 @@
 <script setup>
+    import { computed } from 'vue';
+    import { useI18n } from 'vue-i18n';
     import { onMounted } from 'vue';
     import { useFadeIn } from '../scripts/common';
-    import languageJson from '../locales/tr.json'
-    const propertyLength = languageJson.pricingPage.properties.length;
+
+    const { tm } = useI18n();
+    const propertyLength = computed(() => tm('pricingPage.properties')?.length || 0);
     useFadeIn();
 
     onMounted(() => {

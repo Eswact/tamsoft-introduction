@@ -1,9 +1,11 @@
 <script setup>
-    import { onMounted } from 'vue';
+    import { computed } from 'vue';
+    import { useI18n } from 'vue-i18n';
     import { useFadeIn } from '../scripts/common';
-    import languageJson from '../locales/tr.json'
-    const iconCount = languageJson.homePage.icons.length;
-    const propertyCount = languageJson.homePage.properties.length;
+
+    const { tm } = useI18n();
+    const iconCount = computed(() => tm('homePage.icons')?.length || 0);
+    const propertyCount = computed(() => tm('homePage.properties')?.length || 0);
     useFadeIn();
 </script>
 
@@ -22,7 +24,7 @@
           </div>
         </div>
         <div class="fade-in lg:hidden w-[46%] 2xl:w-[42%] xl:w-[300px] xl:p-0 px-[4%] pt-[6%] pb-[2%] flex justify-center items-center">
-          <img loading="lazy" src="/images/report-bro.svg" alt="Tamsoft Ön Muhasebe Programı">
+          <img loading="lazy" :src="$t('homePage.image1')" alt="Tamsoft Ön Muhasebe Programı">
         </div>
       </div>
       <div class="fade-in w-full max-w-[1600px] flex justify-around items-center gap-[20px] flex-wrap">
@@ -36,7 +38,7 @@
       <div class="bottomWave top-[-10px] mainWave h-[10px]"></div>
       <div class="w-full max-w-[1600px] flex justify-between items-center">
         <div class="w-[50%] p-[50px] xl:p-[40px] lg:hidden">
-          <img class="fade-in" loading="lazy" src="/images/report-pana.svg" alt="Tamsoft Ön Muhasebe Programı">
+          <img class="fade-in" loading="lazy" :src="$t('homePage.image2')" alt="Tamsoft Ön Muhasebe Programı">
         </div>
         <div class="w-[50%] lg:w-full flex justify-center items-center">
           <div class="fade-in w-[75%] sm:w-full bg-white flex flex-col gap-[32px] justify-start items-start p-[50px] xl:p-[30px] border rounded-lg shadow-xl">
